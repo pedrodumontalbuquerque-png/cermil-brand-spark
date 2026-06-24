@@ -112,7 +112,8 @@ async function runMigration() {
     return;
   }
   
-  const veiculos = apiData.data?.data || [];
+  // O JSON raiz é um array com um objeto dentro
+  const veiculos = apiData[0]?.data?.data || [];
   console.log(`📋 Encontrados ${veiculos.length} veículos para processar.`);
   
   for (const veiculo of veiculos) {
