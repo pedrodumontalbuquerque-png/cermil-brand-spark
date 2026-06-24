@@ -4,6 +4,7 @@ import seixoNatural from "@/assets/ecom-seixo-natural.png";
 import ametistas from "@/assets/ecom-ametistas.png";
 import bigRocks from "@/assets/ecom-big-rocks.png";
 import outrasPedras from "@/assets/ecom-outras-pedras.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
 
 import seixoBrancoSack from "@/assets/seixo-branco-sack.jpg";
 import seixoBrancoWood from "@/assets/seixo-branco-wood.jpg";
@@ -88,12 +89,12 @@ export const prontaEntregaProducts: ProntaEntregaProduct[] = [
   {
     id: "seixo-rajado",
     name: "Seixo Rajado",
-    img: seixoRajado,
+    img: gallery3,
     type: "pronta-entrega",
     desc: "Seixo com variações naturais em tons terrosos e avermelhados, ideal para jardins rústicos e orgânicos.",
     granulometrias,
     badge: null,
-    gallery: [seixoRajadoWood, seixoRajadoSack, seixoRajadoGarden],
+    gallery: [gallery3, seixoRajadoWood, seixoRajadoSack, seixoRajadoGarden],
     pricing: {
       "Grande: ~100 mm": { "10 kg": "R$ 19", "25 kg": "R$ 43", "100 kg": "R$ 152", "500 kg": "R$ 695", "1.000 kg": "R$ 1.320" },
       "Médio: ~50 mm": { "10 kg": "R$ 20", "25 kg": "R$ 47", "100 kg": "R$ 167", "500 kg": "R$ 760", "1.000 kg": "R$ 1.450" },
