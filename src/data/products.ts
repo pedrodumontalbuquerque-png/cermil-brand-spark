@@ -5,17 +5,17 @@ import ametistas from "@/assets/ecom-ametistas.png";
 import bigRocks from "@/assets/ecom-big-rocks.png";
 import outrasPedras from "@/assets/ecom-outras-pedras.jpg";
 
-import blend1 from "@/assets/blend-1.jpg";
-import blend2 from "@/assets/blend-2.jpg";
+import seixoBrancoSack from "@/assets/seixo-branco-sack.jpg";
+import seixoBrancoWood from "@/assets/seixo-branco-wood.jpg";
+import seixoBrancoGarden from "@/assets/seixo-branco-garden.jpg";
 
-import branco1 from "@/assets/branco-1.jpg";
-import branco2 from "@/assets/branco-2.jpg";
+import seixoRajadoSack from "@/assets/seixo-rajado-sack.jpg";
+import seixoRajadoWood from "@/assets/seixo-rajado-wood.jpg";
+import seixoRajadoGarden from "@/assets/seixo-rajado-garden.jpg";
 
-import rajado1 from "@/assets/rajado-1.jpg";
-import rajado2 from "@/assets/rajado-2.jpg";
-
-import ametista1 from "@/assets/ametista-1.jpg";
-import ametista2 from "@/assets/ametista-2.jpg";
+import seixoNaturalSack from "@/assets/seixo-natural-sack.jpg";
+import seixoNaturalWood from "@/assets/seixo-natural-wood.jpg";
+import seixoNaturalGarden from "@/assets/seixo-natural-garden.jpg";
 
 const granulometrias = ["Fino: ~5 mm", "Médio: ~50 mm", "Grande: ~100 mm"];
 
@@ -60,7 +60,12 @@ export const prontaEntregaProducts: ProntaEntregaProduct[] = [
     desc: "Quartzo de alta alvura, indicado para composições de maior contraste e projetos que valorizam iluminação e limpeza visual.",
     granulometrias,
     badge: "Mais vendido",
-    gallery: [seixoBranco, branco1, branco2],
+    gallery: [seixoBrancoWood, seixoBrancoSack, seixoBrancoGarden],
+    pricing: {
+      "Grande: ~100 mm": { "10 kg": "R$ 20", "25 kg": "R$ 47", "100 kg": "R$ 166", "500 kg": "R$ 755", "1.000 kg": "R$ 1.440" },
+      "Médio: ~50 mm": { "10 kg": "R$ 22", "25 kg": "R$ 51", "100 kg": "R$ 182", "500 kg": "R$ 830", "1.000 kg": "R$ 1.580" },
+      "Fino: ~5 mm": { "10 kg": "R$ 24", "25 kg": "R$ 56", "100 kg": "R$ 199", "500 kg": "R$ 910", "1.000 kg": "R$ 1.730" }
+    },
     sizes: [
       {
         name: "Fino: aproximadamente 5 mm",
@@ -85,7 +90,12 @@ export const prontaEntregaProducts: ProntaEntregaProduct[] = [
     desc: "Seixo com variações naturais em tons terrosos e avermelhados, ideal para jardins rústicos e orgânicos.",
     granulometrias,
     badge: null,
-    gallery: [seixoRajado, rajado1, rajado2],
+    gallery: [seixoRajadoWood, seixoRajadoSack, seixoRajadoGarden],
+    pricing: {
+      "Grande: ~100 mm": { "10 kg": "R$ 19", "25 kg": "R$ 43", "100 kg": "R$ 152", "500 kg": "R$ 695", "1.000 kg": "R$ 1.320" },
+      "Médio: ~50 mm": { "10 kg": "R$ 20", "25 kg": "R$ 47", "100 kg": "R$ 167", "500 kg": "R$ 760", "1.000 kg": "R$ 1.450" },
+      "Fino: ~5 mm": { "10 kg": "R$ 22", "25 kg": "R$ 51", "100 kg": "R$ 182", "500 kg": "R$ 830", "1.000 kg": "R$ 1.580" }
+    },
     sizes: [
       {
         name: "Fino: aproximadamente 5 mm",
@@ -110,7 +120,12 @@ export const prontaEntregaProducts: ProntaEntregaProduct[] = [
     desc: "Blend natural das cores da jazida. Visual orgânico e autêntico, com variação equilibrada de tons.",
     granulometrias,
     badge: null,
-    gallery: [seixoNatural, blend1, blend2],
+    gallery: [seixoNaturalWood, seixoNaturalSack, seixoNaturalGarden],
+    pricing: {
+      "Grande: ~100 mm": { "10 kg": "R$ 17", "25 kg": "R$ 39", "100 kg": "R$ 138", "500 kg": "R$ 630", "1.000 kg": "R$ 1.200" },
+      "Médio: ~50 mm": { "10 kg": "R$ 19", "25 kg": "R$ 43", "100 kg": "R$ 152", "500 kg": "R$ 695", "1.000 kg": "R$ 1.320" },
+      "Fino: ~5 mm": { "10 kg": "R$ 20", "25 kg": "R$ 47", "100 kg": "R$ 166", "500 kg": "R$ 755", "1.000 kg": "R$ 1.440" }
+    },
     sizes: [
       {
         name: "Fino: aproximadamente 5 mm",

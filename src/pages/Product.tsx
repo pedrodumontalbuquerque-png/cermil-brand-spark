@@ -111,15 +111,34 @@ const ProductPage = () => {
                 </div>
               )}
 
-              {/* Seção Quantidades / Pesos */}
-              {product.weightsText && (
+              {/* Seção Quantidades / Pesos / Preços */}
+              {(product.weightsText || product.pricing) && (
                 <div className="mb-12">
-                  <p className="text-xs uppercase tracking-[0.3em] text-accent mb-6 font-medium border-b border-border pb-3">Quantidades e Pesos</p>
-                  <div className="bg-muted/40 p-6 border border-border">
-                    <p className="text-sm text-foreground leading-relaxed whitespace-pre-wrap">
-                      {product.weightsText}
-                    </p>
-                  </div>
+                  <p className="text-xs uppercase tracking-[0.3em] text-accent mb-6 font-medium border-b border-border pb-3">Quantidades e Preços</p>
+                  
+                  {product.pricing ? (
+                    <div className="flex flex-col gap-8">
+                      {Object.entries(product.pricing).map(([granulometria, pesos]) => (
+                        <div key={granulometria} className="bg-muted/30 border border-border p-5">
+                          <h5 className="font-display text-lg text-foreground mb-4 border-b border-border/50 pb-2">{granulometria.replace(/:(.*)/, ' ($1)')}</h5>
+                          <ul className="grid sm:grid-cols-2 gap-x-4 gap-y-3">
+                            {Object.entries(pesos).map(([peso, preco]) => (
+                              <li key={peso} className="flex items-center justify-between text-sm">
+                                <span className="text-muted-foreground">{peso}</span>
+                                <span className="font-medium text-foreground">{preco}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="bg-muted/40 p-6 border border-border">
+                      <p className="text-sm text-foreground leading-relaxed whitespace-pre-wrap">
+                        {product.weightsText}
+                      </p>
+                    </div>
+                  )}
                 </div>
               )}
 
