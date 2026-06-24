@@ -3,9 +3,9 @@ import { useState, useMemo } from "react";
 import { ArrowLeft, ArrowUpRight, Truck, ShoppingBag, MessageCircle, CheckCircle2, Star, Globe, Package, MapPin, Phone, Mail } from "lucide-react";
 import logo from "@/assets/logo-cermil.png";
 
-import seixoBranco from "@/assets/ecom-seixo-branco.png";
-import seixoRajado from "@/assets/ecom-seixo-rajado.png";
-import seixoNatural from "@/assets/ecom-seixo-natural.png";
+import branco1 from "@/assets/branco-1.jpg";
+import rajado1 from "@/assets/rajado-1.jpg";
+import blend1 from "@/assets/blend-1.jpg";
 
 import ametistas from "@/assets/ecom-ametistas.png";
 import bigRocks from "@/assets/ecom-big-rocks.png";
