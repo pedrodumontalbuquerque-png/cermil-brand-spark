@@ -14,23 +14,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground font-sans antialiased">
       {/* NAV */}
       <header className="absolute top-0 inset-x-0 z-50">
-        {/* Topbar de contato */}
-        <div className="h-9 bg-foreground border-b border-background/10">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10 h-full flex items-center justify-between gap-4">
-            <span className="hidden md:flex items-center gap-1.5 text-[10px] text-background/50">
-              <MapPin className="w-3 h-3 text-accent flex-shrink-0" />
-              Vila Salgado dos Moreiras, SN – Cágado, São Gonçalo do Amarante – CE, 62670-000
-            </span>
-            <div className="flex items-center gap-5 text-[10px] text-background/50 ml-auto">
-              <a href="tel:+5585991124238" className="flex items-center gap-1.5 hover:text-accent transition-colors">
-                <Phone className="w-3 h-3" /> (85) 99112-4238
-              </a>
-              <a href="mailto:adm@almineracao.com" className="flex items-center gap-1.5 hover:text-accent transition-colors">
-                <Mail className="w-3 h-3" /> adm@almineracao.com
-              </a>
-            </div>
-          </div>
-        </div>
+
         {/* Nav principal */}
         <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between backdrop-blur-md bg-background/70 border-b border-border/60">
           <a href="#top" className="flex items-center gap-3">
