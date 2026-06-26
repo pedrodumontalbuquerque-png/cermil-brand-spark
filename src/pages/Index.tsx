@@ -108,8 +108,7 @@ const Index = () => {
               a experiência operacional e a credibilidade institucional já existentes na CERMIL Construção e Mineração.
             </p>
             <p>
-              Não somos uma operação paralela, e tampouco uma vitrine improvisada. Somos a expansão natural de
-              uma estrutura mineral consolidada, agora orientada ao mercado decorativo e a demandas industriais sob consulta.
+              Somos a expansão natural de uma estrutura mineral consolidada, agora orientada ao mercado decorativo e a demandas industriais sob consulta.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 pt-8 hairline">
               {[
@@ -217,7 +216,7 @@ const Index = () => {
             <div className="lg:col-span-6">
               <p className="text-xs uppercase tracking-[0.4em] text-accent mb-4">Aplicações</p>
               <h2 className="font-display font-bold text-4xl lg:text-6xl leading-[1.05] text-balance">
-                Do paisagismo refinado <em className="text-accent not-italic">ao fornecimento</em> de larga escala.
+                Do paisagismo refinado <em className="text-accent not-italic">ao fornecimento</em> em larga escala.
               </h2>
             </div>
             <p className="lg:col-span-5 lg:col-start-8 text-muted-foreground leading-relaxed">
