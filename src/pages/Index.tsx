@@ -225,6 +225,20 @@ const Index = () => {
             </p>
           </div>
 
+          <div className="grid lg:grid-cols-2 gap-8 mb-20">
+            <div className="bg-background/40 border border-border p-8 lg:p-10">
+              <div className="flex items-start justify-between gap-4 mb-4">
+                <h3 className="font-display text-2xl lg:text-3xl text-foreground">Do paisagismo refinado <em className="text-accent not-italic">ao fornecimento</em> de grande escala.</h3>
+                <ArrowUpRight className="w-5 h-5 text-accent shrink-0 mt-1" />
+              </div>
+              <p className="text-muted-foreground text-sm">O mesmo material atravessa universos distintos, sustentado por uma capacidade produtiva preparada para projetos especiais, revenda e demandas técnicas.</p>
+            </div>
+            <div className="bg-background/40 border border-border p-8 lg:p-10">
+              <h3 className="font-display text-2xl lg:text-3xl text-foreground mb-4"><em className="text-accent not-italic">real</em>, traduzida em presença comercial.</h3>
+              <p className="text-muted-foreground text-sm">A CERMIL Stone nasce como a frente comercial dedicada ao fornecimento de seixo de quartzo e pedras naturais, estruturada sobre a base produtiva, a experiência operacional e a credibilidade institucional já existentes na CERMIL Construção e Mineração.</p>
+            </div>
+          </div>
+
           <div className="grid lg:grid-cols-12 gap-8">
             <div className="lg:col-span-7 relative overflow-hidden">
               <img src={landscape} alt="Pilhas de seixo na operação CERMIL" loading="lazy" width={1280} height={960} className="w-full h-[560px] object-cover" />
