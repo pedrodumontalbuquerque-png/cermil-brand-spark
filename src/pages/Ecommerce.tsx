@@ -335,7 +335,7 @@ const Ecommerce = () => {
                 Seixo de Quartzo &amp; <em className="text-accent not-italic">Pedras Naturais</em>
               </h1>
               <p className="mt-3 text-muted-foreground max-w-xl">
-                Pronta entrega de 10 kg a 1.000 kg e linha ornamental exclusiva sob consulta. São Gonçalo do Amarante – CE.
+                Pronta entrega de 10 kg a 1.000 kg e linha ornamental exclusiva sob consulta. Região metropolitana de Fortaleza – CE.
               </p>
             </div>
 
@@ -415,7 +415,7 @@ const Ecommerce = () => {
             <p className="text-[11px] italic tracking-[0.15em] text-background/40">"Sertão em pedra, mundo em projeto."</p>
             <div className="flex items-start gap-2 mt-2 text-[11px] text-background/50 leading-relaxed">
               <MapPin className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
-              <span>Vila Salgado dos Moreiras, SN – Cágado, São Gonçalo do Amarante – CE, 62670-000</span>
+              <span>Região metropolitana de Fortaleza – CE, 62670-000</span>
             </div>
           </div>
 

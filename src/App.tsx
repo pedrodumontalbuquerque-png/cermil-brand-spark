@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import Ecommerce from "./pages/Ecommerce.tsx";
 import Product from "./pages/Product.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import WhatsAppButton from "./components/WhatsAppButton.tsx";
 
 const queryClient = new QueryClient();
 
@@ -23,9 +24,12 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        {/* ── Botão flutuante WhatsApp — aparece em TODAS as páginas ── */}
+        <WhatsAppButton />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
 
 export default App;
+

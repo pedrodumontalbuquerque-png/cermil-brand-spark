@@ -3,6 +3,7 @@ import { ArrowLeft, MessageCircle, Package, MapPin, Phone, Mail, Globe, Truck, S
 import { allProducts } from "@/data/products";
 import { useState } from "react";
 import logo from "@/assets/logo-cermil.png";
+import { WHATSAPP_NUMBER } from "@/components/WhatsAppButton";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -123,13 +124,15 @@ const ProductPage = () => {
                     </div>
                   )}
                   <div className="mt-auto pt-6">
-                    <Link
-                      to="/#contato"
+                    <a
+                      href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Tenho interesse no produto *${product.name}* e gostaria de solicitar um orçamento. Podem me informar mais detalhes?`)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-5 text-sm uppercase tracking-[0.25em] font-medium bg-foreground text-background hover:bg-accent hover:text-accent-foreground transition-colors"
                     >
                       <MessageCircle className="w-4 h-4" />
-                      Solicitar Orçamento
-                    </Link>
+                      Solicitar Orçamento — {product.name}
+                    </a>
                   </div>
                 </div>
               )}
@@ -263,15 +266,17 @@ const ProductPage = () => {
                     </div>
                   )}
 
-                  {/* CTA */}
-                  <Link
-                    to="/#contato"
+                  {/* CTA WhatsApp */}
+                  <a
+                    href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Quero comprar / solicitar orçamento do produto *${product.name}*. Podem me informar disponibilidade e condições?`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mt-8 flex items-center justify-center gap-2 w-full py-4 text-xs uppercase tracking-[0.3em] font-medium bg-foreground text-background hover:bg-accent hover:text-accent-foreground transition-colors"
                   >
                     <ShoppingBag className="w-3.5 h-3.5" />
-                    Solicitar orçamento
+                    Comprar / Orçar — {product.name}
                     <ArrowUpRight className="w-3.5 h-3.5" />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -290,7 +295,7 @@ const ProductPage = () => {
             <p className="text-[11px] italic tracking-[0.15em] text-background/40">"Sertão em pedra, mundo em projeto."</p>
             <div className="flex items-start gap-2 mt-2 text-[11px] text-background/50 leading-relaxed">
               <MapPin className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
-              <span>Vila Salgado dos Moreiras, SN – Cágado, São Gonçalo do Amarante – CE, 62670-000</span>
+              <span>Região metropolitana de Fortaleza – CE, 62670-000</span>
             </div>
           </div>
 

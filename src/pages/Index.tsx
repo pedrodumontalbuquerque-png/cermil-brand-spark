@@ -313,7 +313,7 @@ const Index = () => {
                 </a>
                 <div className="flex items-center gap-4">
                   <span className="w-10 h-10 border border-background/20 flex items-center justify-center"><MapPin className="w-4 h-4" /></span>
-                  <span>São Gonçalo do Amarante · Ceará</span>
+                  <span>Região metropolitana de Fortaleza – CE</span>
                 </div>
               </div>
             </div>
@@ -350,7 +350,7 @@ const Index = () => {
             <p className="text-[11px] italic tracking-[0.15em] text-background/40">"Sertão em pedra, mundo em projeto."</p>
             <div className="flex items-start gap-2 mt-2 text-[11px] text-background/50 leading-relaxed">
               <MapPin className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
-              <span>Vila Salgado dos Moreiras, SN – Cágado, São Gonçalo do Amarante – CE, 62670-000</span>
+              <span>Região metropolitana de Fortaleza – CE, 62670-000</span>
             </div>
           </div>
 
