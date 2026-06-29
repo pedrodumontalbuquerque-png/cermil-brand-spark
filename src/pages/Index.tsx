@@ -28,7 +28,10 @@ const Index = () => {
             
             <li><a href="#contato" className="hover:text-foreground transition-colors">Contato</a></li>
           </ul>
-          <a href="#contato" className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] bg-foreground text-background px-4 py-2.5 hover:bg-accent hover:text-accent-foreground transition-colors">
+          <Link to="/ecommerce" className="md:hidden group inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] bg-foreground text-background px-4 py-2.5 hover:bg-accent hover:text-accent-foreground transition-colors">
+            Produtos <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </Link>
+          <a href="#contato" className="hidden md:inline-flex group items-center gap-2 text-xs uppercase tracking-[0.2em] bg-foreground text-background px-4 py-2.5 hover:bg-accent hover:text-accent-foreground transition-colors">
             Orçamento <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
         </nav>
