@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useMemo } from "react";
 import { ArrowLeft, ArrowUpRight, Truck, ShoppingBag, MessageCircle, CheckCircle2, Star, Globe, Package, MapPin, Phone, Mail } from "lucide-react";
+import { WHATSAPP_NUMBER } from "@/components/WhatsAppButton";
 import logo from "@/assets/logo-cermil.png";
 
 import seixoBrancoWood from "@/assets/seixo-branco-wood.jpg";
@@ -225,12 +226,6 @@ const ProductCard = ({ product }: { product: Product }) => {
                 </button>
               ))}
             </div>
-            {activeWeight && (
-              <p className="mt-2 flex items-center gap-1.5 text-[10px] text-accent">
-                <Truck className="w-3 h-3" />
-                {activeWeight.nota} · {activeWeight.disponibilidade}
-              </p>
-            )}
           </div>
         )}
 
@@ -255,8 +250,14 @@ const ProductCard = ({ product }: { product: Product }) => {
               )}
             </div>
           )}
-          <Link
-            to="/#contato"
+          <a
+            href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+              isPE
+                ? `Olá! Tenho interesse no produto *${product.name}*${selectedGranulometria ? ` (${selectedGranulometria})` : ""}${activeWeight ? `, ${activeWeight.label}` : ""}. Podem me informar disponibilidade e condições?`
+                : `Olá! Tenho interesse no produto *${product.name}* e gostaria de consultar disponibilidade e especificações.`
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className={`flex items-center justify-center gap-2 w-full py-3.5 text-xs uppercase tracking-[0.25em] font-medium transition-all ${
               isPE
                 ? "bg-foreground text-background hover:bg-accent hover:text-accent-foreground"
@@ -274,7 +275,7 @@ const ProductCard = ({ product }: { product: Product }) => {
                 Consultar Disponibilidade
               </>
             )}
-          </Link>
+          </a>
         </div>
       </div>
     </article>
