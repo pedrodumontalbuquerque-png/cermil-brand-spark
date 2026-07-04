@@ -13,10 +13,10 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground font-sans antialiased">
       {/* NAV */}
-      <header className="absolute top-0 inset-x-0 z-50">
+      <header className="absolute top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/60">
 
         {/* Nav principal */}
-        <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between backdrop-blur-md bg-background/70 border-b border-border/60">
+        <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
           <a href="#top" className="flex items-center gap-3">
             <img src={logo} alt="CERMIL" className="h-8 w-auto" />
             <span className="hidden sm:inline-block font-display text-sm tracking-[0.3em] uppercase text-stone">Stone</span>
@@ -205,7 +205,7 @@ const Index = () => {
               to="/ecommerce"
               className="group inline-flex items-center gap-3 border border-accent/60 text-accent hover:bg-accent hover:text-accent-foreground transition-colors px-6 py-3 text-[11px] uppercase tracking-[0.3em]"
             >
-              Ver catálogo e-commerce
+              Ver catálogo
               <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </Link>
           </div>
@@ -316,7 +316,7 @@ const Index = () => {
                 </a>
                 <div className="flex items-center gap-4">
                   <span className="w-10 h-10 border border-background/20 flex items-center justify-center"><MapPin className="w-4 h-4" /></span>
-                  <span>Região metropolitana de Fortaleza – CE</span>
+                  <span>Vila dos Salgado Moreira - CE</span>
                 </div>
               </div>
             </div>
@@ -353,7 +353,7 @@ const Index = () => {
             <p className="text-[11px] italic tracking-[0.15em] text-background/40">"Sertão em pedra, mundo em projeto."</p>
             <div className="flex items-start gap-2 mt-2 text-[11px] text-background/50 leading-relaxed">
               <MapPin className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
-              <span>Região metropolitana de Fortaleza – CE, 62670-000</span>
+              <span>Vila dos Salgado Moreira - CE</span>
             </div>
           </div>
 

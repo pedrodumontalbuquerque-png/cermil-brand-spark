@@ -295,7 +295,7 @@ const ProductPage = () => {
             <p className="text-[11px] italic tracking-[0.15em] text-background/40">"Sertão em pedra, mundo em projeto."</p>
             <div className="flex items-start gap-2 mt-2 text-[11px] text-background/50 leading-relaxed">
               <MapPin className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
-              <span>Região metropolitana de Fortaleza – CE, 62670-000</span>
+              <span>Vila dos Salgado Moreira - CE</span>
             </div>
           </div>
 
