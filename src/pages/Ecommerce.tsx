@@ -4,13 +4,7 @@ import { ArrowLeft, ArrowUpRight, Truck, ShoppingBag, MessageCircle, CheckCircle
 import { WHATSAPP_NUMBER } from "@/components/WhatsAppButton";
 import logo from "@/assets/logo-cermil.png";
 
-import seixoBrancoWood from "@/assets/seixo-branco-wood.jpg";
-import seixoRajadoWood from "@/assets/seixo-rajado-wood.jpg";
-import seixoNaturalWood from "@/assets/seixo-natural-madeira.jpg";
-
-import ametistas from "@/assets/ecom-ametistas.png";
-import bigRocks from "@/assets/ecom-big-rocks.png";
-import outrasPedras1 from "@/assets/outras-pedras-1.png";
+import { Product, prontaEntregaProducts, sobConsultaProducts, allProducts } from "@/data/products";
 
 import pkg10 from "@/assets/pkg-10kg.jpg";
 import pkg25 from "@/assets/pkg-25kg.jpg";
@@ -28,107 +22,6 @@ const weights = [
   { label: "1.000 kg",img: pkg1000, nota: "Big bag FIBC · indústria e contratos",            disponibilidade: "Entregas locais (região direta)" },
 ];
 
-const granulometrias = ["Fino: ~5 mm", "Médio: ~50 mm", "Grande: ~100 mm"];
-
-type ProntaEntregaProduct = {
-  id: string;
-  name: string;
-  img: string;
-  type: "pronta-entrega";
-  desc: string;
-  granulometrias: string[];
-  badge: string | null;
-  pricing?: {
-    [granulometria: string]: {
-      [peso: string]: string;
-    };
-  };
-};
-
-type SobConsultaProduct = {
-  id: string;
-  name: string;
-  img: string;
-  type: "sob-consulta";
-  desc: string;
-  badge: string | null;
-};
-
-type Product = ProntaEntregaProduct | SobConsultaProduct;
-
-const prontaEntregaProducts: ProntaEntregaProduct[] = [
-  {
-    id: "seixo-branco",
-    name: "Seixo Branco",
-    img: seixoBrancoWood,
-    type: "pronta-entrega",
-    desc: "Quartzo de alta alvura, indicado para composições de maior contraste e projetos que valorizam iluminação e limpeza visual.",
-    granulometrias,
-    badge: "Mais vendido",
-    pricing: {
-      "Grande: ~100 mm": { "10 kg": "R$ 20", "25 kg": "R$ 47", "100 kg": "R$ 166", "500 kg": "R$ 755", "1.000 kg": "R$ 1.440" },
-      "Médio: ~50 mm": { "10 kg": "R$ 22", "25 kg": "R$ 51", "100 kg": "R$ 182", "500 kg": "R$ 830", "1.000 kg": "R$ 1.580" },
-      "Fino: ~5 mm": { "10 kg": "R$ 24", "25 kg": "R$ 56", "100 kg": "R$ 199", "500 kg": "R$ 910", "1.000 kg": "R$ 1.730" }
-    }
-  },
-  {
-    id: "seixo-rajado",
-    name: "Seixo Rajado",
-    img: seixoRajadoWood,
-    type: "pronta-entrega",
-    desc: "Seixo com variações naturais em tons terrosos e avermelhados, ideal para jardins rústicos e orgânicos.",
-    granulometrias,
-    badge: null,
-    pricing: {
-      "Grande: ~100 mm": { "10 kg": "R$ 19", "25 kg": "R$ 43", "100 kg": "R$ 152", "500 kg": "R$ 695", "1.000 kg": "R$ 1.320" },
-      "Médio: ~50 mm": { "10 kg": "R$ 20", "25 kg": "R$ 47", "100 kg": "R$ 167", "500 kg": "R$ 760", "1.000 kg": "R$ 1.450" },
-      "Fino: ~5 mm": { "10 kg": "R$ 22", "25 kg": "R$ 51", "100 kg": "R$ 182", "500 kg": "R$ 830", "1.000 kg": "R$ 1.580" }
-    }
-  },
-  {
-    id: "seixo-natural",
-    name: "Seixo Natural (blend)",
-    img: seixoNaturalWood,
-    type: "pronta-entrega",
-    desc: "Blend natural das cores da jazida. Visual orgânico e autêntico, com variação equilibrada de tons.",
-    granulometrias,
-    badge: null,
-    pricing: {
-      "Grande: ~100 mm": { "10 kg": "R$ 17", "25 kg": "R$ 39", "100 kg": "R$ 138", "500 kg": "R$ 630", "1.000 kg": "R$ 1.200" },
-      "Médio: ~50 mm": { "10 kg": "R$ 19", "25 kg": "R$ 43", "100 kg": "R$ 152", "500 kg": "R$ 695", "1.000 kg": "R$ 1.320" },
-      "Fino: ~5 mm": { "10 kg": "R$ 20", "25 kg": "R$ 47", "100 kg": "R$ 166", "500 kg": "R$ 755", "1.000 kg": "R$ 1.440" }
-    }
-  },
-];
-
-const sobConsultaProducts: SobConsultaProduct[] = [
-  {
-    id: "ametistas",
-    name: "Ametistas e derivados",
-    img: ametistas,
-    type: "sob-consulta",
-    desc: "Portfólio não padronizado, alta variabilidade natural (cor, forma, textura, raridade). Comercialização exclusivamente sob consulta.",
-    badge: "Exclusivo",
-  },
-  {
-    id: "big-rocks",
-    name: "Quartzo Big Rocks",
-    img: bigRocks,
-    type: "sob-consulta",
-    desc: "Peças diferenciadas de quartzo em tamanhos grandes. Forma natural ou polida/trabalhada sob especificação do cliente.",
-    badge: null,
-  },
-  {
-    id: "outras-pedras",
-    name: "Outras Pedras Naturais",
-    img: outrasPedras1,
-    type: "sob-consulta",
-    desc: "Pedras com potencial decorativo singular. Ajustes técnicos para uso seguro: remoção de pontas e planeamento da base.",
-    badge: null,
-  },
-];
-
-const allProducts: Product[] = [...prontaEntregaProducts, ...sobConsultaProducts];
 
 // ─── Product Card ───────────────────────────────────────────────────────────
 
