@@ -147,7 +147,7 @@ const ProductCard = ({ product }: { product: Product }) => {
   return (
     <article className="group flex flex-col border border-border bg-card overflow-hidden hover:shadow-[0_12px_40px_-12px_hsl(30_20%_20%/0.18)] transition-shadow duration-300">
       {/* Image */}
-      <Link to={`/product/${product.id}`} className="relative aspect-square overflow-hidden bg-bone block">
+      <Link to={`/produtos/${product.id}`} className="relative aspect-square overflow-hidden bg-bone block">
         <img
           src={displayImg}
           alt={product.name}
@@ -177,7 +177,7 @@ const ProductCard = ({ product }: { product: Product }) => {
       {/* Content */}
       <div className="p-5 lg:p-6 flex flex-col flex-1 gap-4">
         <div>
-          <Link to={`/product/${product.id}`}>
+          <Link to={`/produtos/${product.id}`}>
             <h3 className="font-display text-xl lg:text-2xl text-foreground leading-tight hover:text-accent transition-colors">{product.name}</h3>
           </Link>
           <p className="mt-2 text-sm text-muted-foreground leading-relaxed line-clamp-2">{product.desc}</p>
@@ -416,7 +416,11 @@ const Ecommerce = () => {
             <p className="text-[11px] italic tracking-[0.15em] text-background/40">"Sertão em pedra, mundo em projeto."</p>
             <div className="flex items-start gap-2 mt-2 text-[11px] text-background/50 leading-relaxed">
               <MapPin className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
-              <span>Vila dos Salgado Moreira - CE</span>
+              <div className="flex flex-col">
+                <span className="font-semibold text-background/80">Região metropolitana de Fortaleza</span>
+                <span>Vila Salgado dos Moreiras, SN e</span>
+                <span>Cágado, São Gonçalo do Amarante - CE, 62670-000</span>
+              </div>
             </div>
           </div>
 

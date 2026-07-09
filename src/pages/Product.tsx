@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, MessageCircle, Package, MapPin, Phone, Mail, Globe, Truck, ShoppingBag, ArrowUpRight } from "lucide-react";
 import { allProducts } from "@/data/products";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "@/assets/logo-cermil.png";
 import { WHATSAPP_NUMBER } from "@/components/WhatsAppButton";
 
@@ -9,6 +9,23 @@ const ProductPage = () => {
   const { id } = useParams();
   const product = allProducts.find((p) => p.id === id);
   const [activeImage, setActiveImage] = useState(product?.gallery?.[0] || product?.img);
+
+  useEffect(() => {
+    if (product?.seo) {
+      document.title = product.seo.title;
+      const metaDescription = document.querySelector('meta[name="description"]');
+      if (metaDescription) {
+        metaDescription.setAttribute("content", product.seo.metaDescription);
+      } else {
+        const meta = document.createElement("meta");
+        meta.name = "description";
+        meta.content = product.seo.metaDescription;
+        document.head.appendChild(meta);
+      }
+    } else if (product) {
+      document.title = `${product.name} | CERMIL Stone`;
+    }
+  }, [product]);
 
   if (!product) {
     return (
@@ -89,8 +106,52 @@ const ProductPage = () => {
 
             {/* Direita: Informações do Produto */}
             <div className="flex flex-col">
-              <h1 className="font-display font-bold text-4xl lg:text-5xl leading-tight mb-6">{product.name}</h1>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-10">{product.desc}</p>
+              <h1 className="font-display font-bold text-4xl lg:text-5xl leading-tight mb-6">
+                {product.seo?.h1 || product.name}
+              </h1>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+                {product.seo?.subheadline || product.desc}
+              </p>
+
+              {product.seo?.mainText && (
+                <div className="space-y-4 mb-10 text-sm text-foreground/80 leading-relaxed">
+                  {product.seo.mainText.map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
+                </div>
+              )}
+
+              {product.seo?.h2Applications && (
+                <div className="mb-10">
+                  <h2 className="font-display text-xl text-foreground mb-4">{product.seo.h2Applications}</h2>
+                  {product.seo.applicationsIntro && <p className="text-sm text-muted-foreground mb-4">{product.seo.applicationsIntro}</p>}
+                  <ul className="list-disc list-inside space-y-2 text-sm text-foreground/80">
+                    {product.seo.applications.map((app, i) => (
+                      <li key={i}>{app}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {product.seo?.h2Characteristics && (
+                <div className="mb-10">
+                  <h2 className="font-display text-xl text-foreground mb-4">{product.seo.h2Characteristics}</h2>
+                  {product.seo.characteristicsIntro && <p className="text-sm text-muted-foreground mb-4">{product.seo.characteristicsIntro}</p>}
+                  <ul className="list-disc list-inside space-y-2 text-sm text-foreground/80">
+                    {product.seo.characteristics.map((char, i) => (
+                      <li key={i}>{char}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {product.seo?.h2Supply && (
+                <div className="mb-10">
+                  <h2 className="font-display text-xl text-foreground mb-4">{product.seo.h2Supply}</h2>
+                  <p className="text-sm text-foreground/80 mb-4">{product.seo.supplyText}</p>
+                  <p className="text-sm text-muted-foreground italic border-l-2 border-accent pl-4">{product.seo.closingText}</p>
+                </div>
+              )}
 
               {/* Seção para produtos "sob-consulta" */}
               {product.type === "sob-consulta" && (
@@ -295,7 +356,11 @@ const ProductPage = () => {
             <p className="text-[11px] italic tracking-[0.15em] text-background/40">"Sertão em pedra, mundo em projeto."</p>
             <div className="flex items-start gap-2 mt-2 text-[11px] text-background/50 leading-relaxed">
               <MapPin className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
-              <span>Vila dos Salgado Moreira - CE</span>
+              <div className="flex flex-col">
+                <span className="font-semibold text-background/80">Região metropolitana de Fortaleza</span>
+                <span>Vila Salgado dos Moreiras, SN e</span>
+                <span>Cágado, São Gonçalo do Amarante - CE, 62670-000</span>
+              </div>
             </div>
           </div>
 
