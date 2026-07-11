@@ -92,7 +92,7 @@ const ProductCard = ({ product }: { product: Product }) => {
           <a
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
               isPE
-                ? `Olá! Tenho interesse no produto *${product.name}*${selectedGranulometria ? ` (${selectedGranulometria})` : ""}${activeWeight ? `, ${activeWeight.label}` : ""}. Podem me informar disponibilidade e condições?`
+                ? `Olá! Tenho interesse no produto *${product.name}*. Podem me informar disponibilidade e condições?`
                 : `Olá! Tenho interesse no produto *${product.name}* e gostaria de consultar disponibilidade e especificações.`
             )}`}
             target="_blank"
