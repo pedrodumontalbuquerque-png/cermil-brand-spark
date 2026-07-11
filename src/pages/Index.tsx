@@ -84,15 +84,7 @@ const Index = () => {
 
         </div>
 
-        {/* Faixa inferior — alto contraste */}
-        <div className="absolute bottom-0 inset-x-0 border-t border-background/10 bg-[hsl(30_12%_5%)]">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-[10px] uppercase tracking-[0.35em] text-background/60">
-            <span className="flex items-center gap-2"><span className="text-accent">◆</span> Origem mineral</span>
-            <span className="flex items-center gap-2"><span className="text-accent">◆</span> Estrutura produtiva</span>
-            <span className="flex items-center gap-2"><span className="text-accent">◆</span> Atendimento sob demanda</span>
-            <span className="flex items-center gap-2"><span className="text-accent">◆</span> Fornecimento recorrente</span>
-          </div>
-        </div>
+
       </section>
 
       {/* SOBRE */}
@@ -137,15 +129,10 @@ const Index = () => {
             <span className="h-px w-10 bg-accent" />
             <span className="text-[10px] uppercase tracking-[0.4em] text-accent">Reconhecimento</span>
           </div>
-          <p className="lg:col-span-7 font-display text-2xl lg:text-3xl leading-snug text-balance text-background">
-            Fornecemos quartzo a grupos multinacionais com presença em mais de
+          <p className="lg:col-span-10 font-display text-2xl lg:text-3xl leading-snug text-balance text-background">
+            Fornecemos quartzo a multinacional com presença em mais de
             <span className="text-accent"> 60 países</span>.
           </p>
-          <ul className="lg:col-span-3 grid gap-2 text-[10px] uppercase tracking-[0.3em] text-background/60">
-            <li className="flex items-center gap-2"><span className="text-accent">◆</span> Padrão industrial</li>
-            <li className="flex items-center gap-2"><span className="text-accent">◆</span> Auditoria de origem</li>
-            <li className="flex items-center gap-2"><span className="text-accent">◆</span> Recorrência contratual</li>
-          </ul>
         </div>
       </section>
 
