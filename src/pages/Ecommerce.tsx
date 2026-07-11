@@ -27,22 +27,13 @@ const weights = [
 
 const ProductCard = ({ product }: { product: Product }) => {
   const isPE = product.type === "pronta-entrega";
-  const [selectedWeight, setSelectedWeight] = useState<number | null>(null);
-  const [selectedGranulometria, setSelectedGranulometria] = useState<string | null>(null);
-  const activeWeight = selectedWeight !== null ? weights[selectedWeight] : null;
-  const displayImg = activeWeight ? activeWeight.img : product.img;
-
-  let priceStr = null;
-  if (product.type === "pronta-entrega" && selectedWeight !== null && selectedGranulometria !== null && product.pricing) {
-    priceStr = product.pricing[selectedGranulometria]?.[weights[selectedWeight].label];
-  }
 
   return (
     <article className="group flex flex-col border border-border bg-card overflow-hidden hover:shadow-[0_12px_40px_-12px_hsl(30_20%_20%/0.18)] transition-shadow duration-300">
       {/* Image */}
       <Link to={`/produtos/${product.id}`} className="relative aspect-square overflow-hidden bg-bone block">
         <img
-          src={displayImg}
+          src={product.img}
           alt={product.name}
           loading="lazy"
           width={800}
@@ -76,55 +67,19 @@ const ProductCard = ({ product }: { product: Product }) => {
           <p className="mt-2 text-sm text-muted-foreground leading-relaxed line-clamp-2">{product.desc}</p>
         </div>
 
-        {/* Granulometrias — pronta entrega only */}
-        {isPE && product.type === "pronta-entrega" && (
-          <div>
-            <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-2">Tamanho disponível</p>
-            <div className="flex flex-wrap gap-1.5">
-              {product.granulometrias.map((g) => (
-                <button
-                  key={g}
-                  type="button"
-                  onClick={() => setSelectedGranulometria(selectedGranulometria === g ? null : g)}
-                  className={`text-[10px] uppercase tracking-[0.12em] px-2.5 py-1.5 border transition-colors ${
-                    selectedGranulometria === g
-                      ? "border-accent bg-accent text-accent-foreground"
-                      : "border-border text-muted-foreground hover:border-foreground/40 hover:text-foreground"
-                  }`}
-                >
-                  {g}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Weight selector — pronta entrega only */}
+        {/* Info for pronta entrega */}
         {isPE && (
-          <div>
-            <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-2">Quantidade</p>
-            <div className="flex flex-wrap gap-1.5">
-              {weights.map((w, i) => (
-                <button
-                  key={w.label}
-                  type="button"
-                  onClick={() => setSelectedWeight(selectedWeight === i ? null : i)}
-                  className={`text-[10px] uppercase tracking-[0.12em] px-2.5 py-1.5 border transition-colors ${
-                    selectedWeight === i
-                      ? "border-accent bg-accent text-accent-foreground"
-                      : "border-border text-muted-foreground hover:border-foreground/40 hover:text-foreground"
-                  }`}
-                >
-                  {w.label}
-                </button>
-              ))}
-            </div>
+          <div className="flex items-start gap-2 p-3 bg-muted/50 border border-border mt-2">
+            <Package className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
+            <p className="text-[11px] text-muted-foreground leading-relaxed">
+              Consulte as opções de peso e quantidade no descritivo do produto.
+            </p>
           </div>
         )}
 
         {/* Sob consulta info */}
         {!isPE && (
-          <div className="flex items-start gap-2 p-3 bg-muted/50 border border-border">
+          <div className="flex items-start gap-2 p-3 bg-muted/50 border border-border mt-2">
             <Star className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
             <p className="text-[11px] text-muted-foreground leading-relaxed">
               Ornamental · exclusivo · produzido sob medida. Entre em contato para consultar disponibilidade e especificações.
@@ -134,15 +89,6 @@ const ProductCard = ({ product }: { product: Product }) => {
 
         {/* CTA button — styled like "Add to cart" */}
         <div className="mt-auto pt-1 flex flex-col gap-3">
-          {isPE && (
-            <div className="h-8 flex items-end">
-              {priceStr ? (
-                <p className="font-display text-2xl text-foreground">{priceStr}</p>
-              ) : (
-                <p className="text-[10px] text-muted-foreground uppercase tracking-[0.1em]">Selecione opções para preço</p>
-              )}
-            </div>
-          )}
           <a
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
               isPE
