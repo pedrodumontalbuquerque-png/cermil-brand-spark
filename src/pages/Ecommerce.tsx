@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowUpRight, Truck, ShoppingBag, MessageCircle, CheckCircle
 import { WHATSAPP_NUMBER } from "@/components/WhatsAppButton";
 import logo from "@/assets/logo-cermil.png";
 
-import { Product, prontaEntregaProducts, sobConsultaProducts, allProducts } from "@/data/products";
+import { Product, decorativaProducts, ornamentalProducts, industrialProducts, allProducts } from "@/data/products";
 
 import pkg10 from "@/assets/pkg-10kg.jpg";
 import pkg25 from "@/assets/pkg-25kg.jpg";
@@ -12,7 +12,7 @@ import pkg100 from "@/assets/pkg-100kg.jpg";
 import pkg500 from "@/assets/pkg-500kg.jpg";
 import pkg1000 from "@/assets/pkg-1000kg.jpg";
 
-type FilterType = "all" | "pronta-entrega" | "sob-consulta";
+type FilterType = "all" | "decorativa" | "ornamental" | "industrial";
 
 const weights = [
   { label: "10 kg",    img: pkg10,   nota: "Saco reforçado · varejo e hobbistas",           disponibilidade: "Vendas locais e online" },
@@ -26,7 +26,11 @@ const weights = [
 // ─── Product Card ───────────────────────────────────────────────────────────
 
 const ProductCard = ({ product }: { product: Product }) => {
-  const isPE = product.type === "pronta-entrega";
+  const lineLabel = {
+    "decorativa": "Linha Decorativa",
+    "ornamental": "Linha Ornamental",
+    "industrial": "Linha Industrial"
+  }[product.line];
 
   return (
     <article className="group flex flex-col border border-border bg-card overflow-hidden hover:shadow-[0_12px_40px_-12px_hsl(30_20%_20%/0.18)] transition-shadow duration-300">
@@ -40,21 +44,14 @@ const ProductCard = ({ product }: { product: Product }) => {
           height={800}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.06]"
         />
-        {/* Type badge */}
-        <span className={`absolute top-3 left-3 text-[9px] uppercase tracking-[0.3em] px-2.5 py-1 font-medium ${
-          isPE
-            ? "bg-foreground text-background"
-            : "bg-accent text-accent-foreground"
-        }`}>
-          {isPE ? "Pronta entrega" : "Sob consulta"}
+        {/* Line badge */}
+        <span className="absolute top-3 left-3 text-[9px] uppercase tracking-[0.3em] px-2.5 py-1 font-medium bg-foreground text-background">
+          {lineLabel}
         </span>
         {product.badge && (
           <span className="absolute top-3 right-3 text-[9px] uppercase tracking-[0.3em] px-2.5 py-1 bg-accent text-accent-foreground font-medium">
             {product.badge}
           </span>
-        )}
-        {!isPE && (
-          <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 to-transparent pointer-events-none" />
         )}
       </Link>
 
@@ -67,53 +64,25 @@ const ProductCard = ({ product }: { product: Product }) => {
           <p className="mt-2 text-sm text-muted-foreground leading-relaxed line-clamp-2">{product.desc}</p>
         </div>
 
-        {/* Info for pronta entrega */}
-        {isPE && (
-          <div className="flex items-start gap-2 p-3 bg-muted/50 border border-border mt-2">
-            <Package className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
-            <p className="text-[11px] text-muted-foreground leading-relaxed">
-              Consulte as opções de peso e quantidade no descritivo do produto.
-            </p>
-          </div>
-        )}
+        <div className="flex items-start gap-2 p-3 bg-muted/50 border border-border mt-2">
+          <MessageCircle className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
+          <p className="text-[11px] text-muted-foreground leading-relaxed">
+            Confira detalhes completos, opções de tamanho e disponibilidade.
+          </p>
+        </div>
 
-        {/* Sob consulta info */}
-        {!isPE && (
-          <div className="flex items-start gap-2 p-3 bg-muted/50 border border-border mt-2">
-            <Star className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
-            <p className="text-[11px] text-muted-foreground leading-relaxed">
-              Ornamental · exclusivo · produzido sob medida. Entre em contato para consultar disponibilidade e especificações.
-            </p>
-          </div>
-        )}
-
-        {/* CTA button — styled like "Add to cart" */}
+        {/* CTA button */}
         <div className="mt-auto pt-1 flex flex-col gap-3">
           <a
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-              isPE
-                ? `Olá! Tenho interesse no produto *${product.name}*. Podem me informar disponibilidade e condições?`
-                : `Olá! Tenho interesse no produto *${product.name}* e gostaria de consultar disponibilidade e especificações.`
+              `Olá! Tenho interesse no produto *${product.name}*. Gostaria de solicitar um orçamento.`
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex items-center justify-center gap-2 w-full py-3.5 text-xs uppercase tracking-[0.25em] font-medium transition-all ${
-              isPE
-                ? "bg-foreground text-background hover:bg-accent hover:text-accent-foreground"
-                : "bg-accent text-accent-foreground hover:bg-foreground hover:text-background"
-            }`}
+            className="flex items-center justify-center gap-2 w-full py-3.5 text-xs uppercase tracking-[0.25em] font-medium bg-foreground text-background hover:bg-accent hover:text-accent-foreground transition-all"
           >
-            {isPE ? (
-              <>
-                <ShoppingBag className="w-3.5 h-3.5" />
-                Solicitar Orçamento
-              </>
-            ) : (
-              <>
-                <MessageCircle className="w-3.5 h-3.5" />
-                Consultar Disponibilidade
-              </>
-            )}
+            <ShoppingBag className="w-3.5 h-3.5" />
+            Solicitar Orçamento
           </a>
         </div>
       </div>
@@ -133,8 +102,9 @@ const Ecommerce = () => {
 
   const filterOptions: { id: FilterType; label: string; count: number }[] = [
     { id: "all", label: "Todos", count: allProducts.length },
-    { id: "pronta-entrega", label: "Pronta entrega", count: prontaEntregaProducts.length },
-    { id: "sob-consulta", label: "Sob consulta", count: sobConsultaProducts.length },
+    { id: "decorativa", label: "Linha Decorativa", count: decorativaProducts.length },
+    { id: "ornamental", label: "Linha Ornamental", count: ornamentalProducts.length },
+    { id: "industrial", label: "Linha Industrial", count: industrialProducts.length },
   ];
 
   return (
@@ -170,12 +140,12 @@ const Ecommerce = () => {
 
           <div className="flex flex-col lg:flex-row lg:items-end gap-6 justify-between">
             <div>
-              <p className="text-xs uppercase tracking-[0.4em] text-accent mb-3">Catálogo · Pronta entrega & sob consulta</p>
+              <p className="text-xs uppercase tracking-[0.4em] text-accent mb-3">Catálogo · Decorativa, Ornamental & Industrial</p>
               <h1 className="font-display font-bold text-4xl lg:text-5xl leading-[1.05] text-balance">
                 Seixo de Quartzo &amp; <em className="text-accent not-italic">Pedras Naturais</em>
               </h1>
               <p className="mt-3 text-muted-foreground max-w-xl">
-                Pronta entrega de 10 kg a 1.000 kg e linha ornamental exclusiva sob consulta. Vila dos Salgado Moreira - CE.
+                Fornecemos quartzo para a maior companhia siderúrgica do mundo, presente em mais de 60 países. Disponibilidade em embalagem ou a granel.
               </p>
             </div>
 

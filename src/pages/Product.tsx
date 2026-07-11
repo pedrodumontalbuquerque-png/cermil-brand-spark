@@ -40,7 +40,6 @@ const ProductPage = () => {
     );
   }
 
-  const isPE = product.type === "pronta-entrega";
   const images = product.gallery || [product.img];
 
   return (
@@ -69,15 +68,13 @@ const ProductPage = () => {
             {/* Esquerda: Galeria de Imagens */}
             <div className="flex flex-col gap-6">
               <div className="aspect-square bg-bone border border-border/50 overflow-hidden relative">
-                <img 
-                  src={activeImage} 
-                  alt={product.name} 
+                <img
+                  src={activeImage}
+                  alt={product.name}
                   className="w-full h-full object-cover"
                 />
-                <span className={`absolute top-4 left-4 text-[10px] uppercase tracking-[0.3em] px-3 py-1.5 font-medium ${
-                  isPE ? "bg-foreground text-background" : "bg-accent text-accent-foreground"
-                }`}>
-                  {isPE ? "Pronta entrega" : "Sob consulta"}
+                <span className="absolute top-4 left-4 text-[10px] uppercase tracking-[0.3em] px-3 py-1.5 font-medium bg-foreground text-background">
+                  {product.line === "decorativa" ? "Linha Decorativa" : product.line === "ornamental" ? "Linha Ornamental" : "Linha Industrial"}
                 </span>
                 {product.badge && (
                   <span className="absolute top-4 right-4 text-[10px] uppercase tracking-[0.3em] px-3 py-1.5 bg-accent text-accent-foreground font-medium">
@@ -153,8 +150,8 @@ const ProductPage = () => {
                 </div>
               )}
 
-              {/* Seção para produtos "sob-consulta" */}
-              {product.type === "sob-consulta" && (
+              {/* Info section com CTA unificado */}
+              {(product.sizes || product.weightsText) && (
                 <div className="mb-12">
                   {product.sizes && product.sizes.length > 0 && (
                     <div className="mb-10">
@@ -184,24 +181,13 @@ const ProductPage = () => {
                       </div>
                     </div>
                   )}
-                  <div className="mt-auto pt-6">
-                    <a
-                      href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Tenho interesse no produto *${product.name}* e gostaria de solicitar um orçamento. Podem me informar mais detalhes?`)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-5 text-sm uppercase tracking-[0.25em] font-medium bg-foreground text-background hover:bg-accent hover:text-accent-foreground transition-colors"
-                    >
-                      <MessageCircle className="w-4 h-4" />
-                      Solicitar Orçamento — {product.name}
-                    </a>
-                  </div>
                 </div>
               )}
             </div>
           </div>
 
-          {/* ── SEÇÃO INFERIOR PARA PRONTA ENTREGA (FULL WIDTH) ── */}
-          {product.type === "pronta-entrega" && (
+          {/* ── SEÇÃO INFERIOR (FULL WIDTH) ── */}
+          {product.pricing && (
             <div className="mt-20 pt-16 border-t border-border">
               <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
                 {/* ── Quantidades ── */}
@@ -329,16 +315,35 @@ const ProductPage = () => {
 
                   {/* CTA WhatsApp */}
                   <a
-                    href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Quero comprar / solicitar orçamento do produto *${product.name}*. Podem me informar disponibilidade e condições?`)}`}
+                    href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Tenho interesse no produto *${product.name}* e gostaria de solicitar um orçamento. Podem me informar mais detalhes?`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-8 flex items-center justify-center gap-2 w-full py-4 text-xs uppercase tracking-[0.3em] font-medium bg-foreground text-background hover:bg-accent hover:text-accent-foreground transition-colors"
                   >
                     <ShoppingBag className="w-3.5 h-3.5" />
-                    Comprar / Orçar — {product.name}
+                    Solicitar Orçamento — {product.name}
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </a>
                 </div>
+              </div>
+            </div>
+          )}
+
+          {/* CTA Final para todos os produtos */}
+          {!product.pricing && (
+            <div className="mt-20 pt-16 border-t border-border">
+              <div className="flex flex-col items-center gap-6 text-center py-12">
+                <h2 className="font-display text-2xl text-foreground">Interessado neste produto?</h2>
+                <p className="text-muted-foreground max-w-md">Entre em contato para saber mais sobre disponibilidade, especificações técnicas e solicitar um orçamento.</p>
+                <a
+                  href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Tenho interesse no produto *${product.name}* e gostaria de solicitar um orçamento.`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 px-10 py-4 text-xs uppercase tracking-[0.3em] font-medium bg-foreground text-background hover:bg-accent hover:text-accent-foreground transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </a>
               </div>
             </div>
           )}
