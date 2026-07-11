@@ -130,7 +130,7 @@ const Index = () => {
             <span className="text-[10px] uppercase tracking-[0.4em] text-accent">Reconhecimento</span>
           </div>
           <p className="lg:col-span-10 font-display text-2xl lg:text-3xl leading-snug text-balance text-background">
-            Fornecemos quartzo a multinacional com presença em mais de
+            Fornecemos quartzo para a maior companhia siderúrgica do mundo, presente em mais de
             <span className="text-accent"> 60 países</span>.
           </p>
         </div>
@@ -305,7 +305,7 @@ const Index = () => {
                   <span className="w-10 h-10 border border-background/20 flex items-center justify-center flex-shrink-0"><MapPin className="w-4 h-4" /></span>
                   <div className="flex flex-col">
                     <span className="font-semibold text-foreground">Região metropolitana de Fortaleza</span>
-                    <span className="text-sm">Vila Salgado dos Moreiras, SN e</span>
+                    <span className="text-sm">Vila Salgado dos Moreiras, SN</span>
                     <span className="text-sm">Cágado, São Gonçalo do Amarante - CE, 62670-000</span>
                   </div>
                 </div>
@@ -346,7 +346,7 @@ const Index = () => {
               <MapPin className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
               <div className="flex flex-col">
                 <span className="font-semibold text-background/80">Região metropolitana de Fortaleza</span>
-                <span>Vila Salgado dos Moreiras, SN e</span>
+                <span>Vila Salgado dos Moreiras, SN</span>
                 <span>Cágado, São Gonçalo do Amarante - CE, 62670-000</span>
               </div>
             </div>

@@ -195,7 +195,7 @@ const ProductPage = () => {
               <MapPin className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
               <div className="flex flex-col">
                 <span className="font-semibold text-background/80">Região metropolitana de Fortaleza</span>
-                <span>Vila Salgado dos Moreiras, SN e</span>
+                <span>Vila Salgado dos Moreiras, SN</span>
                 <span>Cágado, São Gonçalo do Amarante - CE, 62670-000</span>
               </div>
             </div>
