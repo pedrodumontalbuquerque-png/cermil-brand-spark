@@ -150,39 +150,6 @@ const ProductPage = () => {
                 </div>
               )}
 
-              {/* Info section com CTA unificado */}
-              {(product.sizes || product.weightsText) && (
-                <div className="mb-12">
-                  {product.sizes && product.sizes.length > 0 && (
-                    <div className="mb-10">
-                      <p className="text-xs uppercase tracking-[0.3em] text-accent mb-6 font-medium border-b border-border pb-3">Tamanhos (Granulometrias)</p>
-                      <div className="flex flex-col gap-6">
-                        {product.sizes.map((s, i) => (
-                          <div key={i} className="flex gap-4">
-                            <div className="w-6 h-6 rounded bg-muted flex items-center justify-center flex-shrink-0 mt-0.5">
-                              <span className="text-xs font-medium text-foreground">{i + 1}</span>
-                            </div>
-                            <div>
-                              <h4 className="font-display text-lg text-foreground">{s.name}</h4>
-                              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                  {product.weightsText && (
-                    <div className="mb-12">
-                      <p className="text-xs uppercase tracking-[0.3em] text-accent mb-6 font-medium border-b border-border pb-3">Quantidades e Pesos</p>
-                      <div className="bg-muted/40 p-6 border border-border">
-                        <p className="text-sm text-foreground leading-relaxed whitespace-pre-wrap">
-                          {product.weightsText}
-                        </p>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              )}
             </div>
           </div>
 
