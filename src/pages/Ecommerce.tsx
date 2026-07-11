@@ -138,29 +138,24 @@ const Ecommerce = () => {
             <span className="text-foreground">Produtos</span>
           </nav>
 
-          <div className="flex flex-col lg:flex-row lg:items-end gap-6 justify-between">
-            <div>
-              <p className="text-xs uppercase tracking-[0.4em] text-accent mb-3">Catálogo · Decorativa, Ornamental & Industrial</p>
-              <h1 className="font-display font-bold text-4xl lg:text-5xl leading-[1.05] text-balance">
-                Seixo de Quartzo &amp; <em className="text-accent not-italic">Pedras Naturais</em>
-              </h1>
-              <p className="mt-3 text-muted-foreground max-w-xl">
-                Fornecemos quartzo para a maior companhia siderúrgica do mundo, presente em mais de 60 países. Disponibilidade em embalagem ou a granel.
-              </p>
-            </div>
+          <div>
+            <p className="text-xs uppercase tracking-[0.4em] text-accent mb-3">Catálogo</p>
+            <h1 className="font-display font-bold text-4xl lg:text-5xl leading-[1.05] text-balance">
+              Seixo de Quartzo &amp; <em className="text-accent not-italic">Pedras Naturais</em>
+            </h1>
+          </div>
 
-            {/* Trust badges */}
-            <div className="flex flex-wrap gap-5 text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-              <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-accent" /> Origem certificada
-              </span>
-              <span className="flex items-center gap-1.5">
-                <Truck className="w-3.5 h-3.5 text-accent" /> Entrega em todo o Brasil
-              </span>
-              <span className="flex items-center gap-1.5">
-                <Star className="w-3.5 h-3.5 text-accent" /> Capacidade para grandes volumes
-              </span>
-            </div>
+          {/* Trust badges */}
+          <div className="flex flex-wrap gap-5 text-[10px] uppercase tracking-[0.25em] text-muted-foreground mt-6">
+            <span className="flex items-center gap-1.5">
+              <CheckCircle2 className="w-3.5 h-3.5 text-accent" /> Origem certificada
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Truck className="w-3.5 h-3.5 text-accent" /> Entrega em todo o Brasil
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Star className="w-3.5 h-3.5 text-accent" /> Capacidade para grandes volumes
+            </span>
           </div>
         </div>
       </section>
