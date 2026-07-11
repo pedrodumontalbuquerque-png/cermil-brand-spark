@@ -150,6 +150,13 @@ const ProductPage = () => {
                 </div>
               )}
 
+              <div className="flex items-start gap-3 p-4 border border-accent/30 bg-accent/5 mb-10">
+                <Package className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
+                <p className="text-sm text-foreground/80 leading-relaxed">
+                  <span className="font-medium text-foreground">Disponível também a granel</span> (sem embalagem), para revenda e distribuição em larga escala.
+                </p>
+              </div>
+
             </div>
           </div>
 

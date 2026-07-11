@@ -97,7 +97,7 @@ const Ecommerce = () => {
 
   const filtered = useMemo(() => {
     if (activeFilter === "all") return allProducts;
-    return allProducts.filter((p) => p.type === activeFilter);
+    return allProducts.filter((p) => p.line === activeFilter);
   }, [activeFilter]);
 
   const filterOptions: { id: FilterType; label: string; count: number }[] = [
