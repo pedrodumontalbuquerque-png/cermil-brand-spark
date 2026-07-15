@@ -304,7 +304,6 @@ const Index = () => {
                 <div className="flex items-center gap-4">
                   <span className="w-10 h-10 border border-background/20 flex items-center justify-center flex-shrink-0"><MapPin className="w-4 h-4" /></span>
                   <div className="flex flex-col">
-                    <span className="font-semibold text-foreground">Região metropolitana de Fortaleza</span>
                     <span className="text-sm">Vila Salgado dos Moreiras, SN</span>
                     <span className="text-sm">Cágado, São Gonçalo do Amarante - CE, 62670-000</span>
                   </div>
@@ -345,7 +344,6 @@ const Index = () => {
             <div className="flex items-start gap-2 mt-2 text-[11px] text-background/50 leading-relaxed">
               <MapPin className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
               <div className="flex flex-col">
-                <span className="font-semibold text-background/80">Região metropolitana de Fortaleza</span>
                 <span>Vila Salgado dos Moreiras, SN</span>
                 <span>Cágado, São Gonçalo do Amarante - CE, 62670-000</span>
               </div>

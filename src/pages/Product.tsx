@@ -107,7 +107,10 @@ const ProductPage = () => {
                 {product.seo?.h1 || product.name}
               </h1>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                {product.seo?.subheadline || product.desc}
+                {product.desc}
+                {product.seo?.subheadline && product.seo.subheadline !== product.desc && (
+                  <> {product.seo.subheadline}</>
+                )}
               </p>
 
               {product.seo?.mainText && (
@@ -187,7 +190,6 @@ const ProductPage = () => {
             <div className="flex items-start gap-2 mt-2 text-[11px] text-background/50 leading-relaxed">
               <MapPin className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
               <div className="flex flex-col">
-                <span className="font-semibold text-background/80">Região metropolitana de Fortaleza</span>
                 <span>Vila Salgado dos Moreiras, SN</span>
                 <span>Cágado, São Gonçalo do Amarante - CE, 62670-000</span>
               </div>
