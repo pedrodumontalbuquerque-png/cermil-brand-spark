@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, MessageCircle, Package, MapPin, Phone, Mail, Globe, Truck, ShoppingBag, ArrowUpRight } from "lucide-react";
+import { ArrowLeft, MessageCircle, MapPin, Phone, Mail, Globe, Truck, ShoppingBag, ArrowUpRight } from "lucide-react";
 import { allProducts } from "@/data/products";
 import { useState, useEffect } from "react";
 import logo from "@/assets/logo-cermil.png";
@@ -149,13 +149,6 @@ const ProductPage = () => {
                   <p className="text-sm text-muted-foreground italic border-l-2 border-accent pl-4">{product.seo.closingText}</p>
                 </div>
               )}
-
-              <div className="flex items-start gap-3 p-4 border border-accent/30 bg-accent/5 mb-10">
-                <Package className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
-                <p className="text-sm text-foreground/80 leading-relaxed">
-                  <span className="font-medium text-foreground">Disponível também a granel</span> (sem embalagem), para revenda e distribuição em larga escala.
-                </p>
-              </div>
 
             </div>
           </div>

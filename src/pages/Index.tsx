@@ -301,7 +301,7 @@ const Index = () => {
                   <span className="w-10 h-10 border border-background/20 flex items-center justify-center group-hover:bg-accent group-hover:border-accent group-hover:text-accent-foreground transition-colors"><Mail className="w-4 h-4" /></span>
                   <span>comercial@cermil.com.br</span>
                 </a>
-                <div className="flex items-start gap-4">
+                <div className="flex items-center gap-4">
                   <span className="w-10 h-10 border border-background/20 flex items-center justify-center flex-shrink-0"><MapPin className="w-4 h-4" /></span>
                   <div className="flex flex-col">
                     <span className="font-semibold text-foreground">Região metropolitana de Fortaleza</span>
