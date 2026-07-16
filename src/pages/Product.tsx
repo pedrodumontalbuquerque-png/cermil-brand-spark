@@ -1,14 +1,13 @@
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, MessageCircle, MapPin, Phone, Mail, Globe, Truck, ShoppingBag, ArrowUpRight } from "lucide-react";
 import { allProducts } from "@/data/products";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import logo from "@/assets/logo-cermil.png";
 import { WHATSAPP_NUMBER } from "@/components/WhatsAppButton";
 
 const ProductPage = () => {
   const { id } = useParams();
   const product = allProducts.find((p) => p.id === id);
-  const [activeImage, setActiveImage] = useState(product?.gallery?.[0] || product?.img);
 
   useEffect(() => {
     if (product?.seo) {
@@ -69,7 +68,7 @@ const ProductPage = () => {
             <div className="flex flex-col gap-6">
               <div className="aspect-square bg-bone border border-border/50 overflow-hidden relative">
                 <img
-                  src={activeImage}
+                  src={images[0]}
                   alt={product.name}
                   className="w-full h-full object-cover"
                 />
@@ -82,23 +81,13 @@ const ProductPage = () => {
                   </span>
                 )}
               </div>
-              
-              {/* Miniaturas se houver mais de uma foto */}
-              {images.length > 1 && (
-                <div className="grid grid-cols-4 gap-4">
-                  {images.map((img, idx) => (
-                    <button 
-                      key={idx} 
-                      onClick={() => setActiveImage(img)}
-                      className={`aspect-square border overflow-hidden transition-all ${
-                        activeImage === img ? "border-foreground opacity-100" : "border-border/50 opacity-60 hover:opacity-100"
-                      }`}
-                    >
-                      <img src={img} alt={`${product.name} - imagem ${idx + 1}`} className="w-full h-full object-cover" />
-                    </button>
-                  ))}
+
+              {/* Demais fotos empilhadas em tamanho grande */}
+              {images.slice(1).map((img, idx) => (
+                <div key={idx} className="aspect-square bg-bone border border-border/50 overflow-hidden">
+                  <img src={img} alt={`${product.name} - imagem ${idx + 2}`} className="w-full h-full object-cover" />
                 </div>
-              )}
+              ))}
             </div>
 
             {/* Direita: Informações do Produto */}
@@ -112,6 +101,18 @@ const ProductPage = () => {
                   <> {product.seo.subheadline}</>
                 )}
               </p>
+
+              {images.length > 1 && (
+                <a
+                  href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Tenho interesse no produto *${product.name}* e gostaria de solicitar um orçamento.`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 px-10 py-4 mb-10 text-xs uppercase tracking-[0.3em] font-medium bg-foreground text-background hover:bg-accent hover:text-accent-foreground transition-colors w-fit"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </a>
+              )}
 
               {product.seo?.mainText && (
                 <div className="space-y-4 mb-10 text-sm text-foreground/80 leading-relaxed">
