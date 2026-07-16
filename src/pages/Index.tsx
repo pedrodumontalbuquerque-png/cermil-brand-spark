@@ -146,13 +146,8 @@ const Index = () => {
                 Material natural, <em className="text-accent not-italic">portfólio aberto</em>.
               </h2>
             </div>
-            <p className="max-w-md text-background/70 leading-relaxed">
-              Seixo de Quartzo como produto principal. Outras pedras, granulometrias e
-              especificações disponíveis sob consulta.
-            </p>
           </div>
 
-          
           <div className="grid lg:grid-cols-12 gap-8">
             <article className="lg:col-span-7 group relative overflow-hidden bg-background/5 border border-background/10">
               <div className="aspect-[4/3] overflow-hidden">
@@ -209,10 +204,6 @@ const Index = () => {
                 Do paisagismo refinado <em className="text-accent not-italic">ao fornecimento</em> em larga escala.
               </h2>
             </div>
-            <p className="lg:col-span-5 lg:col-start-8 text-muted-foreground leading-relaxed">
-              O mesmo material atravessa universos distintos, sustentado por uma capacidade
-              produtiva preparada para projetos especiais, revenda e demandas técnicas.
-            </p>
           </div>
 
           <div className="grid lg:grid-cols-12 gap-8">
@@ -254,9 +245,6 @@ const Index = () => {
                 Operação <em className="text-accent not-italic">em movimento</em>.
               </h2>
             </div>
-            <p className="lg:col-span-4 lg:col-start-9 text-background/70 leading-relaxed">
-              Imagens reais da estrutura produtiva, do processamento mineral e do material em estoque.
-            </p>
           </div>
 
           <div className="grid grid-cols-12 gap-4 lg:gap-6">
@@ -306,6 +294,7 @@ const Index = () => {
                   <div className="flex flex-col">
                     <span className="text-sm">Vila Salgado dos Moreiras, SN</span>
                     <span className="text-sm">Cágado, São Gonçalo do Amarante - CE, 62670-000</span>
+                    <span className="text-sm">Região Metropolitana de Fortaleza</span>
                   </div>
                 </div>
               </div>
@@ -346,6 +335,7 @@ const Index = () => {
               <div className="flex flex-col">
                 <span>Vila Salgado dos Moreiras, SN</span>
                 <span>Cágado, São Gonçalo do Amarante - CE, 62670-000</span>
+                <span>Região Metropolitana de Fortaleza</span>
               </div>
             </div>
           </div>

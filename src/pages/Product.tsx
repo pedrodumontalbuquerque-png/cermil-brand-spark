@@ -192,6 +192,7 @@ const ProductPage = () => {
               <div className="flex flex-col">
                 <span>Vila Salgado dos Moreiras, SN</span>
                 <span>Cágado, São Gonçalo do Amarante - CE, 62670-000</span>
+                <span>Região Metropolitana de Fortaleza</span>
               </div>
             </div>
           </div>
