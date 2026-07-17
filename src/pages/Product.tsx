@@ -95,34 +95,22 @@ const ProductPage = () => {
               <h1 className="font-display font-bold text-4xl lg:text-5xl leading-tight mb-6">
                 {product.seo?.h1 || product.name}
               </h1>
-              <div className="bg-accent text-accent-foreground p-8 rounded-xl mb-10 flex flex-col items-start shadow-sm">
-                <a
-                  href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Tenho interesse no produto *${product.name}* e gostaria de solicitar um orçamento.`)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 px-8 py-3.5 mb-6 text-xs uppercase tracking-[0.3em] font-medium bg-foreground text-background hover:bg-foreground/90 transition-colors w-full sm:w-fit"
-                >
-                  <MessageCircle className="w-4 h-4" />
-                  Solicitar Orçamento
-                </a>
+              <a
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Tenho interesse no produto *${product.name}* e gostaria de solicitar um orçamento.`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-10 py-4 mb-8 text-xs uppercase tracking-[0.3em] font-medium bg-foreground text-background hover:bg-accent hover:text-accent-foreground transition-colors w-fit"
+              >
+                <MessageCircle className="w-4 h-4" />
+                Solicitar Orçamento
+              </a>
 
-                <p className="text-lg leading-relaxed mb-6 font-medium">
-                  {product.desc}
-                  {product.seo?.subheadline && product.seo.subheadline !== product.desc && (
-                    <> {product.seo.subheadline}</>
-                  )}
-                </p>
-
-                <a
-                  href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Tenho interesse no produto *${product.name}* e gostaria de solicitar um orçamento.`)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 px-8 py-3.5 text-xs uppercase tracking-[0.3em] font-medium bg-foreground text-background hover:bg-foreground/90 transition-colors w-full sm:w-fit"
-                >
-                  <MessageCircle className="w-4 h-4" />
-                  Solicitar Orçamento
-                </a>
-              </div>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-10">
+                {product.desc}
+                {product.seo?.subheadline && product.seo.subheadline !== product.desc && (
+                  <> {product.seo.subheadline}</>
+                )}
+              </p>
 
               {product.seo?.mainText && (
                 <div className="space-y-4 mb-10 text-sm text-foreground/80 leading-relaxed">
@@ -169,23 +157,21 @@ const ProductPage = () => {
 
 
           {/* CTA Final para todos os produtos */}
-          {!product.pricing && (
-            <div className="mt-20 pt-16 border-t border-border">
-              <div className="flex flex-col items-center gap-6 text-center py-12">
-                <h2 className="font-display text-2xl text-foreground">Interessado neste produto?</h2>
-                <p className="text-muted-foreground max-w-md">Entre em contato para saber mais sobre disponibilidade, especificações técnicas e solicitar um orçamento.</p>
-                <a
-                  href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Tenho interesse no produto *${product.name}* e gostaria de solicitar um orçamento.`)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 px-10 py-4 text-xs uppercase tracking-[0.3em] font-medium bg-foreground text-background hover:bg-accent hover:text-accent-foreground transition-colors"
-                >
-                  <MessageCircle className="w-4 h-4" />
-                  Solicitar Orçamento
-                </a>
-              </div>
+          <div className="mt-20 pt-16 border-t border-border">
+            <div className="bg-accent text-accent-foreground rounded-2xl p-10 md:p-14 flex flex-col items-center gap-6 text-center shadow-sm">
+              <h2 className="font-display text-3xl md:text-4xl font-bold">Interessado neste produto?</h2>
+              <p className="text-accent-foreground/80 max-w-lg text-lg">Entre em contato para saber mais sobre disponibilidade, especificações técnicas e solicitar um orçamento.</p>
+              <a
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Tenho interesse no produto *${product.name}* e gostaria de solicitar um orçamento.`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-10 py-4 mt-2 text-xs uppercase tracking-[0.3em] font-medium bg-foreground text-background hover:bg-foreground/90 transition-colors"
+              >
+                <MessageCircle className="w-4 h-4" />
+                Solicitar Orçamento
+              </a>
             </div>
-          )}
+          </div>
         </div>
       </main>
 
