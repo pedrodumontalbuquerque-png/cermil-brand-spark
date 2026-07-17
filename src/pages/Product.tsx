@@ -95,24 +95,34 @@ const ProductPage = () => {
               <h1 className="font-display font-bold text-4xl lg:text-5xl leading-tight mb-6">
                 {product.seo?.h1 || product.name}
               </h1>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                {product.desc}
-                {product.seo?.subheadline && product.seo.subheadline !== product.desc && (
-                  <> {product.seo.subheadline}</>
-                )}
-              </p>
-
-              {images.length > 1 && (
+              <div className="bg-accent text-accent-foreground p-8 rounded-xl mb-10 flex flex-col items-start shadow-sm">
                 <a
                   href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Tenho interesse no produto *${product.name}* e gostaria de solicitar um orçamento.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 px-10 py-4 mb-10 text-xs uppercase tracking-[0.3em] font-medium bg-foreground text-background hover:bg-accent hover:text-accent-foreground transition-colors w-fit"
+                  className="flex items-center justify-center gap-2 px-8 py-3.5 mb-6 text-xs uppercase tracking-[0.3em] font-medium bg-foreground text-background hover:bg-foreground/90 transition-colors w-full sm:w-fit"
                 >
                   <MessageCircle className="w-4 h-4" />
                   Solicitar Orçamento
                 </a>
-              )}
+
+                <p className="text-lg leading-relaxed mb-6 font-medium">
+                  {product.desc}
+                  {product.seo?.subheadline && product.seo.subheadline !== product.desc && (
+                    <> {product.seo.subheadline}</>
+                  )}
+                </p>
+
+                <a
+                  href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Tenho interesse no produto *${product.name}* e gostaria de solicitar um orçamento.`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 px-8 py-3.5 text-xs uppercase tracking-[0.3em] font-medium bg-foreground text-background hover:bg-foreground/90 transition-colors w-full sm:w-fit"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </a>
+              </div>
 
               {product.seo?.mainText && (
                 <div className="space-y-4 mb-10 text-sm text-foreground/80 leading-relaxed">
@@ -203,8 +213,8 @@ const ProductPage = () => {
             <a href="tel:+5585991124238" className="flex items-center gap-2 text-[12px] text-background/60 hover:text-accent transition-colors">
               <Phone className="w-3.5 h-3.5" /> (85) 99112-4238
             </a>
-            <a href="mailto:adm@almineracao.com" className="flex items-center gap-2 text-[12px] text-background/60 hover:text-accent transition-colors">
-              <Mail className="w-3.5 h-3.5" /> adm@almineracao.com
+            <a href="mailto:cermilstone@gmail.com" className="flex items-center gap-2 text-[12px] text-background/60 hover:text-accent transition-colors">
+              <Mail className="w-3.5 h-3.5" /> cermilstone@gmail.com
             </a>
           </div>
 

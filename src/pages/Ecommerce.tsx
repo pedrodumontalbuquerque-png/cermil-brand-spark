@@ -234,8 +234,8 @@ const Ecommerce = () => {
             <a href="tel:+5585991124238" className="flex items-center gap-2 text-[12px] text-background/60 hover:text-accent transition-colors">
               <Phone className="w-3.5 h-3.5" /> (85) 99112-4238
             </a>
-            <a href="mailto:adm@almineracao.com" className="flex items-center gap-2 text-[12px] text-background/60 hover:text-accent transition-colors">
-              <Mail className="w-3.5 h-3.5" /> adm@almineracao.com
+            <a href="mailto:cermilstone@gmail.com" className="flex items-center gap-2 text-[12px] text-background/60 hover:text-accent transition-colors">
+              <Mail className="w-3.5 h-3.5" /> cermilstone@gmail.com
             </a>
           </div>
 

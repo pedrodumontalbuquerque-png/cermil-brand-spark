@@ -285,9 +285,9 @@ const Index = () => {
                   <span className="w-10 h-10 border border-background/20 flex items-center justify-center group-hover:bg-accent group-hover:border-accent group-hover:text-accent-foreground transition-colors"><Phone className="w-4 h-4" /></span>
                   <span>(85) 99112-4238</span>
                 </a>
-                <a href="mailto:comercial@cermil.com.br" className="flex items-center gap-4 group">
+                <a href="mailto:cermilstone@gmail.com" className="flex items-center gap-4 group">
                   <span className="w-10 h-10 border border-background/20 flex items-center justify-center group-hover:bg-accent group-hover:border-accent group-hover:text-accent-foreground transition-colors"><Mail className="w-4 h-4" /></span>
-                  <span>comercial@cermil.com.br</span>
+                  <span>cermilstone@gmail.com</span>
                 </a>
                 <div className="flex items-center gap-4">
                   <span className="w-10 h-10 border border-background/20 flex items-center justify-center flex-shrink-0"><MapPin className="w-4 h-4" /></span>
@@ -346,8 +346,8 @@ const Index = () => {
             <a href="tel:+5585991124238" className="flex items-center gap-2 text-[12px] text-background/60 hover:text-accent transition-colors">
               <Phone className="w-3.5 h-3.5" /> (85) 99112-4238
             </a>
-            <a href="mailto:adm@almineracao.com" className="flex items-center gap-2 text-[12px] text-background/60 hover:text-accent transition-colors">
-              <Mail className="w-3.5 h-3.5" /> adm@almineracao.com
+            <a href="mailto:cermilstone@gmail.com" className="flex items-center gap-2 text-[12px] text-background/60 hover:text-accent transition-colors">
+              <Mail className="w-3.5 h-3.5" /> cermilstone@gmail.com
             </a>
           </div>
 
