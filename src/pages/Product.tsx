@@ -31,7 +31,7 @@ const ProductPage = () => {
       <div className="min-h-screen flex items-center justify-center bg-background text-foreground">
         <div className="text-center">
           <h1 className="text-3xl font-display font-bold mb-4">Produto não encontrado</h1>
-          <Link to="/ecommerce" className="text-accent underline uppercase tracking-widest text-sm">
+          <Link to="/produtos" className="text-accent underline uppercase tracking-widest text-sm">
             Voltar ao catálogo
           </Link>
         </div>
@@ -51,7 +51,7 @@ const ProductPage = () => {
             <span className="hidden sm:inline-block font-display text-sm tracking-[0.3em] uppercase text-stone">Stone</span>
           </Link>
           <Link
-            to="/ecommerce"
+            to="/produtos"
             className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-muted-foreground hover:text-foreground transition-colors"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
@@ -73,7 +73,7 @@ const ProductPage = () => {
                   className="w-full h-full object-cover"
                 />
                 <span className="absolute top-4 left-4 text-[10px] uppercase tracking-[0.3em] px-3 py-1.5 font-medium bg-foreground text-background">
-                  {product.line === "decorativa" ? "Linha Decorativa" : product.line === "ornamental" ? "Linha Ornamental" : "Linha Industrial"}
+                  {product.line === "decorativa" ? "Linha Decorativa" : product.line === "ornamental" ? "Linha Ornamental" : product.line === "industrial" ? "Linha Industrial" : "Linha Construção Civil"}
                 </span>
                 {product.badge && (
                   <span className="absolute top-4 right-4 text-[10px] uppercase tracking-[0.3em] px-3 py-1.5 bg-accent text-accent-foreground font-medium">
@@ -206,7 +206,7 @@ const ProductPage = () => {
 
           <div className="flex flex-col gap-3 md:items-end">
             <p className="text-[10px] uppercase tracking-[0.4em] text-accent mb-1">Navegação</p>
-            <Link to="/ecommerce" className="text-[11px] uppercase tracking-[0.25em] text-background/50 hover:text-accent transition-colors">
+            <Link to="/produtos" className="text-[11px] uppercase tracking-[0.25em] text-background/50 hover:text-accent transition-colors">
               ← Voltar ao catálogo
             </Link>
             <p className="text-[11px] uppercase tracking-[0.2em] text-background/40 mt-auto">CNPJ 20.150.507/0001-39</p>

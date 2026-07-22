@@ -23,12 +23,12 @@ const Index = () => {
           </a>
           <ul className="hidden md:flex items-center gap-10 text-xs uppercase tracking-[0.2em] text-muted-foreground">
             <li><a href="#sobre" className="hover:text-foreground transition-colors">Quem somos</a></li>
-            <li><Link to="/ecommerce" className="hover:text-foreground transition-colors">Produtos</Link></li>
+            <li><Link to="/produtos" className="hover:text-foreground transition-colors">Produtos</Link></li>
             <li><a href="#aplicacoes" className="hover:text-foreground transition-colors">Aplicações</a></li>
             
             <li><a href="#contato" className="hover:text-foreground transition-colors">Contato</a></li>
           </ul>
-          <Link to="/ecommerce" className="md:hidden group inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] bg-foreground text-background px-4 py-2.5 hover:bg-accent hover:text-accent-foreground transition-colors">
+          <Link to="/produtos" className="md:hidden group inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] bg-foreground text-background px-4 py-2.5 hover:bg-accent hover:text-accent-foreground transition-colors">
             Produtos <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
           <a href="#contato" className="hidden md:inline-flex group items-center gap-2 text-xs uppercase tracking-[0.2em] bg-foreground text-background px-4 py-2.5 hover:bg-accent hover:text-accent-foreground transition-colors">
@@ -54,21 +54,18 @@ const Index = () => {
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 min-h-[78svh] flex flex-col justify-center pt-20 pb-20">
           <div className="max-w-4xl">
-            <h1 className="reveal reveal-delay-1 font-display font-bold text-balance text-5xl sm:text-6xl lg:text-8xl leading-[0.9] tracking-[-0.02em] text-background">
-              Seixo
-              <span className="block">
-                de <span className="italic font-normal text-accent">Quartzo</span>
-              </span>
+            <h1 className="reveal reveal-delay-1 font-display font-bold text-balance text-5xl sm:text-6xl lg:text-7xl leading-[0.95] tracking-[-0.02em] text-background">
+              Soluções minerais
               <span className="block text-background/70 text-3xl sm:text-4xl lg:text-5xl mt-3 font-normal italic tracking-[-0.01em]">
-                & pedras naturais
+                para paisagismo, construção civil <span className="text-accent not-italic">& indústria</span>
               </span>
             </h1>
 
             <div className="reveal reveal-delay-2 mt-14 grid sm:grid-cols-[auto,1fr] gap-8 items-start max-w-2xl">
               <span className="hidden sm:block w-16 h-px bg-accent mt-3" />
               <p className="text-base lg:text-lg text-background/80 leading-relaxed">
-                Origem mineral, estrutura produtiva consolidada e fornecimento sob demanda
-                ao serviço do mercado de pedras naturais.
+                Da linha decorativa ao fornecimento em escala, a CERMIL Stone reúne materiais minerais
+                selecionados para diferentes aplicações, com atendimento comercial orientado à demanda de cada projeto.
               </p>
             </div>
 
@@ -98,18 +95,21 @@ const Index = () => {
           </div>
           <div className="lg:col-span-7 lg:col-start-6 space-y-8 text-lg text-muted-foreground leading-relaxed">
             <p>
-              A <span className="text-foreground font-medium">CERMIL Stone</span> nasce como a frente comercial dedicada
-              ao fornecimento de seixo de quartzo e pedras naturais, estruturada sobre a base produtiva,
-              a experiência operacional e a credibilidade institucional já existentes na CERMIL Construção e Mineração.
+              A <span className="text-foreground font-medium">CERMIL Stone</span> é a frente da CERMIL voltada à valorização e
+              ao fornecimento de materiais minerais para diferentes aplicações. Com base em uma operação consolidada e origem
+              diretamente ligada ao setor mineral, a marca atua com linhas voltadas ao paisagismo, à decoração,
+              à construção civil e ao atendimento industrial.
             </p>
             <p>
-              Somos a expansão natural de uma estrutura mineral consolidada, agora orientada ao mercado decorativo e a demandas industriais sob consulta.
+              Mais do que um portfólio de produtos, a CERMIL Stone reúne materiais selecionados para responder a diferentes
+              necessidades de mercado, do uso ornamental ao fornecimento em escala. Essa atuação permite conectar
+              disponibilidade, aplicação e suporte comercial em uma estrutura preparada para atender projetos de diferentes portes.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 pt-8 hairline">
               {[
-                { k: "Operação", v: "Consolidada" },
-                { k: "Histórico", v: "Recorrente" },
-                { k: "Atendimento", v: "Sob demanda" },
+                { k: "Origem", v: "Certificada" },
+                { k: "Entrega", v: "Todo o Brasil" },
+                { k: "Capacidade", v: "Grandes volumes" },
               ].map((s) => (
                 <div key={s.k}>
                   <p className="text-[11px] uppercase tracking-[0.3em] text-muted-foreground/70">{s.k}</p>
@@ -141,9 +141,9 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-20">
             <div>
-              <p className="text-xs uppercase tracking-[0.4em] text-accent mb-4">Produtos</p>
+              <p className="text-xs uppercase tracking-[0.4em] text-accent mb-4">Portfólio de materiais</p>
               <h2 className="font-display font-bold text-4xl lg:text-6xl leading-[1.05] max-w-2xl text-background text-balance">
-                Material natural, <em className="text-accent not-italic">portfólio aberto</em>.
+                Material mineral, <em className="text-accent not-italic">portfólio aberto</em>.
               </h2>
             </div>
           </div>
@@ -166,7 +166,7 @@ const Index = () => {
             <div className="lg:col-span-5 grid gap-8">
               {[
                 { t: "Pedras Naturais", d: "Variedades minerais sob consulta para projetos decorativos e técnicos." },
-                { t: "Granulometrias específicas", d: "Trabalhamos com faixas de tamanho de referência do mercado e também sob demanda." },
+                { t: "Construção Civil", d: "Areia, arisco e brita para abastecimento de obras, com fornecimento regional." },
                 { t: "Demandas industriais", d: "Volumes e padrões compatíveis com operações de alta exigência." },
               ].map((c) => (
                 <div key={c.t} className="group p-8 border border-background/10 hover:border-accent/60 transition-colors bg-background/[0.03]">
@@ -184,7 +184,7 @@ const Index = () => {
 
           <div className="mt-16 flex justify-center">
             <Link
-              to="/ecommerce"
+              to="/produtos"
               className="group inline-flex items-center gap-3 border border-accent/60 text-accent hover:bg-accent hover:text-accent-foreground transition-colors px-6 py-3 text-[11px] uppercase tracking-[0.3em]"
             >
               Ver catálogo
@@ -199,10 +199,15 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-12 gap-16 items-end mb-20">
             <div className="lg:col-span-6">
-              <p className="text-xs uppercase tracking-[0.4em] text-accent mb-4">Aplicações</p>
+              <p className="text-xs uppercase tracking-[0.4em] text-accent mb-4">Aplicações para diferentes mercados</p>
               <h2 className="font-display font-bold text-4xl lg:text-6xl leading-[1.05] text-balance">
-                Do paisagismo refinado <em className="text-accent not-italic">ao fornecimento</em> em larga escala.
+                Do paisagismo refinado <em className="text-accent not-italic">à construção civil</em> em larga escala.
               </h2>
+              <p className="mt-6 text-muted-foreground text-lg leading-relaxed max-w-xl">
+                A CERMIL Stone atende diferentes frentes de mercado com materiais minerais selecionados para usos
+                decorativos, ornamentais, industriais e para construção civil. Seu portfólio é pensado para responder
+                tanto a projetos de paisagismo e arquitetura quanto a demandas por abastecimento técnico e fornecimento para obras.
+              </p>
             </div>
           </div>
 
@@ -219,7 +224,7 @@ const Index = () => {
                 { i: <Layers className="w-5 h-5" />, t: "Revenda", d: "Parcerias e fornecimento contínuo a distribuidores." },
                 { i: <Mountain className="w-5 h-5" />, t: "Projetos especiais", d: "Especificações dedicadas, formatos sob demanda." },
                 { i: <Compass className="w-5 h-5" />, t: "Demandas industriais", d: "Pedidos de grande porte e padrão técnico exigente." },
-                { i: <Truck className="w-5 h-5" />, t: "Fornecimentos específicos", d: "Combinações de material conforme projeto do cliente." },
+                { i: <Truck className="w-5 h-5" />, t: "Construção civil", d: "Areia, arisco e brita para abastecimento regional de obras." },
               ].map((a) => (
                 <li key={a.t} className="py-7 flex items-start gap-6 group">
                   <span className="text-accent mt-1">{a.i}</span>
@@ -276,8 +281,8 @@ const Index = () => {
                 Vamos estruturar o seu <em className="text-accent not-italic">próximo fornecimento</em>.
               </h2>
               <p className="mt-8 text-background/70 max-w-lg text-lg leading-relaxed">
-                Envie sua demanda informando granulometria, volume, destino e aplicação, e nossa equipe retorna com
-                proposta sob medida.
+                Fale com a equipe CERMIL Stone para informações sobre disponibilidade, volumes, aplicações e
+                fornecimento de materiais para paisagismo, construção civil, decoração e indústria.
               </p>
 
               <div className="mt-12 space-y-5 text-background/80">
@@ -354,7 +359,7 @@ const Index = () => {
           {/* Col 3 — info legal */}
           <div className="flex flex-col gap-2 md:items-end">
             <p className="text-[10px] uppercase tracking-[0.4em] text-accent mb-1">CERMIL Stone</p>
-            <p className="text-[11px] uppercase tracking-[0.2em] text-background/50">Seixo de Quartzo · Pedras Naturais</p>
+            <p className="text-[11px] uppercase tracking-[0.2em] text-background/50">Paisagismo · Construção Civil · Indústria</p>
             <p className="text-[11px] uppercase tracking-[0.2em] text-background/40">CNPJ 20.150.507/0001-39</p>
           </div>
         </div>

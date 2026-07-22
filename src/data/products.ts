@@ -22,6 +22,8 @@ import seixoNaturalGarden from "@/assets/seixo-natural-quintal.jpg";
 import ametista1 from "@/assets/ametista-1.jpg";
 import ametista2 from "@/assets/ametista-2.jpg";
 
+import construcaoCivilPlaceholder from "@/assets/operation.jpg";
+
 const granulometrias = ["Fino: ~5 mm", "Médio: ~50 mm", "Grande: ~100 mm"];
 const sizes = [{"name": "Fino: aproximadamente 5 mm", "desc": "Formato bem fino, próximo a um grão de milho, ideal para pisos drenantes, áreas de circulação externa e aplicações em que a drenagem e o conforto ao pisar são fundamentais."}, {"name": "Médio: faixa em torno de 50 mm", "desc": "Indicado para jardins, paisagismo geral, composições decorativas em canteiros, bordas de caminhos e áreas de destaque."}, {"name": "Grande: faixa em torno de 100 mm", "desc": "Indicado para pontos focais de paisagismo, contornos de espelhos d'água, delimitação de áreas e composições em que a pedra tenha presença visual mais marcante."}];
 
@@ -47,7 +49,7 @@ export type SEOData = {
   closingText: string;
 };
 
-export type LineType = "decorativa" | "ornamental" | "industrial";
+export type LineType = "decorativa" | "ornamental" | "industrial" | "construcao-civil";
 
 export type Product = {
   id: string;
@@ -180,4 +182,37 @@ export const industrialProducts: Product[] = [
   }
 ];
 
-export const allProducts: Product[] = [...decorativaProducts, ...ornamentalProducts, ...industrialProducts];
+export const construcaoCivilProducts: Product[] = [
+  {
+    id: "areia-construcao-civil",
+    name: "Areia",
+    img: construcaoCivilPlaceholder,
+    line: "construcao-civil",
+    desc: "Areia para construção civil, com fornecimento regional voltado ao abastecimento de obras e aplicações técnicas.",
+    badge: null,
+    gallery: [construcaoCivilPlaceholder],
+    seo: {"title": "Areia para Construção Civil | CERMIL Stone", "metaDescription": "Areia para obra e construção civil, com fornecimento em São Gonçalo do Amarante, Pecém e região metropolitana de Fortaleza. Origem mineral CERMIL Stone.", "h1": "Areia", "subheadline": "Material mineral destinado ao abastecimento de obras, com fornecimento regional e suporte comercial orientado à demanda de cada projeto.", "mainText": ["A Areia da CERMIL Stone integra a Linha Construção Civil, criada para atender ao abastecimento de obras e à demanda por materiais minerais aplicados à construção. Com origem ligada à base mineral da CERMIL, o fornecimento é pensado para atender desde pequenas obras até demandas de maior volume.", "O atendimento está estruturado para a região de São Gonçalo do Amarante, Pecém e a região metropolitana de Fortaleza, com foco em agilidade de entrega e regularidade de abastecimento para construtoras, empreiteiras e obras em andamento.", "Na CERMIL Stone, a Areia reforça a conexão entre origem mineral, capacidade de fornecimento e aplicação prática em diferentes contextos de obra, unindo a experiência da linha decorativa à nova frente de construção civil."], "h2Applications": "Aplicações da Areia na construção civil", "applicationsIntro": "A areia é indicada para diferentes etapas e aplicações técnicas dentro de uma obra.", "applications": ["Preparo de argamassa e concreto", "Reboco e acabamento", "Assentamento de pisos e alvenaria", "Obras residenciais e comerciais", "Fornecimento para construtoras e empreiteiras", "Abastecimento regular de canteiro de obra"], "h2Characteristics": "Características da Areia CERMIL Stone", "characteristicsIntro": "Selecionada para uso em construção civil, a areia é fornecida com foco em regularidade e adequação à demanda técnica da obra.", "characteristics": ["Material mineral de origem certificada", "Fornecimento regional", "Disponibilidade para pequenos e grandes volumes", "Atendimento orientado à demanda da obra", "Suporte comercial dedicado"], "h2Supply": "Fornecimento e disponibilidade", "supplyText": "A Areia integra a Linha Construção Civil da CERMIL Stone, com fornecimento para São Gonçalo do Amarante, Pecém e região metropolitana de Fortaleza. A disponibilidade pode variar conforme volume e demanda da obra.", "closingText": "Consulte a equipe CERMIL Stone para informações sobre disponibilidade, volumes e fornecimento de areia para sua obra."}
+  },
+  {
+    id: "arisco-construcao-civil",
+    name: "Arisco",
+    img: construcaoCivilPlaceholder,
+    line: "construcao-civil",
+    desc: "Arisco para construção civil, indicado para aterro, nivelamento e aplicações técnicas em obras.",
+    badge: null,
+    gallery: [construcaoCivilPlaceholder],
+    seo: {"title": "Arisco para Construção Civil | CERMIL Stone", "metaDescription": "Arisco para construção civil, aterro e nivelamento de terreno. Fornecimento em São Gonçalo do Amarante, Pecém e região metropolitana de Fortaleza.", "h1": "Arisco", "subheadline": "Material mineral utilizado em aterro, nivelamento e preparo de terreno, com fornecimento regional e suporte comercial orientado à demanda da obra.", "mainText": ["O Arisco da CERMIL Stone faz parte da Linha Construção Civil, desenvolvida para atender demandas de abastecimento técnico em obras. É um material amplamente utilizado em etapas de aterro, nivelamento e preparo de terreno, tanto em obras residenciais quanto em empreendimentos de maior porte.", "Com origem ligada à base mineral da CERMIL, o arisco é fornecido com foco em regularidade e agilidade de entrega para São Gonçalo do Amarante, Pecém e a região metropolitana de Fortaleza, atendendo construtoras, empreiteiras e obras em diferentes fases de execução.", "Na CERMIL Stone, o Arisco reforça a atuação da marca em construção civil, unindo disponibilidade, aplicação técnica e suporte comercial dedicado a cada demanda."], "h2Applications": "Aplicações do Arisco na construção civil", "applicationsIntro": "O arisco é indicado para diferentes etapas de preparo e adequação de terreno em obras.", "applications": ["Aterro de terrenos", "Nivelamento de área", "Preparo de base para construção", "Obras residenciais e comerciais", "Fornecimento para construtoras e empreiteiras", "Abastecimento regular de canteiro de obra"], "h2Characteristics": "Características do Arisco CERMIL Stone", "characteristicsIntro": "Fornecido para uso técnico em obras, o arisco atende demandas de aterro e nivelamento com regularidade de abastecimento.", "characteristics": ["Material mineral de origem certificada", "Fornecimento regional", "Disponibilidade para pequenos e grandes volumes", "Atendimento orientado à demanda da obra", "Suporte comercial dedicado"], "h2Supply": "Fornecimento e disponibilidade", "supplyText": "O Arisco integra a Linha Construção Civil da CERMIL Stone, com fornecimento para São Gonçalo do Amarante, Pecém e região metropolitana de Fortaleza. A disponibilidade pode variar conforme volume e demanda da obra.", "closingText": "Consulte a equipe CERMIL Stone para informações sobre disponibilidade, volumes e fornecimento de arisco para sua obra."}
+  },
+  {
+    id: "brita-construcao-civil",
+    name: "Brita",
+    img: construcaoCivilPlaceholder,
+    line: "construcao-civil",
+    desc: "Brita para construção civil, indicada para concreto, fundações e aplicações técnicas em obras.",
+    badge: null,
+    gallery: [construcaoCivilPlaceholder],
+    seo: {"title": "Brita para Construção Civil | CERMIL Stone", "metaDescription": "Brita para obra, concreto e fundações. Fornecimento de brita em São Gonçalo do Amarante, Pecém e região metropolitana de Fortaleza com a CERMIL Stone.", "h1": "Brita", "subheadline": "Agregado mineral indicado para concreto, fundações e aplicações técnicas em obras, com fornecimento regional e suporte comercial orientado à demanda do projeto.", "mainText": ["A Brita da CERMIL Stone integra a Linha Construção Civil, voltada ao fornecimento de agregados minerais para obras. É um material essencial em etapas como preparo de concreto, fundações e drenagem, sendo aplicado tanto em obras residenciais quanto em empreendimentos de maior escala.", "Com base na estrutura mineral da CERMIL, a brita é fornecida com foco em regularidade e agilidade de entrega para São Gonçalo do Amarante, Pecém e a região metropolitana de Fortaleza, atendendo construtoras, empreiteiras e obras em execução.", "Na CERMIL Stone, a Brita amplia a atuação da marca para a construção civil, conectando origem mineral, capacidade de fornecimento e aplicação técnica em diferentes contextos de obra."], "h2Applications": "Aplicações da Brita na construção civil", "applicationsIntro": "A brita é indicada para diferentes aplicações técnicas dentro de uma obra.", "applications": ["Preparo de concreto", "Fundações e estruturas", "Drenagem de terrenos", "Obras residenciais e comerciais", "Fornecimento para construtoras e empreiteiras", "Abastecimento regular de canteiro de obra"], "h2Characteristics": "Características da Brita CERMIL Stone", "characteristicsIntro": "Fornecida para uso técnico em obras, a brita atende demandas de concreto e fundação com regularidade de abastecimento.", "characteristics": ["Material mineral de origem certificada", "Fornecimento regional", "Disponibilidade para pequenos e grandes volumes", "Atendimento orientado à demanda da obra", "Suporte comercial dedicado"], "h2Supply": "Fornecimento e disponibilidade", "supplyText": "A Brita integra a Linha Construção Civil da CERMIL Stone, com fornecimento para São Gonçalo do Amarante, Pecém e região metropolitana de Fortaleza. A disponibilidade pode variar conforme volume e demanda da obra.", "closingText": "Consulte a equipe CERMIL Stone para informações sobre disponibilidade, volumes e fornecimento de brita para sua obra."}
+  }
+];
+
+export const allProducts: Product[] = [...decorativaProducts, ...ornamentalProducts, ...industrialProducts, ...construcaoCivilProducts];

@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowUpRight, Truck, ShoppingBag, MessageCircle, CheckCircle
 import { WHATSAPP_NUMBER } from "@/components/WhatsAppButton";
 import logo from "@/assets/logo-cermil.png";
 
-import { Product, decorativaProducts, ornamentalProducts, industrialProducts, allProducts } from "@/data/products";
+import { Product, decorativaProducts, ornamentalProducts, industrialProducts, construcaoCivilProducts, allProducts } from "@/data/products";
 
 import pkg10 from "@/assets/pkg-10kg.jpg";
 import pkg25 from "@/assets/pkg-25kg.jpg";
@@ -12,7 +12,7 @@ import pkg100 from "@/assets/pkg-100kg.jpg";
 import pkg500 from "@/assets/pkg-500kg.jpg";
 import pkg1000 from "@/assets/pkg-1000kg.jpg";
 
-type FilterType = "all" | "decorativa" | "ornamental" | "industrial";
+type FilterType = "all" | "decorativa" | "ornamental" | "industrial" | "construcao-civil";
 
 const weights = [
   { label: "10 kg",    img: pkg10,   nota: "Saco reforçado · varejo e hobbistas",           disponibilidade: "Vendas locais e online" },
@@ -29,7 +29,8 @@ const ProductCard = ({ product }: { product: Product }) => {
   const lineLabel = {
     "decorativa": "Linha Decorativa",
     "ornamental": "Linha Ornamental",
-    "industrial": "Linha Industrial"
+    "industrial": "Linha Industrial",
+    "construcao-civil": "Linha Construção Civil"
   }[product.line];
 
   return (
@@ -105,6 +106,7 @@ const Ecommerce = () => {
     { id: "decorativa", label: "Linha Decorativa", count: decorativaProducts.length },
     { id: "ornamental", label: "Linha Ornamental", count: ornamentalProducts.length },
     { id: "industrial", label: "Linha Industrial", count: industrialProducts.length },
+    { id: "construcao-civil", label: "Linha Construção Civil", count: construcaoCivilProducts.length },
   ];
 
   return (
@@ -139,10 +141,13 @@ const Ecommerce = () => {
           </nav>
 
           <div>
-            <p className="text-xs uppercase tracking-[0.4em] text-accent mb-3">Catálogo</p>
+            <p className="text-xs uppercase tracking-[0.4em] text-accent mb-3">Portfólio de materiais</p>
             <h1 className="font-display font-bold text-4xl lg:text-5xl leading-[1.05] text-balance">
-              Seixo de Quartzo &amp; <em className="text-accent not-italic">Pedras Naturais</em>
+              Soluções minerais para <em className="text-accent not-italic">paisagismo, construção civil e indústria</em>
             </h1>
+            <p className="mt-5 text-muted-foreground max-w-2xl text-lg leading-relaxed">
+              Linhas de produtos desenvolvidas para atender demandas de paisagismo, decoração, construção civil e fornecimento industrial.
+            </p>
           </div>
 
           {/* Trust badges */}
