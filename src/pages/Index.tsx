@@ -57,7 +57,7 @@ const Index = () => {
             <h1 className="reveal reveal-delay-1 font-display font-bold text-balance text-5xl sm:text-6xl lg:text-7xl leading-[0.95] tracking-[-0.02em] text-background">
               Soluções minerais
               <span className="block text-background/70 text-3xl sm:text-4xl lg:text-5xl mt-3 font-normal italic tracking-[-0.01em]">
-                para paisagismo, construção civil <span className="text-accent not-italic">& indústria</span>
+                para paisagismo, construção civil & indústria
               </span>
             </h1>
 
@@ -74,7 +74,7 @@ const Index = () => {
                 Solicitar orçamento <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </a>
               <a href="#produtos" className="group inline-flex items-center gap-3 px-8 py-4 text-xs uppercase tracking-[0.3em] border border-background/30 text-background hover:border-accent hover:text-accent transition-colors">
-                Conhecer portfolio
+                Conhecer Produtos
               </a>
             </div>
           </div>
@@ -97,7 +97,7 @@ const Index = () => {
             <p>
               A <span className="text-foreground font-medium">CERMIL Stone</span> é a frente da CERMIL voltada à valorização e
               ao fornecimento de materiais minerais para diferentes aplicações. Com base em uma operação consolidada e origem
-              diretamente ligada ao setor mineral, a marca atua com linhas voltadas ao paisagismo, à decoração,
+              diretamente ligada ao setor mineral, a marca atua com linhas voltadas ao paisagismo,
               à construção civil e ao atendimento industrial.
             </p>
             <p>
@@ -187,7 +187,7 @@ const Index = () => {
               to="/produtos"
               className="group inline-flex items-center gap-3 border border-accent/60 text-accent hover:bg-accent hover:text-accent-foreground transition-colors px-6 py-3 text-[11px] uppercase tracking-[0.3em]"
             >
-              Ver catálogo
+              Ver Produtos
               <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </Link>
           </div>
@@ -203,11 +203,7 @@ const Index = () => {
               <h2 className="font-display font-bold text-4xl lg:text-6xl leading-[1.05] text-balance">
                 Do paisagismo refinado <em className="text-accent not-italic">à construção civil</em> em larga escala.
               </h2>
-              <p className="mt-6 text-muted-foreground text-lg leading-relaxed max-w-xl">
-                A CERMIL Stone atende diferentes frentes de mercado com materiais minerais selecionados para usos
-                decorativos, ornamentais, industriais e para construção civil. Seu portfólio é pensado para responder
-                tanto a projetos de paisagismo e arquitetura quanto a demandas por abastecimento técnico e fornecimento para obras.
-              </p>
+
             </div>
           </div>
 
@@ -216,7 +212,7 @@ const Index = () => {
               <img src={landscape} alt="Pilhas de seixo na operação CERMIL" loading="lazy" width={1280} height={960} className="w-full h-[560px] object-cover" />
               <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-foreground/85 to-transparent">
                 <p className="font-display text-2xl text-background">Fornecimento & Estoque</p>
-                <p className="text-background/70 text-sm mt-1">Material disponível em escala para paisagismo, decoração e indústria.</p>
+                <p className="text-background/70 text-sm mt-1">Material disponível em escala para paisagismo e indústria.</p>
               </div>
             </div>
             <ul className="lg:col-span-5 divide-y divide-border">
@@ -282,7 +278,7 @@ const Index = () => {
               </h2>
               <p className="mt-8 text-background/70 max-w-lg text-lg leading-relaxed">
                 Fale com a equipe CERMIL Stone para informações sobre disponibilidade, volumes, aplicações e
-                fornecimento de materiais para paisagismo, construção civil, decoração e indústria.
+                fornecimento de materiais para paisagismo, construção civil e indústria.
               </p>
 
               <div className="mt-12 space-y-5 text-background/80">
