@@ -74,7 +74,7 @@ const Index = () => {
                 Solicitar orçamento <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </a>
               <a href="#produtos" className="group inline-flex items-center gap-3 px-8 py-4 text-xs uppercase tracking-[0.3em] border border-background/30 text-background hover:border-accent hover:text-accent transition-colors">
-                Conhecer o produto
+                Conhecer portfolio
               </a>
             </div>
           </div>
@@ -297,9 +297,9 @@ const Index = () => {
                 <div className="flex items-center gap-4">
                   <span className="w-10 h-10 border border-background/20 flex items-center justify-center flex-shrink-0"><MapPin className="w-4 h-4" /></span>
                   <div className="flex flex-col">
+                    <span className="text-sm">Região Metropolitana de Fortaleza</span>
                     <span className="text-sm">Vila Salgado dos Moreiras, SN</span>
                     <span className="text-sm">Cágado, São Gonçalo do Amarante - CE, 62670-000</span>
-                    <span className="text-sm">Região Metropolitana de Fortaleza</span>
                   </div>
                 </div>
               </div>
@@ -338,9 +338,9 @@ const Index = () => {
             <div className="flex items-start gap-2 mt-2 text-[11px] text-background/50 leading-relaxed">
               <MapPin className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
               <div className="flex flex-col">
+                <span>Região Metropolitana de Fortaleza</span>
                 <span>Vila Salgado dos Moreiras, SN</span>
                 <span>Cágado, São Gonçalo do Amarante - CE, 62670-000</span>
-                <span>Região Metropolitana de Fortaleza</span>
               </div>
             </div>
           </div>

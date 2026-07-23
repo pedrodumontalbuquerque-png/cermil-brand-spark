@@ -159,7 +159,7 @@ const Ecommerce = () => {
               <Truck className="w-3.5 h-3.5 text-accent" /> Entrega em todo o Brasil
             </span>
             <span className="flex items-center gap-1.5">
-              <Star className="w-3.5 h-3.5 text-accent" /> Capacidade para grandes volumes
+              <Star className="w-3.5 h-3.5 text-accent" /> Fornecimento a granel
             </span>
           </div>
         </div>
@@ -226,9 +226,9 @@ const Ecommerce = () => {
             <div className="flex items-start gap-2 mt-2 text-[11px] text-background/50 leading-relaxed">
               <MapPin className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
               <div className="flex flex-col">
+                <span>Região Metropolitana de Fortaleza</span>
                 <span>Vila Salgado dos Moreiras, SN</span>
                 <span>Cágado, São Gonçalo do Amarante - CE, 62670-000</span>
-                <span>Região Metropolitana de Fortaleza</span>
               </div>
             </div>
           </div>
