@@ -146,7 +146,7 @@ const Ecommerce = () => {
               Soluções minerais para <em className="text-accent not-italic">paisagismo, construção civil e indústria</em>
             </h1>
             <p className="mt-5 text-muted-foreground max-w-2xl text-lg leading-relaxed">
-              Linhas de produtos desenvolvidas para atender demandas de paisagismo, decoração, construção civil e fornecimento industrial.
+              Linhas de produtos desenvolvidas para atender demandas de paisagismo, construção civil e fornecimento industrial.
             </p>
           </div>
 

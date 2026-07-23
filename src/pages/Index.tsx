@@ -121,17 +121,16 @@ const Index = () => {
         </div>
       </section>
 
-      {/* SELO MULTINACIONAIS */}
-      <section aria-label="Reconhecimento" className="relative bg-foreground text-background py-16 lg:py-20 overflow-hidden">
+      {/* TRAJETÓRIA */}
+      <section aria-label="Trajetória" className="relative bg-foreground text-background py-16 lg:py-20 overflow-hidden">
         <div className="absolute inset-y-0 left-0 w-1 bg-accent" aria-hidden />
         <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-2 flex items-center gap-3">
             <span className="h-px w-10 bg-accent" />
-            <span className="text-[10px] uppercase tracking-[0.4em] text-accent">Reconhecimento</span>
+            <span className="text-[10px] uppercase tracking-[0.4em] text-accent">Trajetória</span>
           </div>
           <p className="lg:col-span-10 font-display text-2xl lg:text-3xl leading-snug text-balance text-background">
-            Fornecemos quartzo para a maior companhia siderúrgica do mundo, presente em mais de
-            <span className="text-accent"> 60 países</span>.
+            A CERMIL Stone nasce de uma base de experiência construída desde o início dos anos 2000, reunindo conhecimento técnico, visão de mercado e inteligência comercial aplicada ao setor mineral.
           </p>
         </div>
       </section>
