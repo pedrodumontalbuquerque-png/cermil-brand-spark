@@ -21,8 +21,8 @@ import seixoNaturalGarden from "@/assets/seixo-natural-quintal.jpg";
 
 import ametista1 from "@/assets/ametista-1.jpg";
 import ametista2 from "@/assets/ametista-2.jpg";
-import quartzoIndustrial1 from "@/assets/quartzo-industrial-1.jpg";
-import quartzoIndustrial2 from "@/assets/quartzo-industrial-2.jpg";
+import quartzoIndustrial1 from "@/assets/quartzo-industrial-novo-1.png";
+import quartzoIndustrial2 from "@/assets/quartzo-industrial-novo-2.jpg";
 
 import construcaoCivilPlaceholder from "@/assets/operation.jpg";
 
