@@ -193,16 +193,15 @@ const Index = () => {
         </div>
       </section>
 
-      {/* APLICAÇÕES */}
+      {/* ESTRUTURA COMERCIAL */}
       <section id="aplicacoes" className="py-32 lg:py-44">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-12 gap-16 items-end mb-20">
-            <div className="lg:col-span-6">
-              <p className="text-xs uppercase tracking-[0.4em] text-accent mb-4">Aplicações para diferentes mercados</p>
-              <h2 className="font-display font-bold text-4xl lg:text-6xl leading-[1.05] text-balance">
-                Do paisagismo refinado <em className="text-accent not-italic">à construção civil</em> em larga escala.
+            <div className="lg:col-span-8">
+              <p className="text-xs uppercase tracking-[0.4em] text-accent mb-4">Estrutura comercial</p>
+              <h2 className="font-display font-bold text-4xl lg:text-5xl leading-[1.05] text-balance">
+                Atendimento comercial estruturado para <em className="text-accent not-italic">diferentes perfis de demanda</em>, com flexibilidade de fornecimento, escala e recorrência.
               </h2>
-
             </div>
           </div>
 
@@ -216,10 +215,10 @@ const Index = () => {
             </div>
             <ul className="lg:col-span-5 divide-y divide-border">
               {[
-                { i: <Layers className="w-5 h-5" />, t: "Revenda", d: "Parcerias e fornecimento contínuo a distribuidores." },
-                { i: <Mountain className="w-5 h-5" />, t: "Projetos especiais", d: "Especificações dedicadas, formatos sob demanda." },
-                { i: <Compass className="w-5 h-5" />, t: "Demandas industriais", d: "Pedidos de grande porte e padrão técnico exigente." },
-                { i: <Truck className="w-5 h-5" />, t: "Construção civil", d: "Areia, arisco e brita para abastecimento regional de obras." },
+                { i: <Layers className="w-5 h-5" />, t: "Revenda", d: "Parcerias comerciais com fornecimento contínuo para distribuidores, lojas e operações de revenda." },
+                { i: <Mountain className="w-5 h-5" />, t: "Sob demanda", d: "Atendimento orientado a especificações, formatos e necessidades particulares de cada demanda." },
+                { i: <Compass className="w-5 h-5" />, t: "Grandes volumes", d: "Fornecimento preparado para operações de maior porte, com regularidade, escala e padronização comercial." },
+                { i: <MapPin className="w-5 h-5" />, t: "Atendimento regional", d: "Suporte comercial para demandas regionais com foco em agilidade de atendimento e abastecimento contínuo." },
               ].map((a) => (
                 <li key={a.t} className="py-7 flex items-start gap-6 group">
                   <span className="text-accent mt-1">{a.i}</span>
