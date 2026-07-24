@@ -74,7 +74,7 @@ export const decorativaProducts: Product[] = [
     desc: "Quartzo de alta alvura, indicado para composições de maior contraste e projetos que valorizam iluminação e limpeza visual.",
     granulometrias,
     badge: "Mais vendido",
-    gallery: [seixoBrancoCover, seixoBrancoJpeg],
+    gallery: [seixoBrancoJpeg],
     pricing: {
       "Grande: ~100 mm": { "10 kg": "R$ 20", "25 kg": "R$ 47", "100 kg": "R$ 166", "500 kg": "R$ 755", "1.000 kg": "R$ 1.440", "A Granel": "Sob consulta" },
       "Médio: ~50 mm": { "10 kg": "R$ 22", "25 kg": "R$ 51", "100 kg": "R$ 182", "500 kg": "R$ 830", "1.000 kg": "R$ 1.580", "A Granel": "Sob consulta" },
@@ -92,7 +92,7 @@ export const decorativaProducts: Product[] = [
     desc: "Seixo com variações naturais em tons terrosos e avermelhados, ideal para jardins rústicos e orgânicos.",
     granulometrias,
     badge: null,
-    gallery: [seixoRajadoCover, seixoRajadoJpeg],
+    gallery: [seixoRajadoJpeg],
     pricing: {
       "Grande: ~100 mm": { "10 kg": "R$ 19", "25 kg": "R$ 43", "100 kg": "R$ 152", "500 kg": "R$ 695", "1.000 kg": "R$ 1.320", "A Granel": "Sob consulta" },
       "Médio: ~50 mm": { "10 kg": "R$ 20", "25 kg": "R$ 47", "100 kg": "R$ 167", "500 kg": "R$ 760", "1.000 kg": "R$ 1.450", "A Granel": "Sob consulta" },
@@ -110,7 +110,7 @@ export const decorativaProducts: Product[] = [
     desc: "Blend natural das cores da jazida. Visual orgânico e autêntico, com variação equilibrada de tons.",
     granulometrias,
     badge: null,
-    gallery: [seixoNaturalMixCover, seixoNaturalMixJpeg],
+    gallery: [seixoNaturalMixJpeg],
     pricing: {
       "Grande: ~100 mm": { "10 kg": "R$ 17", "25 kg": "R$ 39", "100 kg": "R$ 138", "500 kg": "R$ 630", "1.000 kg": "R$ 1.200", "A Granel": "Sob consulta" },
       "Médio: ~50 mm": { "10 kg": "R$ 19", "25 kg": "R$ 43", "100 kg": "R$ 152", "500 kg": "R$ 695", "1.000 kg": "R$ 1.320", "A Granel": "Sob consulta" },
