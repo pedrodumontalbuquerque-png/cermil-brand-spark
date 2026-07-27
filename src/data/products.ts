@@ -8,21 +8,18 @@ import outrasPedras3 from "@/assets/outras-pedras-3.png";
 import gallery3 from "@/assets/gallery-3.jpg";
 
 import seixoBrancoJpeg from "@/assets/seixo-branco-foto.jpeg";
-import seixoBrancoReal from "/imagens/seixo branco real.jpeg";
-import seixoBrancoReal2 from "/imagens/seixo branco real 2.jpeg";
-
 import seixoRajadoJpeg from "@/assets/seixo-rajado-foto.jpeg";
 import seixoRajadoCover from "@/assets/seixo-rajado-cover.webp";
-import seixoRajadoReal from "/imagens/seixo rajado real.jpeg";
-import seixoRajadoReal2 from "/imagens/seixo rajado real 2.jpeg";
-
 import seixoBrancoGarden from "@/assets/seixo-branco-garden.jpg";
-
 import seixoRajadoGarden from "@/assets/seixo-rajado-garden.jpg";
-
 import seixoNaturalWood from "@/assets/seixo-natural-madeira.jpg";
-import seixoMixReal from "/imagens/seixo mix real.jpeg";
-import seixoMixReal2 from "/imagens/seixo mix real 2.jpeg";
+
+const seixoBrancoReal = "/imagens/seixo branco real.jpeg";
+const seixoBrancoReal2 = "/imagens/seixo branco real 2.jpeg";
+const seixoRajadoReal = "/imagens/seixo rajado real.jpeg";
+const seixoRajadoReal2 = "/imagens/seixo rajado real 2.jpeg";
+const seixoMixReal = "/imagens/seixo mix real.jpeg";
+const seixoMixReal2 = "/imagens/seixo mix real 2.jpeg";
 
 import ametista1 from "@/assets/ametista-1.jpg";
 import ametista2 from "@/assets/ametista-2.jpg";
