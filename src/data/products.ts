@@ -1,10 +1,6 @@
 import seixoBranco from "@/assets/ecom-seixo-branco.png";
 import seixoRajado from "@/assets/ecom-seixo-rajado.png";
 import seixoNatural from "@/assets/ecom-seixo-natural.png";
-import ametistas from "@/assets/ecom-ametistas.png";
-import bigRocks from "@/assets/ecom-big-rocks.png";
-import outrasPedras1 from "@/assets/outras-pedras-1.png";
-import outrasPedras3 from "@/assets/outras-pedras-3.png";
 import gallery3 from "@/assets/gallery-3.jpg";
 
 import seixoBrancoJpeg from "@/assets/seixo-branco-foto.jpeg";
@@ -21,8 +17,6 @@ const seixoMixReal = "/imagens/seixo%20mix%20real.jpeg";
 const seixoMixReal2 = "/imagens/seixo%20mix%20real%202.jpeg";
 const seixoBlendMixQuintal = "/imagens/Seixo%20Blend%20Mix%20-%20Decora%C3%A7%C3%A3o%20Quintal.jpg";
 
-import ametista1 from "@/assets/ametista-1.jpg";
-import ametista2 from "@/assets/ametista-2.jpg";
 import quartzoIndustrial1 from "@/assets/quartzo-industrial-novo-1.png";
 import quartzoIndustrial2 from "@/assets/quartzo-industrial-novo-2.jpg";
 
@@ -60,7 +54,7 @@ export type LineType = "decorativa" | "ornamental" | "industrial" | "construcao-
 export type Product = {
   id: string;
   name: string;
-  img: string;
+  img?: string;
   line: LineType;
   desc: string;
   granulometrias?: string[];
@@ -142,12 +136,10 @@ export const decorativaProducts: Product[] = [
   {
     id: "pedra-dolomita-decorativa",
     name: "Pedra Dolomita",
-    img: outrasPedras1,
     line: "decorativa",
     desc: "Material natural de coloração clara, muito utilizado em projetos de paisagismo e decoração.",
     granulometrias,
     badge: null,
-    gallery: [outrasPedras1],
     sizes: sizes,
     weightsText: "A CERMIL Stone trabalha com quantidades variadas para atender a sua necessidade.",
     seo: {"title": "Pedra Dolomita Decorativa para Jardim e Paisagismo | CERMIL Stone", "metaDescription": "Pedra dolomita decorativa para jardins, vasos e paisagismo. Material natural de coloração clara com fornecimento para todo o Brasil.", "h1": "Pedra Dolomita", "subheadline": "Material natural de coloração clara, muito utilizado em projetos de paisagismo e decoração por sua estética limpa, versatilidade e boa composição visual.", "mainText": ["A Pedra Dolomita Decorativa da CERMIL Stone é uma solução natural indicada para projetos que buscam leveza visual, clareza estética e acabamento organizado. Seu visual limpo favorece composições paisagísticas elegantes e atemporais, sendo muito utilizado em jardins, vasos, canteiros e diferentes propostas de decoração para áreas externas.", "A dolomita para jardim se destaca pela facilidade de composição com vegetação, madeira, concreto, cerâmica e outros materiais naturais. Em projetos residenciais, comerciais e institucionais, ela pode ser utilizada tanto como acabamento principal quanto como detalhe de contraste, contribuindo para uma leitura visual mais clara e bem definida do espaço.", "Na linha decorativa da CERMIL Stone, a Pedra Dolomita atende aplicações em paisagismo, decoração e arquitetura com fornecimento para diferentes volumes e demandas. Seu uso valoriza desde pequenos elementos ornamentais até áreas mais amplas de cobertura e acabamento externo."], "h2Applications": "Aplicações da Pedra Dolomita em paisagismo", "applicationsIntro": "A pedra dolomita decorativa é indicada para usos externos e composições paisagísticas que pedem visual claro, acabamento natural e versatilidade de aplicação.", "applications": ["Jardins e canteiros", "Vasos e floreiras", "Faixas decorativas", "Áreas externas residenciais e comerciais", "Composições paisagísticas com vegetação", "Acabamentos decorativos em ambientes externos"], "h2Characteristics": "Características da Pedra Dolomita CERMIL Stone", "characteristicsIntro": "Com coloração clara e boa presença visual, a dolomita decorativa é um material bastante utilizado em projetos que valorizam organização, leveza e permanência estética.", "characteristics": ["Material natural decorativo", "Coloração clara e acabamento limpo", "Boa adaptação a projetos externos", "Fácil composição com outros materiais", "Aplicação ampla em paisagismo e decoração"], "h2Supply": "Fornecimento e disponibilidade", "supplyText": "A Pedra Dolomita integra a linha decorativa da CERMIL Stone. A disponibilidade pode variar conforme granulometria, volume e demanda do projeto.", "closingText": "Consulte a equipe CERMIL Stone para informações sobre disponibilidade, aplicações e fornecimento da pedra dolomita decorativa para seu projeto."}
@@ -158,31 +150,25 @@ export const ornamentalProducts: Product[] = [
   {
     id: "ametista-ornamental",
     name: "Ametista",
-    img: ametistas,
     line: "ornamental",
     desc: "Pedra natural de presença marcante e alto valor estético, indicada para composições ornamentais e projetos especiais.",
     badge: "Exclusivo",
-    gallery: [ametistas, ametista1, ametista2],
     seo: {"title": "Ametista para Decoração e Projetos Especiais | CERMIL Stone", "metaDescription": "Ametista ornamental para decoração, arquitetura e projetos especiais. Pedra natural de forte apelo visual com fornecimento para todo o Brasil.", "h1": "Ametista", "subheadline": "Pedra natural de presença marcante e alto valor estético, indicada para composições ornamentais, decoração e projetos especiais com forte identidade visual.", "mainText": ["A Ametista Ornamental da CERMIL Stone é um material natural selecionado para projetos que buscam exclusividade, presença visual e valor decorativo. Reconhecida por sua identidade mineral marcante, a ametista se destaca como uma pedra ornamental capaz de transformar composições e reforçar a singularidade estética dos ambientes.", "Em decoração, arquitetura e projetos especiais, a ametista pode ser utilizada como elemento de destaque, agregando profundidade visual, sofisticação natural e personalidade ao espaço. Seu uso atende propostas que valorizam materiais autênticos e composições de forte apelo estético, tanto em ambientes internos quanto em contextos ornamentais específicos.", "Na linha ornamental da CERMIL Stone, a Ametista atende demandas decorativas e compositivas com fornecimento conforme a natureza de cada projeto. É uma pedra voltada para aplicações em que o valor visual do material é parte central da proposta."], "h2Applications": "Aplicações da Ametista Ornamental", "applicationsIntro": "A ametista ornamental é indicada para composições decorativas e projetos especiais em que a pedra natural assume protagonismo visual e valor estético.", "applications": ["Ambientes decorativos", "Projetos especiais", "Composições ornamentais", "Espaços internos de destaque", "Elementos naturais de forte apelo visual", "Propostas com identidade estética marcante"], "h2Characteristics": "Características da Ametista CERMIL Stone", "characteristicsIntro": "Selecionada para usos ornamentais, a ametista reúne autenticidade, presença visual e apelo estético elevado.", "characteristics": ["Pedra natural ornamental", "Forte identidade mineral", "Alto valor estético", "Presença visual marcante", "Aplicação em decoração e projetos especiais"], "h2Supply": "Fornecimento e disponibilidade", "supplyText": "A Ametista integra a linha ornamental da CERMIL Stone. A disponibilidade pode variar conforme volume, formato e demanda do projeto.", "closingText": "Consulte a equipe CERMIL Stone para informações sobre aplicações, disponibilidade e fornecimento de ametista ornamental para seu projeto."}
   },
   {
     id: "quartzo-leitoso-ornamental",
     name: "Quartzo Leitoso",
-    img: bigRocks,
     line: "ornamental",
     desc: "Quartzo natural de aparência clara e presença mineral marcante, indicado para composições ornamentais e decoração.",
     badge: null,
-    gallery: [bigRocks],
     seo: {"title": "Quartzo Leitoso para Decoração e Arquitetura | CERMIL Stone", "metaDescription": "Quartzo leitoso ornamental para decoração, arquitetura e composições naturais. Material selecionado pela CERMIL Stone com fornecimento para todo o Brasil.", "h1": "Quartzo Leitoso", "subheadline": "Quartzo natural de aparência clara e presença mineral marcante, indicado para composições ornamentais, decoração e projetos que valorizam autenticidade natural.", "mainText": ["O Quartzo Leitoso Ornamental da CERMIL Stone é um material natural selecionado para projetos que valorizam presença mineral, autenticidade e sofisticação natural. Sua aparência clara e sua textura característica tornam o quartzo leitoso uma escolha diferenciada para composições decorativas em ambientes internos e externos.", "Em projetos de arquitetura, decoração e composição ornamental, o quartzo leitoso funciona como um elemento de destaque capaz de transmitir solidez, naturalidade e valor estético. Sua leitura visual se encaixa bem tanto em propostas mais contemporâneas quanto em composições com linguagem mais orgânica, sempre reforçando a identidade mineral do ambiente.", "Na linha ornamental da CERMIL Stone, o Quartzo Leitoso atende aplicações em decoração, arquitetura e projetos especiais, com fornecimento conforme o perfil e a escala de cada demanda. É um material indicado para quem busca um produto natural com forte presença visual e valor ornamental."], "h2Applications": "Aplicações do Quartzo Leitoso Ornamental", "applicationsIntro": "O quartzo leitoso pode ser utilizado em diferentes propostas decorativas e ornamentais, especialmente em projetos que pedem destaque visual e acabamento natural.", "applications": ["Ambientes decorativos", "Projetos de arquitetura", "Composições ornamentais", "Áreas internas e externas", "Espaços de destaque mineral", "Projetos especiais com pedra natural"], "h2Characteristics": "Características do Quartzo Leitoso CERMIL Stone", "characteristicsIntro": "Selecionado para aplicações ornamentais, o quartzo leitoso reúne presença visual, autenticidade e versatilidade de composição.", "characteristics": ["Quartzo natural ornamental", "Aparência clara e marcante", "Estética mineral sofisticada", "Boa presença em ambientes internos e externos", "Aplicação versátil em decoração e arquitetura"], "h2Supply": "Fornecimento e disponibilidade", "supplyText": "O Quartzo Leitoso integra a linha ornamental da CERMIL Stone. A disponibilidade pode variar conforme volume, formato e demanda do projeto.", "closingText": "Consulte a equipe CERMIL Stone para informações sobre aplicações, disponibilidade e fornecimento do quartzo leitoso ornamental para seu projeto."}
   },
   {
     id: "quartzo-rose-ornamental",
     name: "Quartzo Rose",
-    img: outrasPedras3,
     line: "ornamental",
     desc: "Quartzo natural de tonalidade suave e valor estético marcante, indicado para projetos que buscam delicadeza.",
     badge: null,
-    gallery: [outrasPedras3],
     seo: {"title": "Quartzo Rose para Decoração e Projetos Especiais | CERMIL Stone", "metaDescription": "Quartzo rose ornamental para decoração e projetos especiais. Material natural de tonalidade suave com fornecimento para todo o Brasil.", "h1": "Quartzo Rose", "subheadline": "Quartzo natural de tonalidade suave e valor estético marcante, indicado para composições ornamentais e projetos que buscam delicadeza, originalidade e presença mineral.", "mainText": ["O Quartzo Rose Ornamental da CERMIL Stone é um material natural selecionado para composições que valorizam suavidade visual, originalidade e apelo decorativo. Sua tonalidade característica confere ao ambiente uma presença mineral diferenciada, tornando o produto uma escolha interessante para projetos que buscam um elemento natural com identidade própria.", "Em aplicações decorativas e ornamentais, o quartzo rose se destaca pela capacidade de enriquecer ambientes com uma leitura estética delicada, mas ao mesmo tempo marcante. Ele pode ser inserido em projetos de interiores, áreas de destaque e composições especiais, contribuindo para espaços com mais personalidade e sofisticação natural.", "Na linha ornamental da CERMIL Stone, o Quartzo Rose atende projetos decorativos, arquitetônicos e composições especiais com fornecimento conforme o perfil de cada demanda. É um material pensado para usos em que a pedra natural também cumpre função estética e simbólica dentro do ambiente."], "h2Applications": "Aplicações do Quartzo Rose Ornamental", "applicationsIntro": "O quartzo rose é indicado para propostas ornamentais e decorativas em que a pedra natural assume papel de destaque visual e composição estética.", "applications": ["Decoração de interiores", "Ambientes de destaque", "Projetos especiais", "Composições ornamentais", "Espaços com proposta estética natural", "Aplicações decorativas com identidade visual"], "h2Characteristics": "Características do Quartzo Rose CERMIL Stone", "characteristicsIntro": "Sua coloração característica e sua presença visual tornam o material uma escolha diferenciada para projetos de valor ornamental.", "characteristics": ["Quartzo natural ornamental", "Tonalidade suave e distinta", "Boa presença estética", "Material para composições especiais", "Aplicação em decoração e arquitetura"], "h2Supply": "Fornecimento e disponibilidade", "supplyText": "O Quartzo Rose integra a linha ornamental da CERMIL Stone. A disponibilidade pode variar conforme volume, formato e demanda do projeto.", "closingText": "Consulte a equipe CERMIL Stone para informações sobre aplicações, disponibilidade e fornecimento do quartzo rose ornamental para seu projeto."}
   },
 ];

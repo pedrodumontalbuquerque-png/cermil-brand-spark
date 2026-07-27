@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, MessageCircle, MapPin, Phone, Mail, Globe, Truck, ShoppingBag, ArrowUpRight } from "lucide-react";
+import { ArrowLeft, MessageCircle, MapPin, Phone, Mail, Globe, Truck, ShoppingBag, ArrowUpRight, ImageOff } from "lucide-react";
 import { allProducts } from "@/data/products";
 import { useEffect } from "react";
 import logo from "@/assets/logo-cermil.png";
@@ -39,7 +39,7 @@ const ProductPage = () => {
     );
   }
 
-  const galleryItems = product.gallery || [product.img];
+  const galleryItems = product.gallery || (product.img ? [product.img] : []);
 
   // Normalize gallery items to always have image and optional title
   const normalizedImages = galleryItems.map(item =>
@@ -74,17 +74,24 @@ const ProductPage = () => {
             {/* Esquerda: Galeria de Imagens */}
             <div className="flex flex-col gap-6">
               <div>
-                {normalizedImages[0].title && (
+                {normalizedImages[0]?.title && (
                   <p className="text-xs uppercase tracking-[0.2em] font-medium text-muted-foreground mb-3">
                     {normalizedImages[0].title}
                   </p>
                 )}
                 <div className="aspect-square bg-bone border border-border/50 overflow-hidden relative">
-                  <img
-                    src={normalizedImages[0].image}
-                    alt={product.name}
-                    className="w-full h-full object-cover"
-                  />
+                  {normalizedImages[0] ? (
+                    <img
+                      src={normalizedImages[0].image}
+                      alt={product.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex flex-col items-center justify-center gap-3 text-muted-foreground/60">
+                      <ImageOff className="w-10 h-10" strokeWidth={1.5} />
+                      <span className="text-xs uppercase tracking-[0.2em]">Foto em breve</span>
+                    </div>
+                  )}
                   <span className="absolute top-4 left-4 text-[10px] uppercase tracking-[0.3em] px-3 py-1.5 font-medium bg-foreground text-background">
                     {product.line === "decorativa" ? "Linha Decorativa" : product.line === "ornamental" ? "Linha Ornamental" : product.line === "industrial" ? "Linha Industrial" : "Linha Construção Civil"}
                   </span>

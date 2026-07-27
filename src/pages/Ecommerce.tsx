@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useMemo } from "react";
-import { ArrowLeft, ArrowUpRight, Truck, ShoppingBag, MessageCircle, CheckCircle2, Star, Globe, Package, MapPin, Phone, Mail } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Truck, ShoppingBag, MessageCircle, CheckCircle2, Star, Globe, Package, MapPin, Phone, Mail, ImageOff } from "lucide-react";
 import { WHATSAPP_NUMBER } from "@/components/WhatsAppButton";
 import logo from "@/assets/logo-cermil.png";
 
@@ -37,14 +37,21 @@ const ProductCard = ({ product }: { product: Product }) => {
     <article className="group flex flex-col border border-border bg-card overflow-hidden hover:shadow-[0_12px_40px_-12px_hsl(30_20%_20%/0.18)] transition-shadow duration-300">
       {/* Image */}
       <Link to={`/produtos/${product.id}`} className="relative aspect-square overflow-hidden bg-bone block">
-        <img
-          src={product.img}
-          alt={product.name}
-          loading="lazy"
-          width={800}
-          height={800}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.06]"
-        />
+        {product.img ? (
+          <img
+            src={product.img}
+            alt={product.name}
+            loading="lazy"
+            width={800}
+            height={800}
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.06]"
+          />
+        ) : (
+          <div className="w-full h-full flex flex-col items-center justify-center gap-2 text-muted-foreground/60">
+            <ImageOff className="w-8 h-8" strokeWidth={1.5} />
+            <span className="text-[10px] uppercase tracking-[0.2em]">Foto em breve</span>
+          </div>
+        )}
         {/* Line badge */}
         <span className="absolute top-3 left-3 text-[9px] uppercase tracking-[0.3em] px-2.5 py-1 font-medium bg-foreground text-background">
           {lineLabel}
