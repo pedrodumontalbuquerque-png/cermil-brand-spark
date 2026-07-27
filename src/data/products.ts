@@ -15,7 +15,7 @@ import seixoRajadoGarden from "@/assets/seixo-rajado-garden.jpg";
 import seixoNaturalWood from "@/assets/seixo-natural-madeira.jpg";
 
 const seixoBrancoReal = "/imagens/seixo%20branco%20real.jpeg";
-const seixoBrancoReal2 = "/imagens/seixo%20branco%20real%202.jpeg";
+const seixoBrancoReal2 = "/imagens/seixo%20branco%20.jpeg";
 const seixoRajadoRealFirst = "/imagens/seixo%20rajado%20real%20first.jpeg";
 const seixoRajadoReal = "/imagens/seixo%20rajado%20real.jpeg";
 const seixoMixReal = "/imagens/seixo%20mix%20real.jpeg";
