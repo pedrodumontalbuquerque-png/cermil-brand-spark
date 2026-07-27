@@ -14,12 +14,12 @@ import seixoBrancoGarden from "@/assets/seixo-branco-garden.jpg";
 import seixoRajadoGarden from "@/assets/seixo-rajado-garden.jpg";
 import seixoNaturalWood from "@/assets/seixo-natural-madeira.jpg";
 
-const seixoBrancoReal = "/imagens/seixo branco real.jpeg";
-const seixoBrancoReal2 = "/imagens/seixo branco real 2.jpeg";
-const seixoRajadoReal = "/imagens/seixo rajado real.jpeg";
-const seixoRajadoReal2 = "/imagens/seixo rajado real 2.jpeg";
-const seixoMixReal = "/imagens/seixo mix real.jpeg";
-const seixoMixReal2 = "/imagens/seixo mix real 2.jpeg";
+const seixoBrancoReal = "/imagens/seixo%20branco%20real.jpeg";
+const seixoBrancoReal2 = "/imagens/seixo%20branco%20real%202.jpeg";
+const seixoRajadoReal = "/imagens/seixo%20rajado%20real.jpeg";
+const seixoRajadoReal2 = "/imagens/seixo%20rajado%20real%202.jpeg";
+const seixoMixReal = "/imagens/seixo%20mix%20real.jpeg";
+const seixoMixReal2 = "/imagens/seixo%20mix%20real%202.jpeg";
 
 import ametista1 from "@/assets/ametista-1.jpg";
 import ametista2 from "@/assets/ametista-2.jpg";
