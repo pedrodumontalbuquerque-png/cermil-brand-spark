@@ -18,7 +18,6 @@ const seixoBrancoReal = "/imagens/seixo%20branco%20real.jpeg";
 const seixoBrancoReal2 = "/imagens/seixo%20branco%20real%202.jpeg";
 const seixoRajadoRealFirst = "/imagens/seixo%20rajado%20real%20first.jpeg";
 const seixoRajadoReal = "/imagens/seixo%20rajado%20real.jpeg";
-const seixoRajadoReal2 = "/imagens/seixo%20rajado%20real%202.jpeg";
 const seixoMixReal = "/imagens/seixo%20mix%20real.jpeg";
 const seixoMixReal2 = "/imagens/seixo%20mix%20real%202.jpeg";
 
