@@ -1,0 +1,1738 @@
+{
+  "success": true,
+  "data": {
+    "meta": {
+      "total": 40,
+      "perPage": 20,
+      "currentPage": 1,
+      "lastPage": 2,
+      "firstPage": 1,
+      "firstPageUrl": "/?page=1",
+      "lastPageUrl": "/?page=2",
+      "nextPageUrl": "/?page=2",
+      "previousPageUrl": null
+    },
+    "data": [
+      {
+        "veiculoId": 882634,
+        "veiculoDescricao": "XRE 190/ Flex",
+        "veiculoModelo": "XRE 190/ Flex",
+        "veiculoAnoFab": 2024,
+        "veiculoAnoMod": 2025,
+        "veiculoDtEntrada": "2026-01-28T21:00:00.000-03:00",
+        "veiculoCor": "Azul",
+        "veiculoPlaca": "TIJ-2C38",
+        "veiculoRenavam": "01408055578",
+        "veiculoChassi": "9C2MD4100SR000718",
+        "veiculoValorEntrada": "26700.00",
+        "veiculoValorVenda": "27990.00",
+        "veiculoKm": "9365",
+        "veiculoKmSaida": null,
+        "veiculoCambio": "manual",
+        "veiculoCombustivel": "flex",
+        "veiculoMotor": "MD41E0S000496",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Compra",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 80,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "0",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "184",
+        "marca": {
+          "codigoMarca": 80,
+          "marca": "HONDA"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Computador de bordo",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Freios ABS",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Revisado concessionária",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Único Dono",
+            "opcionalChaveMercadolivre": null
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/882634/gb-6d44c99.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/882634/gb-24f9c36.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/882634/gb-7a2826f.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/882634/gb-0cd611d.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/882634/gb-8e01a21.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/882634/gb-02b9b26.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/882634/gb-54b4ce7.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/882634/gb-be888d0.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/882634/gb-239d1e8.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/882634/gb-2e833a4.jpeg"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 905426,
+        "veiculoDescricao": "CG 160 TITAN",
+        "veiculoModelo": "CG 160 TITAN",
+        "veiculoAnoFab": 2025,
+        "veiculoAnoMod": 2025,
+        "veiculoDtEntrada": "2026-02-25T21:00:00.000-03:00",
+        "veiculoCor": "Laranja",
+        "veiculoPlaca": "THW-3C41",
+        "veiculoRenavam": "01430405241",
+        "veiculoChassi": "9C2KC2210SR030925",
+        "veiculoValorEntrada": "20793.39",
+        "veiculoValorVenda": "21990.00",
+        "veiculoKm": "12794",
+        "veiculoKmSaida": null,
+        "veiculoCambio": "manual",
+        "veiculoCombustivel": "flex",
+        "veiculoMotor": "KC22E1S030542",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Compra",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 80,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "0",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "162",
+        "marca": {
+          "codigoMarca": 80,
+          "marca": "HONDA"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Computador de bordo",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Freios ABS",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Manual do proprietário",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Partida Elétrica",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Rodas de Liga Leve",
+            "opcionalChaveMercadolivre": "HAS_ALLOY_WHEELS"
+          },
+          {
+            "opcionalDescricao": "Único Dono",
+            "opcionalChaveMercadolivre": null
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/905426/gb-9fe5615.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/905426/gb-4ad71cf.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/905426/gb-daded71.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/905426/gb-0a020ec.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/905426/gb-16c67cb.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/905426/gb-d5dffa5.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/905426/gb-6754f31.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/905426/gb-6de86cb.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/905426/gb-5a2f63f.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/905426/gb-97360a8.heic"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 926564,
+        "veiculoDescricao": "G 310 R",
+        "veiculoModelo": "G 310 R",
+        "veiculoAnoFab": 2022,
+        "veiculoAnoMod": 2022,
+        "veiculoDtEntrada": "2026-03-13T21:00:00.000-03:00",
+        "veiculoCor": "Cinza",
+        "veiculoPlaca": "SAR-8C16",
+        "veiculoRenavam": "01325254778",
+        "veiculoChassi": "99Z0G4003NZ910311",
+        "veiculoValorEntrada": "26990.00",
+        "veiculoValorVenda": "27990.00",
+        "veiculoKm": "9824",
+        "veiculoKmSaida": null,
+        "veiculoCambio": null,
+        "veiculoCombustivel": "gasolina",
+        "veiculoMotor": null,
+        "veiculoPortas": null,
+        "veiculoOrigem": "Troca",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 67,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "0",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "310",
+        "marca": {
+          "codigoMarca": 67,
+          "marca": "BMW"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Chave Reserva",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Computador de bordo",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Freios ABS",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Manual do proprietário",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Rodas de Liga Leve",
+            "opcionalChaveMercadolivre": "HAS_ALLOY_WHEELS"
+          },
+          {
+            "opcionalDescricao": "Único Dono",
+            "opcionalChaveMercadolivre": null
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/926564/gb-004cf16.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/926564/gb-114d17c.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/926564/gb-cac148c.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/926564/gb-68f560f.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/926564/gb-9e4a396.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/926564/gb-e61ba71.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/926564/gb-feecbc1.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/926564/gb-3677b58.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/926564/gb-497d079.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/926564/gb-d67137d.heic"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 947331,
+        "veiculoDescricao": "Versys-X 300",
+        "veiculoModelo": "Versys-X 300",
+        "veiculoAnoFab": 2017,
+        "veiculoAnoMod": 2018,
+        "veiculoDtEntrada": "2026-04-10T21:00:00.000-03:00",
+        "veiculoCor": "Verde",
+        "veiculoPlaca": "PNP-6275",
+        "veiculoRenavam": "01157436010",
+        "veiculoChassi": "96PLEHC15JFS00143",
+        "veiculoValorEntrada": "21400.00",
+        "veiculoValorVenda": "26990.00",
+        "veiculoKm": "55777",
+        "veiculoKmSaida": "55826",
+        "veiculoCambio": "manual",
+        "veiculoCombustivel": "gasolina",
+        "veiculoMotor": "EX300AES13579",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Compra",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 85,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "0",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "296",
+        "marca": {
+          "codigoMarca": 85,
+          "marca": "KAWASAKI"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Chave Reserva",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Computador de bordo",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Contra peso no guidon",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Freios ABS",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Manual do proprietário",
+            "opcionalChaveMercadolivre": null
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/947331/gb-0c2600e.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/947331/gb-0cb7b19.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/947331/gb-774e81a.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/947331/gb-37a25cb.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/947331/gb-b460772.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/947331/gb-b833bdd.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/947331/gb-e0f943d.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/947331/gb-c921145.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/947331/gb-2db5753.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/947331/gb-2a9d8d1.heic"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 954372,
+        "veiculoDescricao": "XRE 300/ 300 ABS/ FLEX",
+        "veiculoModelo": "XRE 300/ 300 ABS/ FLEX",
+        "veiculoAnoFab": 2017,
+        "veiculoAnoMod": 2017,
+        "veiculoDtEntrada": "2026-04-19T21:00:00.000-03:00",
+        "veiculoCor": "Preta",
+        "veiculoPlaca": "PDP-9C78",
+        "veiculoRenavam": "01125783262",
+        "veiculoChassi": "9C2ND1110HR006219",
+        "veiculoValorEntrada": "16500.00",
+        "veiculoValorVenda": "23990.00",
+        "veiculoKm": "98348",
+        "veiculoKmSaida": null,
+        "veiculoCambio": "manual",
+        "veiculoCombustivel": "flex",
+        "veiculoMotor": "ND11E1H006220",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Compra",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 80,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "0",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "291",
+        "marca": {
+          "codigoMarca": 80,
+          "marca": "HONDA"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Freio a Disco",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Partida Elétrica",
+            "opcionalChaveMercadolivre": null
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/954372/gb-b677f48.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/954372/gb-e007cbb.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/954372/gb-297bc82.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/954372/gb-d484d1b.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/954372/gb-392c9eb.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/954372/gb-940e38d.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/954372/gb-c325349.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/954372/gb-826d703.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/954372/gb-b95bf07.jpeg"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 954865,
+        "veiculoDescricao": "NXR 160 BROS FLEX",
+        "veiculoModelo": "NXR 160 BROS FLEX",
+        "veiculoAnoFab": 2026,
+        "veiculoAnoMod": 2026,
+        "veiculoDtEntrada": "2026-04-21T21:00:00.000-03:00",
+        "veiculoCor": "Vermelha",
+        "veiculoPlaca": "TIF-9D34",
+        "veiculoRenavam": "00",
+        "veiculoChassi": "9c2kd082otr049977",
+        "veiculoValorEntrada": "23930.00",
+        "veiculoValorVenda": "26990.00",
+        "veiculoKm": "0",
+        "veiculoKmSaida": null,
+        "veiculoCambio": "manual",
+        "veiculoCombustivel": "flex",
+        "veiculoMotor": "00",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Compra",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 80,
+        "veiculoStatus": 1,
+        "veiculoPotencia": null,
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "160",
+        "marca": {
+          "codigoMarca": 80,
+          "marca": "HONDA"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Chave Reserva",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Computador de bordo",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Freios ABS",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Manual do proprietário",
+            "opcionalChaveMercadolivre": null
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/954865/gb-7f365ff.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/954865/gb-95da71b.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/954865/gb-03753f0.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/954865/gb-6b3c95b.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/954865/gb-19a2cd0.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/954865/gb-94099cd.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/954865/gb-c8966b2.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/954865/gb-900caea.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/954865/gb-e3cdd72.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/954865/gb-e94b4ca.heic"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 956506,
+        "veiculoDescricao": "CG 150 TITAN-ESD MIX/FLEX",
+        "veiculoModelo": "CG 150 TITAN-ESD MIX/FLEX",
+        "veiculoAnoFab": 2009,
+        "veiculoAnoMod": 2009,
+        "veiculoDtEntrada": "2026-04-22T21:00:00.000-03:00",
+        "veiculoCor": "Preta",
+        "veiculoPlaca": "NRA-5I62",
+        "veiculoRenavam": "00126082316",
+        "veiculoChassi": "9C2KC15309R012101",
+        "veiculoValorEntrada": "9000.00",
+        "veiculoValorVenda": "10990.00",
+        "veiculoKm": "58435",
+        "veiculoKmSaida": null,
+        "veiculoCambio": null,
+        "veiculoCombustivel": "gasolina",
+        "veiculoMotor": null,
+        "veiculoPortas": null,
+        "veiculoOrigem": "Troca",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 80,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "0",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "149",
+        "marca": {
+          "codigoMarca": 80,
+          "marca": "HONDA"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Freio a Disco",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Partida Elétrica",
+            "opcionalChaveMercadolivre": null
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/956506/gb-8597bda.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/956506/gb-e7a23ce.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/956506/gb-06b482a.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/956506/gb-41945ac.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/956506/gb-1475341.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/956506/gb-fe16d4e.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/956506/gb-4cf93d9.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/956506/gb-9246f5c.jpeg"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 959212,
+        "veiculoDescricao": "FZ25 250 FAZER FLEX",
+        "veiculoModelo": "FZ25 250 FAZER FLEX",
+        "veiculoAnoFab": 2023,
+        "veiculoAnoMod": 2023,
+        "veiculoDtEntrada": "2026-04-26T21:00:00.000-03:00",
+        "veiculoCor": "Vermelha",
+        "veiculoPlaca": "SBJ-7A67",
+        "veiculoRenavam": "01344484937",
+        "veiculoChassi": "9C6RG5020P0055911",
+        "veiculoValorEntrada": "19000.00",
+        "veiculoValorVenda": "22990.00",
+        "veiculoKm": "28511",
+        "veiculoKmSaida": null,
+        "veiculoCambio": null,
+        "veiculoCombustivel": "flex",
+        "veiculoMotor": "G3K1E-147001 ",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Troca",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 101,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "0",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "249",
+        "marca": {
+          "codigoMarca": 101,
+          "marca": "YAMAHA"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Chave Reserva",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Freios ABS",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "IPVA pago",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Manual do proprietário",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Partida Elétrica",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Rodas de Liga Leve",
+            "opcionalChaveMercadolivre": "HAS_ALLOY_WHEELS"
+          },
+          {
+            "opcionalDescricao": "Único Dono",
+            "opcionalChaveMercadolivre": null
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/959212/gb-66c36d0.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/959212/gb-794d9c2.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/959212/gb-6729c18.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/959212/gb-1375158.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/959212/gb-bddb4d9.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/959212/gb-4579aed.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/959212/gb-f1b7701.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/959212/gb-38a0250.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/959212/gb-d3b7288.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/959212/gb-16718a3.jpeg"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 960068,
+        "veiculoDescricao": "NXR 160 BROS ESDD FLEXONE",
+        "veiculoModelo": "NXR 160 BROS ESDD FLEXONE",
+        "veiculoAnoFab": 2020,
+        "veiculoAnoMod": 2021,
+        "veiculoDtEntrada": "2026-04-27T21:00:00.000-03:00",
+        "veiculoCor": "Azul",
+        "veiculoPlaca": "PNN-6G44",
+        "veiculoRenavam": "01247728045",
+        "veiculoChassi": "9C2KD0810MR002040",
+        "veiculoValorEntrada": "14500.00",
+        "veiculoValorVenda": "18990.00",
+        "veiculoKm": "31034",
+        "veiculoKmSaida": null,
+        "veiculoCambio": "manual",
+        "veiculoCombustivel": "flex",
+        "veiculoMotor": "KD08E1M002030",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Compra",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 80,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "0",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "162",
+        "marca": {
+          "codigoMarca": 80,
+          "marca": "HONDA"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Freio a Disco",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "IPVA pago",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Partida Elétrica",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Único Dono",
+            "opcionalChaveMercadolivre": null
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/960068/gb-d25e902.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/960068/gb-fc2f406.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/960068/gb-e4715b8.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/960068/gb-461d1d0.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/960068/gb-e47d319.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/960068/gb-3d1fa43.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/960068/gb-2e9effa.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/960068/gb-fa0d3bf.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/960068/gb-173fd8b.jpeg"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 962573,
+        "veiculoDescricao": "MT-09 850cc/ABS",
+        "veiculoModelo": "MT-09 850cc/ABS",
+        "veiculoAnoFab": 2015,
+        "veiculoAnoMod": 2016,
+        "veiculoDtEntrada": "2026-05-01T21:00:00.000-03:00",
+        "veiculoCor": "Roxa",
+        "veiculoPlaca": "PNR-6E26",
+        "veiculoRenavam": "01096360222",
+        "veiculoChassi": "9C6RN3520G0001987",
+        "veiculoValorEntrada": "40000.00",
+        "veiculoValorVenda": "45990.00",
+        "veiculoKm": "42639",
+        "veiculoKmSaida": null,
+        "veiculoCambio": null,
+        "veiculoCombustivel": "gasolina",
+        "veiculoMotor": "N704E-001987",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Troca",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 101,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "0",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "847",
+        "marca": {
+          "codigoMarca": 101,
+          "marca": "YAMAHA"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Chave Reserva",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Computador de bordo",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Contra peso no guidon",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Escapamento esportivo",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Freios ABS",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Manual do proprietário",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Partida Elétrica",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Rodas de Liga Leve",
+            "opcionalChaveMercadolivre": "HAS_ALLOY_WHEELS"
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/962573/gb-50e1fa4.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/962573/gb-7c7e2dc.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/962573/gb-ab3e6b5.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/962573/gb-c935bf1.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/962573/gb-c5fc538.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/962573/gb-42d8e4c.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/962573/gb-667705e.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/962573/gb-e91139a.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/962573/gb-8ee766e.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/962573/gb-de280d7.jpeg"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 967685,
+        "veiculoDescricao": "SCOOTER FBQ3 400W",
+        "veiculoModelo": "SCOOTER FBQ3",
+        "veiculoAnoFab": 2026,
+        "veiculoAnoMod": 2026,
+        "veiculoDtEntrada": "2026-05-07T21:00:00.000-03:00",
+        "veiculoCor": "Preta",
+        "veiculoPlaca": null,
+        "veiculoRenavam": null,
+        "veiculoChassi": "L4AA2CC07SZ001726",
+        "veiculoValorEntrada": "7990.00",
+        "veiculoValorVenda": "8990.00",
+        "veiculoKm": "0",
+        "veiculoKmSaida": null,
+        "veiculoCambio": "automático",
+        "veiculoCombustivel": "eletrico",
+        "veiculoMotor": "400W",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Consignação",
+        "veiculoTag": "0",
+        "veiculoTipo": 14,
+        "veiculoMarcaId": null,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "0",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "48",
+        "marca": null,
+        "tipo": {
+          "veiculoTipoDescricao": "Outras Motos"
+        },
+        "opcionaisLista": [],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/967685/gb-55b8414.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/967685/gb-3b91ef9.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/967685/gb-e7c3c42.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/967685/gb-8dcb055.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/967685/gb-60f5337.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/967685/gb-c80929b.heic"
+          },
+          {
+            "veiculo_galeria_url": "2026/967685/gb-a296ccd.heic"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 969207,
+        "veiculoDescricao": "SCOOTER FZK 800W",
+        "veiculoModelo": "SCOOTER FZK",
+        "veiculoAnoFab": 2026,
+        "veiculoAnoMod": 2026,
+        "veiculoDtEntrada": "2026-05-07T21:00:00.000-03:00",
+        "veiculoCor": "Bege",
+        "veiculoPlaca": null,
+        "veiculoRenavam": null,
+        "veiculoChassi": "L4AA2ED07SZ001607",
+        "veiculoValorEntrada": "8990.00",
+        "veiculoValorVenda": "9990.00",
+        "veiculoKm": "0",
+        "veiculoKmSaida": null,
+        "veiculoCambio": "automático",
+        "veiculoCombustivel": "eletrico",
+        "veiculoMotor": "800W",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Consignação",
+        "veiculoTag": "0",
+        "veiculoTipo": 14,
+        "veiculoMarcaId": null,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "0",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "72",
+        "marca": null,
+        "tipo": {
+          "veiculoTipoDescricao": "Outras Motos"
+        },
+        "opcionaisLista": [],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/969207/gb-7602c98.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/969207/gb-b336eb1.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/969207/gb-05ce2ad.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/969207/gb-6a107cd.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/969207/gb-3aa4da4.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/969207/gb-ddaf3f8.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/969207/gb-fdf864c.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/969207/gb-ce1939e.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/969207/gb-f9fc554.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/969207/gb-7d96440.jpeg"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 975180,
+        "veiculoDescricao": "CG 160 TITAN",
+        "veiculoModelo": "CG 160 TITAN",
+        "veiculoAnoFab": 2026,
+        "veiculoAnoMod": 2026,
+        "veiculoDtEntrada": "2026-05-08T21:00:00.000-03:00",
+        "veiculoCor": "Preta",
+        "veiculoPlaca": "TIG-5G64",
+        "veiculoRenavam": "01487140743",
+        "veiculoChassi": "9C2KC2210TR063615",
+        "veiculoValorEntrada": "24000.00",
+        "veiculoValorVenda": "23990.00",
+        "veiculoKm": "4",
+        "veiculoKmSaida": null,
+        "veiculoCambio": null,
+        "veiculoCombustivel": "flex",
+        "veiculoMotor": null,
+        "veiculoPortas": null,
+        "veiculoOrigem": "Troca",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 80,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "0",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "160",
+        "marca": {
+          "codigoMarca": 80,
+          "marca": "HONDA"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Chave Reserva",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Freios ABS",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Manual do proprietário",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Partida Elétrica",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Rodas de Liga Leve",
+            "opcionalChaveMercadolivre": "HAS_ALLOY_WHEELS"
+          },
+          {
+            "opcionalDescricao": "Único Dono",
+            "opcionalChaveMercadolivre": null
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/975180/gb-ef8cc71.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/975180/gb-dab79ae.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/975180/gb-0c8e975.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/975180/gb-702f1e8.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/975180/gb-92b6e2f.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/975180/gb-f30f169.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/975180/gb-cf49d14.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/975180/gb-d96a7cc.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/975180/gb-6f64d6c.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/975180/gb-3394400.jpeg"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 976262,
+        "veiculoDescricao": "POP 110i",
+        "veiculoModelo": "POP 110i",
+        "veiculoAnoFab": 2022,
+        "veiculoAnoMod": 2022,
+        "veiculoDtEntrada": "2026-05-08T21:00:00.000-03:00",
+        "veiculoCor": "Preta",
+        "veiculoPlaca": "GFJ-4G74",
+        "veiculoRenavam": "01315181913",
+        "veiculoChassi": "9C2JB0100NR079714",
+        "veiculoValorEntrada": "9500.00",
+        "veiculoValorVenda": "11990.00",
+        "veiculoKm": "42919",
+        "veiculoKmSaida": null,
+        "veiculoCambio": "manual",
+        "veiculoCombustivel": "gasolina",
+        "veiculoMotor": "JB01E0N079796",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Compra",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 80,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "0",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "109",
+        "marca": {
+          "codigoMarca": 80,
+          "marca": "HONDA"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Chave Reserva",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Freio a Disco",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "IPVA pago",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Único Dono",
+            "opcionalChaveMercadolivre": null
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/976262/gb-84b8272.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/976262/gb-57f12b9.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/976262/gb-877bcc1.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/976262/gb-571ac85.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/976262/gb-cd1a442.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/976262/gb-498b4f9.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/976262/gb-4163154.jpeg"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 978585,
+        "veiculoDescricao": "CG 125 FAN ES",
+        "veiculoModelo": "CG 125 FAN ES",
+        "veiculoAnoFab": 2010,
+        "veiculoAnoMod": 2010,
+        "veiculoDtEntrada": "2026-05-21T21:00:00.000-03:00",
+        "veiculoCor": "Vermelha",
+        "veiculoPlaca": "NUT-1I64",
+        "veiculoRenavam": "00227134702",
+        "veiculoChassi": "9C2JC4120AR114525",
+        "veiculoValorEntrada": "8000.00",
+        "veiculoValorVenda": "8990.00",
+        "veiculoKm": "7435",
+        "veiculoKmSaida": null,
+        "veiculoCambio": null,
+        "veiculoCombustivel": "gasolina",
+        "veiculoMotor": "JC41E2A114525",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Troca",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 80,
+        "veiculoStatus": 1,
+        "veiculoPotencia": null,
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "125",
+        "marca": {
+          "codigoMarca": 80,
+          "marca": "HONDA"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Chave Reserva",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Freio a Disco",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "IPVA pago",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Partida Elétrica",
+            "opcionalChaveMercadolivre": null
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/978585/gb-8c07cb2.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/978585/gb-d5c53c9.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/978585/gb-1a6bed1.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/978585/gb-0dba158.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/978585/gb-250ebb3.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/978585/gb-6f01714.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/978585/gb-4753ce1.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/978585/gb-1f6ec2c.jpeg"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 984407,
+        "veiculoDescricao": "Classic 350 Signals",
+        "veiculoModelo": "Classic 350 Signals",
+        "veiculoAnoFab": 2022,
+        "veiculoAnoMod": 2023,
+        "veiculoDtEntrada": "2026-05-08T21:00:00.000-03:00",
+        "veiculoCor": "Cinza",
+        "veiculoPlaca": "SBP-7G96",
+        "veiculoRenavam": "01329219284",
+        "veiculoChassi": "ME3DJELT5PV000835",
+        "veiculoValorEntrada": "19940.50",
+        "veiculoValorVenda": "20990.00",
+        "veiculoKm": "12090",
+        "veiculoKmSaida": null,
+        "veiculoCambio": null,
+        "veiculoCombustivel": "gasolina",
+        "veiculoMotor": "J3A5FAP2375567",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Consignação",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 192,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "21",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "349",
+        "marca": {
+          "codigoMarca": 192,
+          "marca": "Royal Enfield"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Freio a Disco",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "IPVA pago",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Partida Elétrica",
+            "opcionalChaveMercadolivre": null
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/984407/gb-54f1f52.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/984407/gb-cb629d9.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/984407/gb-4906d10.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/984407/gb-55781f2.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/984407/gb-dea13bc.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/984407/gb-f82c6da.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/984407/gb-73a42ff.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/984407/gb-e42f099.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/984407/gb-33bea75.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/984407/gb-da2b54e.jpeg"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 985939,
+        "veiculoDescricao": "MT-03 321/ABS",
+        "veiculoModelo": "MT-03 321/ABS",
+        "veiculoAnoFab": 2023,
+        "veiculoAnoMod": 2024,
+        "veiculoDtEntrada": "2026-05-31T21:00:00.000-03:00",
+        "veiculoCor": "Cinza",
+        "veiculoPlaca": "SBH-4I34",
+        "veiculoRenavam": "01378165516",
+        "veiculoChassi": "9C6RH1150R0029268",
+        "veiculoValorEntrada": "30390.50",
+        "veiculoValorVenda": "31990.00",
+        "veiculoKm": "25108",
+        "veiculoKmSaida": null,
+        "veiculoCambio": null,
+        "veiculoCombustivel": "gasolina",
+        "veiculoMotor": "H403E-075097",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Consignação",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 101,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "0",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "0321",
+        "marca": {
+          "codigoMarca": 101,
+          "marca": "YAMAHA"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Chave Reserva",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Freios ABS",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "IPVA pago",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Manual do proprietário",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Partida Elétrica",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Revisado concessionária",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Rodas de Liga Leve",
+            "opcionalChaveMercadolivre": "HAS_ALLOY_WHEELS"
+          },
+          {
+            "opcionalDescricao": "Único Dono",
+            "opcionalChaveMercadolivre": null
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/985939/gb-98c24b8.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/985939/gb-90fedc3.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/985939/gb-e650d0c.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/985939/gb-4b652c2.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/985939/gb-e75479e.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/985939/gb-5844fc2.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/985939/gb-1903ca3.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/985939/gb-25e46eb.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/985939/gb-f2c6b60.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/985939/gb-637d1ec.jpeg"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 1000477,
+        "veiculoDescricao": "YS 150 FAZER SED/ FLEX",
+        "veiculoModelo": "YS 150 FAZER SED/ FLEX",
+        "veiculoAnoFab": 2023,
+        "veiculoAnoMod": 2024,
+        "veiculoDtEntrada": "2026-06-12T21:00:00.000-03:00",
+        "veiculoCor": "Preta",
+        "veiculoPlaca": "SBH-5H98",
+        "veiculoRenavam": "01354353266",
+        "veiculoChassi": "9C6RG3850R0048113",
+        "veiculoValorEntrada": "16000.00",
+        "veiculoValorVenda": "18990.00",
+        "veiculoKm": "14406",
+        "veiculoKmSaida": " 14425",
+        "veiculoCambio": null,
+        "veiculoCombustivel": "flex",
+        "veiculoMotor": "G3F7E111681",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Troca",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 101,
+        "veiculoStatus": 1,
+        "veiculoPotencia": null,
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "150",
+        "marca": {
+          "codigoMarca": 101,
+          "marca": "YAMAHA"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Chave Reserva",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Freio a Disco",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "IPVA pago",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Manual do proprietário",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Partida Elétrica",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Rodas de Liga Leve",
+            "opcionalChaveMercadolivre": "HAS_ALLOY_WHEELS"
+          },
+          {
+            "opcionalDescricao": "Único Dono",
+            "opcionalChaveMercadolivre": null
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/1000477/gb-ef2e68a.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1000477/gb-04f7fa1.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1000477/gb-fa4e6cc.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1000477/gb-55db8cf.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1000477/gb-e59f40f.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1000477/gb-59944ee.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1000477/gb-b5411bc.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1000477/gb-f3d049a.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1000477/gb-e23d07c.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1000477/gb-9c75e1b.jpeg"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 1002963,
+        "veiculoDescricao": "CB 600F HORNET",
+        "veiculoModelo": "CB 600F HORNET",
+        "veiculoAnoFab": 2013,
+        "veiculoAnoMod": 2013,
+        "veiculoDtEntrada": "2026-06-16T21:00:00.000-03:00",
+        "veiculoCor": "Preta",
+        "veiculoPlaca": "OLE-4I60",
+        "veiculoRenavam": "00531945685",
+        "veiculoChassi": "9C2PC4210DR001655",
+        "veiculoValorEntrada": "38000.00",
+        "veiculoValorVenda": "43990.00",
+        "veiculoKm": "61884",
+        "veiculoKmSaida": null,
+        "veiculoCambio": "manual",
+        "veiculoCombustivel": "gasolina",
+        "veiculoMotor": "PC42E1D001655",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Consignação",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 80,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "0",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "599",
+        "marca": {
+          "codigoMarca": 80,
+          "marca": "HONDA"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [],
+        "galeria": [],
+        "anunciado": {
+          "site": false
+        }
+      },
+      {
+        "veiculoId": 1003942,
+        "veiculoDescricao": "ADV 160",
+        "veiculoModelo": "ADV 160",
+        "veiculoAnoFab": 2025,
+        "veiculoAnoMod": 2026,
+        "veiculoDtEntrada": "2026-06-16T21:00:00.000-03:00",
+        "veiculoCor": "Vermelha",
+        "veiculoPlaca": "TII-9C16",
+        "veiculoRenavam": "01467356449",
+        "veiculoChassi": "9C2KF4300TR004795",
+        "veiculoValorEntrada": "27540.00",
+        "veiculoValorVenda": "27990.00",
+        "veiculoKm": "878",
+        "veiculoKmSaida": null,
+        "veiculoCambio": "automático",
+        "veiculoCombustivel": "gasolina",
+        "veiculoMotor": "KF43E0T004777",
+        "veiculoPortas": null,
+        "veiculoOrigem": "Consignação",
+        "veiculoTag": "0",
+        "veiculoTipo": 2,
+        "veiculoMarcaId": 80,
+        "veiculoStatus": 1,
+        "veiculoPotencia": "0",
+        "veiculoBlindado": 0,
+        "veiculoCilindrada": "160",
+        "marca": {
+          "codigoMarca": 80,
+          "marca": "HONDA"
+        },
+        "tipo": {
+          "veiculoTipoDescricao": "Moto"
+        },
+        "opcionaisLista": [
+          {
+            "opcionalDescricao": "Câmbio Automático",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Chave Reserva",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Freios ABS",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "IPVA pago",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Manual do proprietário",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Partida Elétrica",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Revisado concessionária",
+            "opcionalChaveMercadolivre": null
+          },
+          {
+            "opcionalDescricao": "Rodas de Liga Leve",
+            "opcionalChaveMercadolivre": "HAS_ALLOY_WHEELS"
+          },
+          {
+            "opcionalDescricao": "Único Dono",
+            "opcionalChaveMercadolivre": null
+          }
+        ],
+        "galeria": [
+          {
+            "veiculo_galeria_url": "2026/1003942/gb-7f98c8e.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1003942/gb-3c860f4.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1003942/gb-ebb6dfe.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1003942/gb-1fa9f45.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1003942/gb-2a126fa.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1003942/gb-17aa7ea.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1003942/gb-5eb122f.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1003942/gb-06c8b0e.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1003942/gb-80c8d83.jpeg"
+          },
+          {
+            "veiculo_galeria_url": "2026/1003942/gb-4178b1a.jpeg"
+          }
+        ],
+        "anunciado": {
+          "site": false
+        }
+      }
+    ]
+  }
+}

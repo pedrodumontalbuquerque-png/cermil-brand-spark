@@ -39,7 +39,14 @@ const ProductPage = () => {
     );
   }
 
-  const images = product.gallery || [product.img];
+  const galleryItems = product.gallery || [product.img];
+
+  // Normalize gallery items to always have image and optional title
+  const normalizedImages = galleryItems.map(item =>
+    typeof item === 'string'
+      ? { image: item, title: null }
+      : item
+  );
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans antialiased">
@@ -66,26 +73,40 @@ const ProductPage = () => {
             
             {/* Esquerda: Galeria de Imagens */}
             <div className="flex flex-col gap-6">
-              <div className="aspect-square bg-bone border border-border/50 overflow-hidden relative">
-                <img
-                  src={images[0]}
-                  alt={product.name}
-                  className="w-full h-full object-cover"
-                />
-                <span className="absolute top-4 left-4 text-[10px] uppercase tracking-[0.3em] px-3 py-1.5 font-medium bg-foreground text-background">
-                  {product.line === "decorativa" ? "Linha Decorativa" : product.line === "ornamental" ? "Linha Ornamental" : product.line === "industrial" ? "Linha Industrial" : "Linha Construção Civil"}
-                </span>
-                {product.badge && (
-                  <span className="absolute top-4 right-4 text-[10px] uppercase tracking-[0.3em] px-3 py-1.5 bg-accent text-accent-foreground font-medium">
-                    {product.badge}
-                  </span>
+              <div>
+                {normalizedImages[0].title && (
+                  <p className="text-xs uppercase tracking-[0.2em] font-medium text-muted-foreground mb-3">
+                    {normalizedImages[0].title}
+                  </p>
                 )}
+                <div className="aspect-square bg-bone border border-border/50 overflow-hidden relative">
+                  <img
+                    src={normalizedImages[0].image}
+                    alt={product.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <span className="absolute top-4 left-4 text-[10px] uppercase tracking-[0.3em] px-3 py-1.5 font-medium bg-foreground text-background">
+                    {product.line === "decorativa" ? "Linha Decorativa" : product.line === "ornamental" ? "Linha Ornamental" : product.line === "industrial" ? "Linha Industrial" : "Linha Construção Civil"}
+                  </span>
+                  {product.badge && (
+                    <span className="absolute top-4 right-4 text-[10px] uppercase tracking-[0.3em] px-3 py-1.5 bg-accent text-accent-foreground font-medium">
+                      {product.badge}
+                    </span>
+                  )}
+                </div>
               </div>
 
               {/* Demais fotos empilhadas em tamanho grande */}
-              {images.slice(1).map((img, idx) => (
-                <div key={idx} className="aspect-square bg-bone border border-border/50 overflow-hidden">
-                  <img src={img} alt={`${product.name} - imagem ${idx + 2}`} className="w-full h-full object-cover" />
+              {normalizedImages.slice(1).map((item, idx) => (
+                <div key={idx}>
+                  {item.title && (
+                    <p className="text-xs uppercase tracking-[0.2em] font-medium text-muted-foreground mb-3">
+                      {item.title}
+                    </p>
+                  )}
+                  <div className="aspect-square bg-bone border border-border/50 overflow-hidden">
+                    <img src={item.image} alt={`${product.name} - imagem ${idx + 2}`} className="w-full h-full object-cover" />
+                  </div>
                 </div>
               ))}
             </div>

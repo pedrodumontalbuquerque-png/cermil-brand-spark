@@ -8,15 +8,21 @@ import outrasPedras3 from "@/assets/outras-pedras-3.png";
 import gallery3 from "@/assets/gallery-3.jpg";
 
 import seixoBrancoJpeg from "@/assets/seixo-branco-foto.jpeg";
+import seixoBrancoReal from "/imagens/seixo branco real.jpeg";
+import seixoBrancoReal2 from "/imagens/seixo branco real 2.jpeg";
 
 import seixoRajadoJpeg from "@/assets/seixo-rajado-foto.jpeg";
 import seixoRajadoCover from "@/assets/seixo-rajado-cover.webp";
+import seixoRajadoReal from "/imagens/seixo rajado real.jpeg";
+import seixoRajadoReal2 from "/imagens/seixo rajado real 2.jpeg";
 
 import seixoBrancoGarden from "@/assets/seixo-branco-garden.jpg";
 
 import seixoRajadoGarden from "@/assets/seixo-rajado-garden.jpg";
 
 import seixoNaturalWood from "@/assets/seixo-natural-madeira.jpg";
+import seixoMixReal from "/imagens/seixo mix real.jpeg";
+import seixoMixReal2 from "/imagens/seixo mix real 2.jpeg";
 
 import ametista1 from "@/assets/ametista-1.jpg";
 import ametista2 from "@/assets/ametista-2.jpg";
@@ -32,6 +38,8 @@ export type SizeDetail = {
   name: string;
   desc: string;
 };
+
+export type GalleryImage = string | { image: string; title: string };
 
 export type SEOData = {
   title: string;
@@ -60,7 +68,7 @@ export type Product = {
   desc: string;
   granulometrias?: string[];
   badge: string | null;
-  gallery?: string[];
+  gallery?: GalleryImage[];
   sizes?: SizeDetail[];
   weightsText?: string;
   pricing?: Record<string, Record<string, string>>;
@@ -76,7 +84,11 @@ export const decorativaProducts: Product[] = [
     desc: "Quartzo de alta alvura, indicado para composições de maior contraste e projetos que valorizam iluminação e limpeza visual.",
     granulometrias,
     badge: "Mais vendido",
-    gallery: [seixoBrancoGarden],
+    gallery: [
+      { image: seixoBrancoReal, title: "Seixo Branco Real (Capa)" },
+      { image: seixoBrancoReal2, title: "Seixo Branco Real 2" },
+      seixoBrancoGarden
+    ],
     pricing: {
       "Grande: ~100 mm": { "10 kg": "R$ 20", "25 kg": "R$ 47", "100 kg": "R$ 166", "500 kg": "R$ 755", "1.000 kg": "R$ 1.440", "A Granel": "Sob consulta" },
       "Médio: ~50 mm": { "10 kg": "R$ 22", "25 kg": "R$ 51", "100 kg": "R$ 182", "500 kg": "R$ 830", "1.000 kg": "R$ 1.580", "A Granel": "Sob consulta" },
@@ -94,7 +106,13 @@ export const decorativaProducts: Product[] = [
     desc: "Seixo com variações naturais em tons terrosos e avermelhados, ideal para jardins rústicos e orgânicos.",
     granulometrias,
     badge: null,
-    gallery: [seixoRajadoJpeg, seixoRajadoCover, seixoRajadoGarden],
+    gallery: [
+      { image: seixoRajadoReal, title: "Seixo Rajado Real (Capa)" },
+      { image: seixoRajadoReal2, title: "Seixo Rajado Real 2" },
+      seixoRajadoJpeg,
+      seixoRajadoCover,
+      seixoRajadoGarden
+    ],
     pricing: {
       "Grande: ~100 mm": { "10 kg": "R$ 19", "25 kg": "R$ 43", "100 kg": "R$ 152", "500 kg": "R$ 695", "1.000 kg": "R$ 1.320", "A Granel": "Sob consulta" },
       "Médio: ~50 mm": { "10 kg": "R$ 20", "25 kg": "R$ 47", "100 kg": "R$ 167", "500 kg": "R$ 760", "1.000 kg": "R$ 1.450", "A Granel": "Sob consulta" },
@@ -112,6 +130,10 @@ export const decorativaProducts: Product[] = [
     desc: "Blend natural das cores da jazida. Visual orgânico e autêntico, com variação equilibrada de tons.",
     granulometrias,
     badge: null,
+    gallery: [
+      { image: seixoMixReal, title: "Seixo Mix Real (Capa)" },
+      { image: seixoMixReal2, title: "Seixo Mix Real 2" }
+    ],
     pricing: {
       "Grande: ~100 mm": { "10 kg": "R$ 17", "25 kg": "R$ 39", "100 kg": "R$ 138", "500 kg": "R$ 630", "1.000 kg": "R$ 1.200", "A Granel": "Sob consulta" },
       "Médio: ~50 mm": { "10 kg": "R$ 19", "25 kg": "R$ 43", "100 kg": "R$ 152", "500 kg": "R$ 695", "1.000 kg": "R$ 1.320", "A Granel": "Sob consulta" },
