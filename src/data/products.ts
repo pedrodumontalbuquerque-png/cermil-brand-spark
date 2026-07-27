@@ -16,6 +16,7 @@ import seixoNaturalWood from "@/assets/seixo-natural-madeira.jpg";
 
 const seixoBrancoReal = "/imagens/seixo%20branco%20real.jpeg";
 const seixoBrancoReal2 = "/imagens/seixo%20branco%20real%202.jpeg";
+const seixoRajadoRealFirst = "/imagens/seixo%20rajado%20real%20first.jpeg";
 const seixoRajadoReal = "/imagens/seixo%20rajado%20real.jpeg";
 const seixoRajadoReal2 = "/imagens/seixo%20rajado%20real%202.jpeg";
 const seixoMixReal = "/imagens/seixo%20mix%20real.jpeg";
@@ -104,7 +105,8 @@ export const decorativaProducts: Product[] = [
     granulometrias,
     badge: null,
     gallery: [
-      { image: seixoRajadoReal, title: "Seixo Rajado Real (Capa)" },
+      { image: seixoRajadoRealFirst, title: "Seixo Rajado Real (Capa)" },
+      seixoRajadoReal,
       seixoRajadoGarden
     ],
     pricing: {
