@@ -10,6 +10,7 @@ import gallery3 from "@/assets/gallery-3.jpg";
 import seixoBrancoJpeg from "@/assets/seixo-branco-foto.jpeg";
 
 import seixoRajadoJpeg from "@/assets/seixo-rajado-foto.jpeg";
+import seixoRajadoCover from "@/assets/seixo-rajado-cover.webp";
 
 import seixoBrancoGarden from "@/assets/seixo-branco-garden.jpg";
 
@@ -93,7 +94,7 @@ export const decorativaProducts: Product[] = [
     desc: "Seixo com variações naturais em tons terrosos e avermelhados, ideal para jardins rústicos e orgânicos.",
     granulometrias,
     badge: null,
-    gallery: [seixoRajadoGarden],
+    gallery: [seixoRajadoJpeg, seixoRajadoCover, seixoRajadoGarden],
     pricing: {
       "Grande: ~100 mm": { "10 kg": "R$ 19", "25 kg": "R$ 43", "100 kg": "R$ 152", "500 kg": "R$ 695", "1.000 kg": "R$ 1.320", "A Granel": "Sob consulta" },
       "Médio: ~50 mm": { "10 kg": "R$ 20", "25 kg": "R$ 47", "100 kg": "R$ 167", "500 kg": "R$ 760", "1.000 kg": "R$ 1.450", "A Granel": "Sob consulta" },
