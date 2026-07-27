@@ -105,9 +105,6 @@ export const decorativaProducts: Product[] = [
     badge: null,
     gallery: [
       { image: seixoRajadoReal, title: "Seixo Rajado Real (Capa)" },
-      { image: seixoRajadoReal2, title: "Seixo Rajado Real 2" },
-      seixoRajadoJpeg,
-      seixoRajadoCover,
       seixoRajadoGarden
     ],
     pricing: {
