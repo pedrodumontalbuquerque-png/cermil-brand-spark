@@ -12,7 +12,6 @@ import seixoRajadoJpeg from "@/assets/seixo-rajado-foto.jpeg";
 import seixoRajadoCover from "@/assets/seixo-rajado-cover.webp";
 import seixoBrancoGarden from "@/assets/seixo-branco-garden.jpg";
 import seixoRajadoGarden from "@/assets/seixo-rajado-garden.jpg";
-import seixoNaturalWood from "@/assets/seixo-natural-madeira.jpg";
 
 const seixoBrancoReal = "/imagens/seixo%20branco%20real.jpeg";
 const seixoBrancoReal2 = "/imagens/seixo%20branco%20.jpeg";
@@ -20,6 +19,7 @@ const seixoRajadoRealFirst = "/imagens/seixo%20rajado%20real%20first.jpeg";
 const seixoRajadoReal = "/imagens/seixo%20rajado%20real.jpeg";
 const seixoMixReal = "/imagens/seixo%20mix%20real.jpeg";
 const seixoMixReal2 = "/imagens/seixo%20mix%20real%202.jpeg";
+const seixoBlendMixQuintal = "/imagens/Seixo%20Blend%20Mix%20-%20Decora%C3%A7%C3%A3o%20Quintal.jpg";
 
 import ametista1 from "@/assets/ametista-1.jpg";
 import ametista2 from "@/assets/ametista-2.jpg";
@@ -120,14 +120,15 @@ export const decorativaProducts: Product[] = [
   {
     id: "seixo-natural-mix",
     name: "Seixo Natural (Mix)",
-    img: seixoNaturalWood,
+    img: seixoMixReal,
     line: "decorativa",
     desc: "Blend natural das cores da jazida. Visual orgânico e autêntico, com variação equilibrada de tons.",
     granulometrias,
     badge: null,
     gallery: [
       { image: seixoMixReal, title: "Seixo Mix Real (Capa)" },
-      { image: seixoMixReal2, title: "Seixo Mix Real 2" }
+      { image: seixoMixReal2, title: "Seixo Mix Real 2" },
+      { image: seixoBlendMixQuintal, title: "Seixo Blend Mix - Decoração Quintal" }
     ],
     pricing: {
       "Grande: ~100 mm": { "10 kg": "R$ 17", "25 kg": "R$ 39", "100 kg": "R$ 138", "500 kg": "R$ 630", "1.000 kg": "R$ 1.200", "A Granel": "Sob consulta" },
