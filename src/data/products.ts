@@ -7,17 +7,14 @@ import outrasPedras1 from "@/assets/outras-pedras-1.png";
 import outrasPedras3 from "@/assets/outras-pedras-3.png";
 import gallery3 from "@/assets/gallery-3.jpg";
 
-import seixoBrancoCover from "@/assets/seixo-branco-cover.webp";
 import seixoBrancoJpeg from "@/assets/seixo-branco-foto.jpeg";
 
-import seixoRajadoCover from "@/assets/seixo-rajado-cover.webp";
 import seixoRajadoJpeg from "@/assets/seixo-rajado-foto.jpeg";
 
 import seixoBrancoGarden from "@/assets/seixo-branco-garden.jpg";
 
 import seixoRajadoGarden from "@/assets/seixo-rajado-garden.jpg";
 
-import seixoNaturalSack from "@/assets/seixo-natural-saco.jpg";
 import seixoNaturalWood from "@/assets/seixo-natural-madeira.jpg";
 
 import ametista1 from "@/assets/ametista-1.jpg";
@@ -78,7 +75,7 @@ export const decorativaProducts: Product[] = [
     desc: "Quartzo de alta alvura, indicado para composições de maior contraste e projetos que valorizam iluminação e limpeza visual.",
     granulometrias,
     badge: "Mais vendido",
-    gallery: [seixoBrancoJpeg, seixoBrancoCover, seixoBrancoGarden],
+    gallery: [seixoBrancoGarden],
     pricing: {
       "Grande: ~100 mm": { "10 kg": "R$ 20", "25 kg": "R$ 47", "100 kg": "R$ 166", "500 kg": "R$ 755", "1.000 kg": "R$ 1.440", "A Granel": "Sob consulta" },
       "Médio: ~50 mm": { "10 kg": "R$ 22", "25 kg": "R$ 51", "100 kg": "R$ 182", "500 kg": "R$ 830", "1.000 kg": "R$ 1.580", "A Granel": "Sob consulta" },
@@ -96,7 +93,7 @@ export const decorativaProducts: Product[] = [
     desc: "Seixo com variações naturais em tons terrosos e avermelhados, ideal para jardins rústicos e orgânicos.",
     granulometrias,
     badge: null,
-    gallery: [seixoRajadoJpeg, seixoRajadoCover, seixoRajadoGarden],
+    gallery: [seixoRajadoGarden],
     pricing: {
       "Grande: ~100 mm": { "10 kg": "R$ 19", "25 kg": "R$ 43", "100 kg": "R$ 152", "500 kg": "R$ 695", "1.000 kg": "R$ 1.320", "A Granel": "Sob consulta" },
       "Médio: ~50 mm": { "10 kg": "R$ 20", "25 kg": "R$ 47", "100 kg": "R$ 167", "500 kg": "R$ 760", "1.000 kg": "R$ 1.450", "A Granel": "Sob consulta" },
@@ -114,7 +111,6 @@ export const decorativaProducts: Product[] = [
     desc: "Blend natural das cores da jazida. Visual orgânico e autêntico, com variação equilibrada de tons.",
     granulometrias,
     badge: null,
-    gallery: [seixoNaturalWood, seixoNaturalSack],
     pricing: {
       "Grande: ~100 mm": { "10 kg": "R$ 17", "25 kg": "R$ 39", "100 kg": "R$ 138", "500 kg": "R$ 630", "1.000 kg": "R$ 1.200", "A Granel": "Sob consulta" },
       "Médio: ~50 mm": { "10 kg": "R$ 19", "25 kg": "R$ 43", "100 kg": "R$ 152", "500 kg": "R$ 695", "1.000 kg": "R$ 1.320", "A Granel": "Sob consulta" },
