@@ -2,7 +2,7 @@ import logo from "@/assets/logo-cermil.png";
 import hero from "@/assets/hero-quartz.jpg";
 import product from "@/assets/branco-1.jpg";
 import operation from "@/assets/operation.jpg";
-const pedrasSobDemanda = "/imagens/pedras%20sob%20demanda.webp";
+const estruturaComercialImg = "/imagens/aperto-de-mao.png";
 import gallery1 from "@/assets/gallery-1.png";
 import gallery2 from "@/assets/gallery-2.png";
 import gallery3 from "@/assets/gallery-3.jpg";
@@ -207,7 +207,7 @@ const Index = () => {
 
           <div className="grid lg:grid-cols-12 gap-8">
             <div className="lg:col-span-7 relative overflow-hidden">
-              <img src={pedrasSobDemanda} alt="Pedras disponíveis sob demanda na operação CERMIL" loading="lazy" width={1280} height={960} className="w-full h-[560px] object-cover" />
+              <img src={estruturaComercialImg} alt="Estrutura Comercial" loading="lazy" width={1280} height={960} className="w-full h-[560px] object-cover" />
               <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-foreground/85 to-transparent">
                 <p className="font-display text-2xl text-background">Fornecimento & Estoque</p>
                 <p className="text-background/70 text-sm mt-1">Material disponível em escala para paisagismo e indústria.</p>

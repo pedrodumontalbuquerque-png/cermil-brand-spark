@@ -122,7 +122,8 @@ export const decorativaProducts: Product[] = [
     gallery: [
       { image: seixoMixReal, title: "Seixo Mix Real (Capa)" },
       { image: seixoMixReal2, title: "Seixo Mix Real 2" },
-      { image: seixoBlendMixQuintal, title: "Seixo Blend Mix - Decoração Quintal" }
+      "/imagens/seixo-mix-caminho-jardim.png",
+      "/imagens/seixo-mix-vaso-decorativo.png"
     ],
     pricing: {
       "Grande: ~100 mm": { "10 kg": "R$ 17", "25 kg": "R$ 39", "100 kg": "R$ 138", "500 kg": "R$ 630", "1.000 kg": "R$ 1.200", "A Granel": "Sob consulta" },

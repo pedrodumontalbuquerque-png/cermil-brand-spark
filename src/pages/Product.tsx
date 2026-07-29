@@ -74,11 +74,7 @@ const ProductPage = () => {
             {/* Esquerda: Galeria de Imagens */}
             <div className="flex flex-col gap-6">
               <div>
-                {normalizedImages[0]?.title && (
-                  <p className="text-xs uppercase tracking-[0.2em] font-medium text-muted-foreground mb-3">
-                    {normalizedImages[0].title}
-                  </p>
-                )}
+
                 <div className="aspect-square bg-bone border border-border/50 overflow-hidden relative">
                   {normalizedImages[0] ? (
                     <img
@@ -106,11 +102,7 @@ const ProductPage = () => {
               {/* Demais fotos empilhadas em tamanho grande */}
               {normalizedImages.slice(1).map((item, idx) => (
                 <div key={idx}>
-                  {item.title && (
-                    <p className="text-xs uppercase tracking-[0.2em] font-medium text-muted-foreground mb-3">
-                      {item.title}
-                    </p>
-                  )}
+
                   <div className="aspect-square bg-bone border border-border/50 overflow-hidden">
                     <img src={item.image} alt={`${product.name} - imagem ${idx + 2}`} className="w-full h-full object-cover" />
                   </div>
