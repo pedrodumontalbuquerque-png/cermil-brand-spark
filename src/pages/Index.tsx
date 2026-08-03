@@ -208,10 +208,6 @@ const Index = () => {
           <div className="grid lg:grid-cols-12 gap-8">
             <div className="lg:col-span-7 relative overflow-hidden">
               <img src={estruturaComercialImg} alt="Estrutura Comercial" loading="lazy" width={1280} height={960} className="w-full h-[560px] object-cover" />
-              <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-foreground/85 to-transparent">
-                <p className="font-display text-2xl text-background">Fornecimento & Estoque</p>
-                <p className="text-background/70 text-sm mt-1">Material disponível em escala para paisagismo e indústria.</p>
-              </div>
             </div>
             <ul className="lg:col-span-5 divide-y divide-border">
               {[
