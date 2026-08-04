@@ -2,7 +2,7 @@ import logo from "@/assets/logo-cermil.png";
 import hero from "@/assets/hero-quartz.jpg";
 import product from "@/assets/branco-1.jpg";
 import operation from "@/assets/operation.jpg";
-const estruturaComercialImg = "/imagens/aperto-de-mao.png";
+const estruturaComercialImg = "/imagens/download.png";
 import gallery1 from "@/assets/gallery-1.png";
 import gallery2 from "@/assets/gallery-2.png";
 import gallery3 from "@/assets/gallery-3.jpg";
