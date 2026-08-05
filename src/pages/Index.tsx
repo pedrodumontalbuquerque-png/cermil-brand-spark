@@ -149,8 +149,8 @@ const Index = () => {
 
           <div className="grid lg:grid-cols-12 gap-8">
             <article className="lg:col-span-7 group relative overflow-hidden bg-background/5 border border-background/10">
-              <div className="aspect-[4/3] overflow-hidden">
-                <img src={product} alt="Seixo de Quartzo" loading="lazy" width={1280} height={1280} className="w-full h-full object-cover scale-[1.12] origin-top-left transition-transform duration-[1200ms] group-hover:scale-[1.18]" />
+              <div className="aspect-auto lg:aspect-[4/3] overflow-hidden">
+                <img src={product} alt="Seixo de Quartzo" loading="lazy" width={1280} height={1280} className="w-full h-auto lg:h-full lg:object-cover lg:scale-[1.12] lg:origin-top-left transition-transform duration-[1200ms] group-hover:scale-[1.02] lg:group-hover:scale-[1.18]" />
               </div>
               <div className="p-8 lg:p-10 flex items-end justify-between gap-8">
                 <div>
