@@ -1,8 +1,8 @@
 import logo from "@/assets/logo-cermil.png";
 import hero from "@/assets/hero-quartz.jpg";
-import product from "@/assets/seixos-fortaleza.png";
+import product from "@/assets/branco-1.jpg";
 import operation from "@/assets/operation.jpg";
-const estruturaComercialImg = "/imagens/download.png";
+import estruturaComercialImg from "@/assets/seixos-fortaleza.png";
 import gallery1 from "@/assets/gallery-1.png";
 import gallery2 from "@/assets/gallery-2.png";
 import gallery3 from "@/assets/gallery-3.jpg";
@@ -206,8 +206,8 @@ const Index = () => {
           </div>
 
           <div className="grid lg:grid-cols-12 gap-8">
-            <div className="lg:col-span-7 relative overflow-hidden">
-              <img src={estruturaComercialImg} alt="Estrutura Comercial" loading="lazy" width={1280} height={960} className="w-full h-[560px] object-cover" />
+            <div className="lg:col-span-7 relative overflow-hidden bg-background/5">
+              <img src={estruturaComercialImg} alt="Estrutura Comercial" loading="lazy" width={1280} height={960} className="w-full aspect-square lg:aspect-auto lg:h-[560px] object-contain lg:object-cover" />
             </div>
             <ul className="lg:col-span-5 divide-y divide-border">
               {[
