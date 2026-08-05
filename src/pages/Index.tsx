@@ -1,6 +1,6 @@
 import logo from "@/assets/logo-cermil.png";
 import hero from "@/assets/hero-quartz.jpg";
-import product from "@/assets/branco-1.jpg";
+import product from "@/assets/seixos-fortaleza.png";
 import operation from "@/assets/operation.jpg";
 const estruturaComercialImg = "/imagens/download.png";
 import gallery1 from "@/assets/gallery-1.png";
