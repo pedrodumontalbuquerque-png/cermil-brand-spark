@@ -4,8 +4,9 @@ import product from "@/assets/branco-1.jpg";
 import operation from "@/assets/operation.jpg";
 import estruturaComercialImg from "@/assets/seixos-fortaleza.png";
 import gallery1 from "@/assets/gallery-1.png";
-import gallery2 from "@/assets/planta-processamento.jpeg";
+import gallery2 from "@/assets/gallery-2.png";
 import gallery3 from "@/assets/gallery-3.jpg";
+import plantaProcessamento from "@/assets/planta-processamento.jpeg";
 import { ArrowUpRight, Mountain, Layers, Truck, Compass, Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -244,14 +245,18 @@ const Index = () => {
 
           <div className="grid grid-cols-12 gap-4 lg:gap-6">
             <figure className="col-span-12 lg:col-span-8 relative overflow-hidden group">
-              <img src={gallery2} alt="Planta em funcionamento - processamento CERMIL" loading="lazy" className="w-full h-[320px] lg:h-[560px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" />
-              <figcaption className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-foreground/90 to-transparent text-[11px] uppercase tracking-[0.3em] text-background/80">Planta em Funcionamento · Processamento</figcaption>
+              <img src={gallery2} alt="Operação CERMIL ao entardecer" loading="lazy" className="w-full h-[320px] lg:h-[560px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" />
+              <figcaption className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-foreground/90 to-transparent text-[11px] uppercase tracking-[0.3em] text-background/80">Pátio · Entardecer</figcaption>
             </figure>
             <figure className="col-span-12 lg:col-span-4 relative overflow-hidden group">
               <img src={gallery3} alt="Pilha de seixo de quartzo" loading="lazy" className="w-full h-[320px] lg:h-[560px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" />
               <figcaption className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-foreground/90 to-transparent text-[11px] uppercase tracking-[0.3em] text-background/80">Seixos Rajados · Jazida</figcaption>
             </figure>
-            <figure className="col-span-12 relative overflow-hidden group">
+            <figure className="col-span-12 lg:col-span-4 relative overflow-hidden group">
+              <img src={plantaProcessamento} alt="Planta em funcionamento - processamento CERMIL" loading="lazy" className="w-full h-[320px] lg:h-[520px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" />
+              <figcaption className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-foreground/90 to-transparent text-[11px] uppercase tracking-[0.3em] text-background/80">Planta em Funcionamento · Processamento</figcaption>
+            </figure>
+            <figure className="col-span-12 lg:col-span-8 relative overflow-hidden group">
               <img src={gallery1} alt="Vista aérea da operação CERMIL" loading="lazy" className="w-full h-[320px] lg:h-[520px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" />
               <figcaption className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-foreground/90 to-transparent text-[11px] uppercase tracking-[0.3em] text-background/80">Vista aérea · Processamento</figcaption>
             </figure>
