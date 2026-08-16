@@ -11,6 +11,22 @@ import { ArrowUpRight, Mountain, Layers, Truck, Compass, Phone, Mail, MapPin } f
 import { Link } from "react-router-dom";
 
 const Index = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const nome = formData.get("nome") || "";
+    const empresa = formData.get("empresa") || "";
+    const email = formData.get("email") || "";
+    const telefone = formData.get("telefone") || "";
+    const aplicacao = formData.get("aplicacao") || "";
+    const mensagem = formData.get("mensagem") || "";
+
+    const text = `*Nova Solicitação de Orçamento*\n\n*Nome:* ${nome}\n*Empresa:* ${empresa}\n*E-mail:* ${email}\n*Telefone:* ${telefone}\n*Aplicação/Projeto:* ${aplicacao}\n*Mensagem:* ${mensagem}`;
+
+    const whatsappUrl = `https://wa.me/5585991124238?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground font-sans antialiased">
       {/* NAV */}
@@ -246,7 +262,7 @@ const Index = () => {
           <div className="grid grid-cols-12 gap-4 lg:gap-6">
             <figure className="col-span-12 lg:col-span-8 relative overflow-hidden group">
               <img src={gallery2} alt="Operação CERMIL ao entardecer" loading="lazy" className="w-full h-[320px] lg:h-[560px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" />
-              <figcaption className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-foreground/90 to-transparent text-[11px] uppercase tracking-[0.3em] text-background/80">Pátio · Entardecer</figcaption>
+              <figcaption className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-foreground/90 to-transparent text-[11px] uppercase tracking-[0.3em] text-background/80">Planta em Funcionamento - Processamento</figcaption>
             </figure>
             <figure className="col-span-12 lg:col-span-4 relative overflow-hidden group">
               <img src={gallery3} alt="Pilha de seixo de quartzo" loading="lazy" className="w-full h-[320px] lg:h-[560px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" />
@@ -254,7 +270,7 @@ const Index = () => {
             </figure>
             <figure className="col-span-12 lg:col-span-4 relative overflow-hidden group">
               <img src={plantaProcessamento} alt="Planta em funcionamento - processamento CERMIL" loading="lazy" className="w-full h-[320px] lg:h-[520px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" />
-              <figcaption className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-foreground/90 to-transparent text-[11px] uppercase tracking-[0.3em] text-background/80">Planta em Funcionamento · Processamento</figcaption>
+              <figcaption className="absolute top-0 inset-x-0 p-6 bg-gradient-to-b from-foreground/90 to-transparent text-[11px] uppercase tracking-[0.3em] text-background/80">Serviço de peneiramento - Arcelormittal</figcaption>
             </figure>
             <figure className="col-span-12 lg:col-span-8 relative overflow-hidden group">
               <img src={gallery1} alt="Vista aérea da operação CERMIL" loading="lazy" className="w-full h-[320px] lg:h-[520px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" />
@@ -300,7 +316,7 @@ const Index = () => {
               </div>
             </div>
 
-            <form className="lg:col-span-6 space-y-6 lg:pl-10 lg:border-l border-background/10" onSubmit={(e) => e.preventDefault()}>
+            <form className="lg:col-span-6 space-y-6 lg:pl-10 lg:border-l border-background/10" onSubmit={handleSubmit}>
               <div className="grid sm:grid-cols-2 gap-6">
                 <Field label="Nome" name="nome" />
                 <Field label="Empresa" name="empresa" />
@@ -310,7 +326,7 @@ const Index = () => {
               <Field label="Aplicação / Projeto" name="aplicacao" />
               <div>
                 <label className="text-[11px] uppercase tracking-[0.3em] text-background/60">Mensagem</label>
-                <textarea rows={4} className="mt-2 w-full bg-transparent border-b border-background/30 focus:border-accent focus:outline-none py-3 text-background placeholder:text-background/30 transition-colors resize-none" placeholder="Volume, granulometria, destino..." />
+                <textarea name="mensagem" rows={4} className="mt-2 w-full bg-transparent border-b border-background/30 focus:border-accent focus:outline-none py-3 text-background placeholder:text-background/30 transition-colors resize-none" placeholder="Volume, granulometria, destino..." />
               </div>
               <button type="submit" className="group inline-flex items-center gap-3 bg-accent text-accent-foreground px-8 py-4 text-sm uppercase tracking-[0.25em] hover:bg-background hover:text-foreground transition-colors">
                 Enviar solicitação <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
