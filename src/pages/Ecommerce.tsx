@@ -150,10 +150,10 @@ const Ecommerce = () => {
           <div>
             <p className="text-xs uppercase tracking-[0.4em] text-accent mb-3">Portfólio de materiais</p>
             <h1 className="font-display font-bold text-4xl lg:text-5xl leading-[1.05] text-balance">
-              Soluções minerais para <em className="text-accent not-italic">paisagismo, construção civil e indústria</em>
+              Soluções minerais para <em className="text-accent not-italic">construção civil, indústria e paisagismo</em>
             </h1>
             <p className="mt-5 text-muted-foreground max-w-2xl text-lg leading-relaxed">
-              Linhas de produtos desenvolvidas para atender demandas de paisagismo, construção civil e fornecimento industrial.
+              Linhas de produtos desenvolvidas para atender demandas de construção civil, indústria e paisagismo.
             </p>
           </div>
 

@@ -58,7 +58,7 @@ const Index = () => {
       <section id="top" className="relative min-h-[78svh] overflow-hidden bg-[hsl(30_12%_8%)] text-background pt-[100px]">
         {/* Background image lateral, com vinheta forte para contraste editorial */}
         <div className="absolute inset-0">
-          <img src={hero} alt="Seixos de quartzo CERMIL" className="absolute inset-0 w-full h-full object-cover opacity-90" width={1920} height={1280} />
+          <img src={operation} alt="Serviço de peneiramento CERMIL - Arcelormittal" className="absolute inset-0 w-full h-full object-cover opacity-90" width={1920} height={1280} />
           {/* Vinheta diagonal: dark sólido à esquerda, imagem revelada à direita */}
           <div className="absolute inset-0 bg-[linear-gradient(95deg,hsl(30_12%_6%)_0%,hsl(30_12%_8%/0.96)_38%,hsl(30_12%_8%/0.55)_60%,transparent_92%)]" />
           {/* Gradiente vertical para reforçar base/topo */}
@@ -74,7 +74,7 @@ const Index = () => {
             <h1 className="reveal reveal-delay-1 font-display font-bold text-balance text-5xl sm:text-6xl lg:text-7xl leading-[0.95] tracking-[-0.02em] text-background">
               Soluções minerais
               <span className="block text-background/70 text-3xl sm:text-4xl lg:text-5xl mt-3 font-normal italic tracking-[-0.01em]">
-                para paisagismo, construção civil & indústria
+                para construção civil, indústria & paisagismo
               </span>
             </h1>
 
@@ -171,9 +171,8 @@ const Index = () => {
               </div>
               <div className="p-8 lg:p-10 flex items-end justify-between gap-8">
                 <div>
-                  <p className="text-[11px] uppercase tracking-[0.3em] text-accent mb-3">Produto principal</p>
-                  <h3 className="font-display text-3xl lg:text-4xl text-background">Seixo de Quartzo</h3>
-                  <p className="mt-3 text-background/60 max-w-md">Origem mineral selecionada. Granulometrias e formatos negociáveis conforme aplicação.</p>
+                  <h3 className="font-display text-3xl lg:text-4xl text-background">Construção Civil</h3>
+                  <p className="mt-3 text-background/60 max-w-md">Areia, arisco e brita para abastecimento de obras, com fornecimento regional.</p>
                 </div>
                 <ArrowUpRight className="w-6 h-6 text-accent shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </div>
@@ -181,17 +180,13 @@ const Index = () => {
 
             <div className="lg:col-span-5 grid gap-8">
               {[
-                { t: "Pedras Naturais", d: "Variedades minerais sob consulta para projetos decorativos e técnicos." },
-                { t: "Construção Civil", d: "Areia, arisco e brita para abastecimento de obras, com fornecimento regional." },
+                { t: "Pedras Naturais", d: "Variedades minerais para projetos decorativos e técnicos." },
                 { t: "Demandas industriais", d: "Volumes e padrões compatíveis com operações de alta exigência." },
               ].map((c) => (
                 <div key={c.t} className="group p-8 border border-background/10 hover:border-accent/60 transition-colors bg-background/[0.03]">
-                  <div className="flex items-start justify-between gap-6">
-                    <div>
-                      <h4 className="font-display text-xl text-background">{c.t}</h4>
-                      <p className="mt-3 text-sm text-background/60 leading-relaxed">{c.d}</p>
-                    </div>
-                    <span className="text-[10px] uppercase tracking-[0.3em] text-accent">Consulta</span>
+                  <div>
+                    <h4 className="font-display text-xl text-background">{c.t}</h4>
+                    <p className="mt-3 text-sm text-background/60 leading-relaxed">{c.d}</p>
                   </div>
                 </div>
               ))}
@@ -270,7 +265,7 @@ const Index = () => {
             </figure>
             <figure className="col-span-12 lg:col-span-4 relative overflow-hidden group">
               <img src={plantaProcessamento} alt="Planta em funcionamento - processamento CERMIL" loading="lazy" className="w-full h-[320px] lg:h-[520px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" />
-              <figcaption className="absolute top-0 inset-x-0 p-6 bg-gradient-to-b from-foreground/90 to-transparent text-[11px] uppercase tracking-[0.3em] text-background/80">Serviço de peneiramento - Arcelormittal</figcaption>
+              <figcaption className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-foreground/90 to-transparent text-[11px] uppercase tracking-[0.3em] text-background/80">Serviço de peneiramento - Arcelormittal</figcaption>
             </figure>
             <figure className="col-span-12 lg:col-span-8 relative overflow-hidden group">
               <img src={gallery1} alt="Vista aérea da operação CERMIL" loading="lazy" className="w-full h-[320px] lg:h-[520px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" />
@@ -370,7 +365,7 @@ const Index = () => {
           {/* Col 3 — info legal */}
           <div className="flex flex-col gap-2 md:items-end">
             <p className="text-[10px] uppercase tracking-[0.4em] text-accent mb-1">CERMIL Stone</p>
-            <p className="text-[11px] uppercase tracking-[0.2em] text-background/50">Paisagismo · Construção Civil · Indústria</p>
+            <p className="text-[11px] uppercase tracking-[0.2em] text-background/50">Construção Civil · Indústria · Paisagismo</p>
             <p className="text-[11px] uppercase tracking-[0.2em] text-background/40">CNPJ 20.150.507/0001-39</p>
           </div>
         </div>
