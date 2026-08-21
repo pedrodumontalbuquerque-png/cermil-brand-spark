@@ -1,6 +1,6 @@
 import logo from "@/assets/logo-cermil.png";
 import hero from "@/assets/hero-quartz.jpg";
-import product from "@/assets/branco-1.jpg";
+import product from "/imagens/Hand_holding_grey_gravel_202608211418.jpeg";
 import operation from "@/assets/operation.jpg";
 import estruturaComercialImg from "@/assets/seixos-fortaleza.png";
 import gallery1 from "@/assets/gallery-1.png";
@@ -77,14 +77,6 @@ const Index = () => {
                 para construção civil, indústria & paisagismo
               </span>
             </h1>
-
-            <div className="reveal reveal-delay-2 mt-14 grid sm:grid-cols-[auto,1fr] gap-8 items-start max-w-2xl">
-              <span className="hidden sm:block w-16 h-px bg-accent mt-3" />
-              <p className="text-base lg:text-lg text-background/80 leading-relaxed">
-                Da linha decorativa ao fornecimento em escala, a CERMIL Stone reúne materiais minerais
-                selecionados para diferentes aplicações, com atendimento comercial orientado à demanda de cada projeto.
-              </p>
-            </div>
 
             <div className="reveal reveal-delay-3 mt-12 flex flex-wrap items-center gap-4">
               <a href="#contato" className="group inline-flex items-center gap-3 bg-accent text-accent-foreground px-8 py-4 text-xs uppercase tracking-[0.3em] font-medium hover:bg-background hover:text-foreground transition-all shadow-elegant">
