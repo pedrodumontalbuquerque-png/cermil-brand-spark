@@ -73,7 +73,7 @@ const Index = () => {
           <div className="max-w-4xl">
             <h1 className="reveal reveal-delay-1 font-display font-bold text-balance text-5xl sm:text-6xl lg:text-7xl leading-[0.95] tracking-[-0.02em] text-background">
               Soluções minerais
-              <span className="block text-background/70 text-3xl sm:text-4xl lg:text-5xl mt-3 font-normal italic tracking-[-0.01em]">
+              <span className="block whitespace-nowrap text-background/70 text-xl sm:text-3xl lg:text-5xl mt-3 font-normal italic tracking-[-0.01em]">
                 para construção civil, indústria & paisagismo
               </span>
             </h1>
