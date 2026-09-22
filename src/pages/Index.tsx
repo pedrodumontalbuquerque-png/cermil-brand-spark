@@ -51,7 +51,7 @@ const Index = () => {
       </header>
 
       {/* HERO */}
-      <section id="top" className="relative min-h-[78svh] overflow-hidden bg-[hsl(30_12%_8%)] text-background pt-[100px]">
+      <section id="top" className="relative min-h-screen overflow-hidden bg-[hsl(30_12%_8%)] text-background pt-[100px]">
         {/* Background image lateral, com vinheta forte para contraste editorial */}
         <div className="absolute inset-0">
           <img src={operation} alt="Serviço de peneiramento CERMIL - Arcelormittal" className="absolute inset-0 w-full h-full object-cover opacity-90" width={1920} height={1280} />
@@ -68,11 +68,11 @@ const Index = () => {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 min-h-[78svh] flex flex-col justify-center pt-20 pb-20">
           <div className="max-w-4xl">
             <a href="#top" className="flex items-center gap-3">
-            <img src={logo} alt="CERMIL" className="h-36 w-auto mb-20" />
+            <img src={logo} alt="CERMIL" className="lg:h-36 w-auto mb-8 lg:mb-20" />
           </a>
             <h1 className="reveal reveal-delay-1 font-display font-bold text-balance text-5xl sm:text-6xl lg:text-7xl leading-[0.95] tracking-[-0.02em] text-background">
               Soluções minerais
-              <span className="block whitespace-nowrap text-background/70 text-xl sm:text-3xl lg:text-5xl mt-3 font-normal italic tracking-[-0.01em]">
+              <span className="block lg:whitespace-nowrap text-background/70 text-xl sm:text-3xl lg:text-5xl mt-3 font-normal italic tracking-[-0.01em]">
                 para construção civil, indústria & paisagismo
               </span>
             </h1>
