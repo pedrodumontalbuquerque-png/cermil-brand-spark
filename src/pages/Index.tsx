@@ -217,7 +217,7 @@ const Index = () => {
                 { i: <Layers className="w-5 h-5" />, t: "Revenda", d: "Parcerias comerciais com fornecimento contínuo para distribuidores, lojas e operações de revenda." },
                 { i: <Mountain className="w-5 h-5" />, t: "Sob demanda", d: "Atendimento orientado a especificações, formatos e necessidades particulares de cada demanda." },
                 { i: <Compass className="w-5 h-5" />, t: "Grandes volumes", d: "Fornecimento preparado para operações de maior porte, com regularidade, escala e padronização comercial." },
-                { i: <MapPin className="w-5 h-5" />, t: "Atendimento regional", d: "Suporte comercial para demandas regionais com foco em agilidade de atendimento e abastecimento contínuo." },
+                { i: <MapPin className="w-5 h-5" />, t: "Atendimento regional", d: "Suporte comercial para demandas regionais, atendendo principalmente São Gonçalo do Amarante, Pecém, Trairi e demais regiões do Ceará." },
               ].map((a) => (
                 <li key={a.t} className="py-7 flex items-start gap-6 group">
                   <span className="text-accent mt-1">{a.i}</span>
