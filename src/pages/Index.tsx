@@ -1,4 +1,4 @@
-import logo from "@/assets/logo-cermil.png";
+import logo from "@/assets/logo_cermil_branca.png";
 import hero from "@/assets/hero-quartz.jpg";
 import product from "/imagens/Hand_holding_grey_gravel_202608211418.jpeg";
 import operation from "@/assets/operation.jpg";
@@ -30,20 +30,16 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground font-sans antialiased">
       {/* NAV */}
-      <header className="absolute top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/60">
+      <header className="absolute top-0 inset-x-0 z-50 backdrop-blur-md">
 
         {/* Nav principal */}
-        <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
-          <a href="#top" className="flex items-center gap-3">
-            <img src={logo} alt="CERMIL" className="h-8 w-auto" />
-            <span className="hidden sm:inline-block font-display text-sm tracking-[0.3em] uppercase text-stone">Stone</span>
-          </a>
-          <ul className="hidden md:flex items-center gap-10 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            <li><a href="#sobre" className="hover:text-foreground transition-colors">Quem somos</a></li>
-            <li><Link to="/produtos" className="hover:text-foreground transition-colors">Produtos</Link></li>
-            <li><a href="#aplicacoes" className="hover:text-foreground transition-colors">Aplicações</a></li>
+        <nav className="max-w-7xl mx-auto p-8 lg:px-10 h-24 flex items-center justify-between">
+          <ul className="hidden md:flex items-center gap-10 text-xs uppercase tracking-[0.2em] text-white">
+            <li><a href="#sobre" className="hover:text-white/50 transition-colors">Quem somos</a></li>
+            <li><a href="#aplicacoes" className="hover:text-white/50 transition-colors">Aplicações</a></li>
             
-            <li><a href="#contato" className="hover:text-foreground transition-colors">Contato</a></li>
+            <li><a href="#contato" className="hover:text-white/50 transition-colors">Contato</a></li>
+            &nbsp;
           </ul>
           <Link to="/produtos" className="md:hidden group inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] bg-foreground text-background px-4 py-2.5 hover:bg-accent hover:text-accent-foreground transition-colors">
             Produtos <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -71,6 +67,9 @@ const Index = () => {
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 min-h-[78svh] flex flex-col justify-center pt-20 pb-20">
           <div className="max-w-4xl">
+            <a href="#top" className="flex items-center gap-3">
+            <img src={logo} alt="CERMIL" className="h-36 w-auto mb-20" />
+          </a>
             <h1 className="reveal reveal-delay-1 font-display font-bold text-balance text-5xl sm:text-6xl lg:text-7xl leading-[0.95] tracking-[-0.02em] text-background">
               Soluções minerais
               <span className="block whitespace-nowrap text-background/70 text-xl sm:text-3xl lg:text-5xl mt-3 font-normal italic tracking-[-0.01em]">
