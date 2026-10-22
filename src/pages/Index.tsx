@@ -1,6 +1,9 @@
 import logo from "@/assets/logo_cermil_branca.png";
 import hero from "@/assets/hero-quartz.jpg";
-import product from "/imagens/Hand_holding_grey_gravel_202608211418.jpeg";
+const linhaIndustrial = "/imagens/linha-industrial.png";
+const linhaConstrucaoCivil = "/imagens/linha-construcao-civil.png";
+// Teste do cliente: trocar por linha-decorativo-opcao-1.png, -opcao-2.png ou -opcao-3.png
+const linhaDecorativo = "/imagens/linha-decorativo-opcao-1.png";
 import operation from "@/assets/operation.jpg";
 import estruturaComercialImg from "@/assets/seixos-fortaleza.png";
 import gallery1 from "@/assets/gallery-1.png";
@@ -157,13 +160,13 @@ const Index = () => {
 
           <div className="grid lg:grid-cols-12 gap-8">
             <article className="lg:col-span-7 group relative overflow-hidden bg-background/5 border border-background/10">
-              <div className="aspect-auto lg:aspect-[4/3] overflow-hidden">
-                <img src={product} alt="Seixo de Quartzo" loading="lazy" width={1280} height={1280} className="w-full h-auto lg:h-full lg:object-cover lg:object-center lg:scale-[1.12] lg:origin-center transition-transform duration-[1200ms] group-hover:scale-[1.02] lg:group-hover:scale-[1.18]" />
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src={linhaIndustrial} alt="Quartzo e brita de quartzo para fornecimento industrial" loading="lazy" className="w-full h-full object-cover object-center transition-transform duration-[1200ms] group-hover:scale-[1.04]" />
               </div>
               <div className="p-8 lg:p-10 flex items-end justify-between gap-8">
                 <div>
-                  <h3 className="font-display text-3xl lg:text-4xl text-background">Construção Civil</h3>
-                  <p className="mt-3 text-background/60 max-w-md">Areia, arisco e brita para abastecimento de obras, com fornecimento regional.</p>
+                  <h3 className="font-display text-3xl lg:text-4xl text-background">Industrial</h3>
+                  <p className="mt-3 text-background/60 max-w-md">Quartzo e brita de quartzo para fornecimento industrial, com atendimento conforme as especificações de cada operação.</p>
                 </div>
                 <ArrowUpRight className="w-6 h-6 text-accent shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </div>
@@ -171,27 +174,22 @@ const Index = () => {
 
             <div className="lg:col-span-5 grid gap-8">
               {[
-                { t: "Pedras Naturais", d: "Variedades minerais para projetos decorativos e técnicos." },
-                { t: "Demandas industriais", d: "Volumes e padrões compatíveis com operações de alta exigência." },
+                { t: "Construção Civil", d: "Brita, areia, arisco e agregados para o abastecimento de obras na região.", img: linhaConstrucaoCivil },
+                { t: "Decorativo", d: "Seixos rolados de quartzo e pedras naturais para jardins, vasos, paisagismo e decoração no geral.", img: linhaDecorativo },
               ].map((c) => (
-                <div key={c.t} className="group p-8 border border-background/10 hover:border-accent/60 transition-colors bg-background/[0.03]">
-                  <div>
-                    <h4 className="font-display text-xl text-background">{c.t}</h4>
-                    <p className="mt-3 text-sm text-background/60 leading-relaxed">{c.d}</p>
+                <article key={c.t} className="group relative overflow-hidden min-h-[260px] border border-background/10 hover:border-accent/60 transition-colors">
+                  <img src={c.img} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.05]" />
+                  <div className="absolute inset-0 bg-black/65" />
+                  <div className="relative h-full min-h-[260px] p-8 flex items-end justify-between gap-6">
+                    <div>
+                      <h4 className="font-display text-2xl text-background">{c.t}</h4>
+                      <p className="mt-3 text-sm text-background/75 leading-relaxed">{c.d}</p>
+                    </div>
+                    <ArrowUpRight className="w-6 h-6 text-accent shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                   </div>
-                </div>
+                </article>
               ))}
             </div>
-          </div>
-
-          <div className="mt-16 flex justify-center">
-            <Link
-              to="/produtos"
-              className="group inline-flex items-center gap-3 border border-accent/60 text-accent hover:bg-accent hover:text-accent-foreground transition-colors px-6 py-3 text-[11px] uppercase tracking-[0.3em]"
-            >
-              Ver Produtos
-              <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </Link>
           </div>
         </div>
       </section>
