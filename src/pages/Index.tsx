@@ -3,7 +3,7 @@ import hero from "@/assets/hero-quartz.jpg";
 const linhaIndustrial = "/imagens/linha-industrial.png";
 const linhaConstrucaoCivil = "/imagens/linha-construcao-civil.png";
 // Teste do cliente: trocar por linha-decorativo-opcao-1.png, -opcao-2.png ou -opcao-3.png
-const linhaDecorativo = "/imagens/linha-decorativo-opcao-1.png";
+const linhaDecorativo = "/imagens/linha-decorativo-opcao-3.png";
 import operation from "@/assets/operation.jpg";
 import estruturaComercialImg from "@/assets/seixos-fortaleza.png";
 import gallery1 from "@/assets/gallery-1.png";
